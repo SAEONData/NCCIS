@@ -8,6 +8,7 @@ let _vmsBaseURL = ''
 let _ssoBaseURL = ''
 let _metadataServiceURL = ''
 let _mapServerBaseURL = ''
+let _ndaoBaseURL = ''
 
 if (CONSTANTS.DEV) {
   _apiBaseURL = 'http://app01.saeon.ac.za/ccistestapi/odata/' //'https://localhost:44301/odata/'
@@ -16,6 +17,7 @@ if (CONSTANTS.DEV) {
   _ccrdSiteBaseURL = 'http://app01.saeon.ac.za/nccrdtestsite/#/' //'http://localhost:8085/#/'
   _ndmcBaseURL = 'http://app01.saeon.ac.za/ndmctestapi/odata/' //'https://localhost:44334/odata/'
   _ndmcSiteBaseURL = 'http://app01.saeon.ac.za/ndmctestsite/#/' //'http://localhost:8080/#/'
+  _ndaoBaseURL = 'http://app01.saeon.ac.za/ndaotestsite/#/'
   _vmsBaseURL = 'http://app01.saeon.ac.za/vmstest/api/' //'http://localhost:64161/api/'
   _ssoBaseURL = 'https://identity.saeon.ac.za/' //'http://localhost:44320/'
   _metadataServiceURL = 'http://qa.dirisa.org/Institutions/dea-monitoring-and-evaluation/dea-monitoring-and-evaluation/metadata/jsonCreateMetadataAsJson/'
@@ -28,6 +30,7 @@ else if (CONSTANTS.TEST) {
   _ccrdSiteBaseURL = 'http://app01.saeon.ac.za/nccrdtestsite/#/'
   _ndmcBaseURL = 'http://app01.saeon.ac.za/ndmctestapi/odata/'
   _ndmcSiteBaseURL = 'http://app01.saeon.ac.za/ndmctestsite/#/'
+  _ndaoBaseURL = 'http://app01.saeon.ac.za/ndaotestsite/#/'
   _vmsBaseURL = 'http://app01.saeon.ac.za/vmstest/api/'
   _ssoBaseURL = 'https://identity.saeon.ac.za/'
   _metadataServiceURL = 'http://qa.dirisa.org/Institutions/dea-monitoring-and-evaluation/dea-monitoring-and-evaluation/metadata/jsonCreateMetadataAsJson/'
@@ -40,6 +43,7 @@ else if (CONSTANTS.PROD) {
   _ccrdSiteBaseURL = 'http://app01.saeon.ac.za/nccrdsite/#/'
   _ndmcBaseURL = 'http://app01.saeon.ac.za/ndmcapi/odata/'
   _ndmcSiteBaseURL = 'http://app01.saeon.ac.za/ndmcsite/#/'
+  _ndaoBaseURL = 'http://app01.saeon.ac.za/ndaosite/#/'
   _vmsBaseURL = 'http://app01.saeon.ac.za/vms/api/'
   _ssoBaseURL = 'https://identity.saeon.ac.za/'
   _metadataServiceURL = 'http://qa.dirisa.org/Institutions/dea-monitoring-and-evaluation/dea-monitoring-and-evaluation/metadata/jsonCreateMetadataAsJson/'
@@ -52,6 +56,7 @@ export const ccrdBaseURL = _ccrdBaseURL
 export const ccrdSiteBaseURL = _ccrdSiteBaseURL
 export const ndmcBaseURL = _ndmcBaseURL
 export const ndmcSiteBaseURL = _ndmcSiteBaseURL
+export const ndaoBaseURL = _ndaoBaseURL
 export const vmsBaseURL = _vmsBaseURL
 export const ssoBaseURL = _ssoBaseURL
 export const metadataServiceURL = _metadataServiceURL

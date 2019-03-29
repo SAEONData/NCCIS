@@ -266,202 +266,11 @@ class Home extends React.Component {
     } = this.state
 
     return (
-      <div style={{ padding: "0px 15px 15px 15px", borderRadius: "10px" }}>
-
-      <Carousel />
-      
-{/* 
-        <AME_Banner />
-
-
-
-        <Row style={{ marginTop: -5 }}>
-          <Col sm="6">
-            <LessInfoBtn
-              infoSection={infoSection}
-              callback={(ifoSec) => { this.setState({ infoSection: !ifoSec }) }}
-            />
-          </Col>
-          <Col sm="6" style={{ textAlign: "right" }}>
-            <Button
-              size="sm"
-              onClick={() => { location.hash = "#/ame/contribute" }}
-              //style={{ margin: "35px 5px 0px 0px" }}
-              style={{
-                minHeight: 35,
-                //paddingTop: 10,
-                marginRight: 0,
-                marginLeft: 0
-              }}
-              color="warning">Submit your contribution
-            </Button>
-          </Col>
-        </Row>
-
-        <Collapse isOpen={infoSection}>
-          <AME_Info />
-        </Collapse>
-
-        <div style={{ height: 5 }} />
-
-        <div style={{ borderTop: "1px solid gainsboro", borderBottom: "1px solid gainsboro", paddingTop: "12px", paddingBottom: "8px" }}>
-          <Row >
-            <Col md="3" style={{ marginBottom: "3px" }}>
-              <RegionFilter
-                value={filterRegion}
-                callback={(value) => { this.setState({ filterRegion: value }) }}
-              />
-            </Col>
-            <Col md="3" style={{ marginBottom: "3px" }}>
-              <SectorFilter
-                value={filterSector}
-                callback={(value) => { this.setState({ filterSector: value }) }}
-              />
-            </Col>
-            <Col md="6">
-              <InstitutionFilter
-                data={this.state.filterInstitutionOptions}
-                value={this.state.filterInstitution}
-                callback={(value) => {
-                  this.setState({ filterInstitution: value.text })
-                }}
-              />
-            </Col>
-          </Row>
-
-          <Row style={{ marginTop: "7px" }}>
-            <Col md="3" style={{ marginBottom: "3px" }}>
-              <GoalFilter
-                value={filterGoal}
-                callback={(value) => { this.setState({ filterGoal: value }) }}
-              />
-            </Col>
-            <Col md="6">
-              <YearFilter
-                value={filterYear}
-                callback={(value) => { this.setState({ filterYear: value }) }}
-              />
-            </Col>
-            <Col md="3">
-              <Button
-                size="sm"
-                style={{
-                  height: "31px",
-                  marginTop: "0px",
-                  paddingTop: 6,
-                  width: "100%",
-                  fontSize: "13px",
-                  marginLeft: "0px",
-                  backgroundColor: DEAGreen
-                }}
-                color=""
-                onClick={() => {
-                  this.setState({
-                    filterYear: (new Date()).getFullYear(),
-                    filterRegion: 0,
-                    filterSector: 0,
-                    filterGoal: 1
-                  })
-                }}
-              >
-                Clear Filters
-              </Button>
-            </Col>
-          </Row>
+      <div>
+        <div style={{ backgroundColor: 'black' }}>
+         <Carousel />
         </div>
-
-        {/* <br /> */}
-        {/* <div style={{ height: 12 }} />
-
-        {
-          (trafficLightFull === true) &&
-          <Row>
-            <Col md="12">
-              <TrafficLights
-                goalData={goalData}
-                filterYear={filterYear}
-                height={350}
-                popCallback={() => { this.setState({ trafficLightFull: false }) }}
-                fullView
-              />
-            </Col>
-          </Row>
-        }
-
-        {
-          (mapFullView === true) &&
-          <Row>
-            <Col md="12">
-              <MapViewCore
-                height={525}
-                popCallback={() => { this.setState({ mapFullView: false }) }}
-                fullView
-                filters={{
-                  region: filterRegion,
-                  parentRegion: filterRegionParent,
-                  sector: filterSector,
-                  institution: filterInstitution,
-                  goal: filterGoal,
-                  year: filterYear
-                }}
-              />
-            </Col>
-          </Row> */}
-        
-{/* 
-        {
-          (trafficLightFull === false && mapFullView === false) &&
-          <Row>
-            <Col md="6">
-
-              <Row>
-                <Col md="12"> */}
-                  {/* selected goal details ??? */}
-                  {/* <GoalDetails goal={filterGoal} />
-                </Col>
-              </Row> */} 
-
-              {/* <br /> */}
-              {/* <div style={{ height: 10 }} />
-
-              <Row>
-                <Col md="12"> */}
-                  {/* traffic lights */}
-                  {/* <TrafficLights
-                    goalData={goalData}
-                    filterYear={filterYear}
-                    height={200}
-                    popCallback={() => { this.setState({ trafficLightFull: true }) }}
-                  />
-                </Col>
-              </Row>
-
-            </Col>
-
-            <Col md="6">
-
-              <Row>
-                <Col md="12">
-                  <MapViewCore
-                    height={420}
-                    popCallback={() => { this.setState({ mapFullView: true }) }}
-                    filters={{
-                      region: filterRegion,
-                      parentRegion: filterRegionParent,
-                      sector: filterSector,
-                      institution: filterInstitution,
-                      goal: filterGoal,
-                      year: filterYear
-                    }}
-                  />
-                </Col>
-              </Row>
-
-            </Col>
-
-          </Row> */}
-        
-
+ 
         <div style={{
           marginTop: "15px",
           marginBottom: "15px",
@@ -490,6 +299,7 @@ class Home extends React.Component {
           </Row>
         </div>
 
+        {/* About */}
         <div style={{
           marginTop: "15px",
           marginBottom: "15px",
@@ -499,30 +309,12 @@ class Home extends React.Component {
           borderBottom: "1px solid gainsboro"
         }}>
           <Row>
-
             <Col>
             <About />
             </Col>
           </Row>
         </div>
-
-        {/* <Row>
-
-          <Col md="4">
-            <SARVA_Preview />
-          </Col>
-
-          <Col md="5">
-            <NCCRD_Preview />
-          </Col>
-
-          <Col md="3">
-            <NDMC_Preview />
-          </Col>
-
-        </Row> */}
-
-
+      
       </div>
     )
   }

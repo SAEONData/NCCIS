@@ -20,6 +20,7 @@ import LoadingPanel from './components/input/LoadingPanel.jsx'
 import Header from './components/navigation/Header.jsx';
 import AME from './components/pages/Adaptation/MonitoringEvaluation/AME.jsx';
 import SideNav from './components/navigation/SideNav.jsx'
+import ComingSoon from './Components/Pages/Home/ComingSoon.jsx'
 import userManager from './components/authentication/userManager'
 
 //Data
@@ -122,6 +123,7 @@ class App extends React.Component {
                   <Route path="/logout" component={Logout} exact />
                   <Route path="/callback" component={CallbackPage} />
                   <Route path="/ame" component={AME} />
+                  <Route path="/ComingSoon" component={ComingSoon} />
                   <Redirect to="/" />
                 </Switch>
               </div>
