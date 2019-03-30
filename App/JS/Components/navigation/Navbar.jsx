@@ -84,8 +84,6 @@ class Navbar extends React.Component {
           light
           expand="md"
           style={{
-            // boxShadow: "0px 15px 10px -15px gainsboro",
-            // borderTop: "1px solid #E8E8E8",
             boxShadow: "rgba(0, 0, 0, 0.3) 0px 15px 10px -15px",
             borderTop: "1px solid rgba(0, 0, 0, 0.3)",
             paddingTop: 2,
@@ -108,17 +106,12 @@ class Navbar extends React.Component {
                 </Button>
               }
 
-              {/* Home */}
-              {/* <NavItem style={{ borderBottom: (locationHash === "#/" ? "4px solid dimgrey" : "0px solid white"), marginRight: "15px" }}>
-                <NavLink to="/"><b>Home</b></NavLink>
-              </NavItem> */}
-
-              {/* GHG */}
-              {/* <NavItem style={{ borderBottom: (locationHash === "#/" ? "4px solid dimgrey" : "0px solid white"), marginRight: "15px" }}>
-                <NavLink to="/"><b>GHG Emissions</b></NavLink>
-              </NavItem> */}
               <NavItem >
-                <NavLink to='/ComingSoon'><b>GHG Emissions </b></NavLink>
+                <NavLink to='/'><b>Home</b></NavLink>
+              </NavItem>
+
+              <NavItem >
+                <NavLink to='/ComingSoon'><b>GHG Emissions</b></NavLink>
               </NavItem>
 
               {/* Climate Change */}
@@ -129,19 +122,15 @@ class Navbar extends React.Component {
                   </DropdownToggle>
                   <DropdownMenu>
                     <DropdownItem header style={{ marginLeft: "-16px", fontWeight: "400", fontSize: "16px", color: "black" }}>
-                        Climate Trends
+                      Climate Trends
                     </DropdownItem>
                     <DropdownItem divider />
-                    <DropdownItem onClick={() => { location.hash="ComingSoon"}}>
+                    <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
                       Historical Observations
                     </DropdownItem>
-                    <DropdownItem onClick={() => { location.hash="ComingSoon"}}>
+                    <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
                       Projections
                     </DropdownItem>
-                  </DropdownMenu>
-                
-                  <DropdownMenu>
-                    
                   </DropdownMenu>
                 </Dropdown>
               </NavItem>
@@ -179,15 +168,15 @@ class Navbar extends React.Component {
                       Tracking and Evaluation System
                     </DropdownItem>
                     <DropdownItem divider />
-                    <DropdownItem onClick={() => { location.hash="ComingSoon"}}>
+                    <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
                       Reports and Publications
-                      <DropdownItem onClick={() => { location.hash="ComingSoon"}}>
+                      <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
                         Strategic Documents
                       </DropdownItem>
-                      <DropdownItem onClick={() => { location.hash="ComingSoon"}}>
+                      <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
                         Research
                       </DropdownItem>
-                      <DropdownItem onClick={() => { location.hash="ComingSoon"}}>
+                      <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
                         Legislation
                       </DropdownItem>
                       <DropdownItem>
@@ -199,30 +188,30 @@ class Navbar extends React.Component {
                           Third National Communication to UNFCCC
                         </DropdownItem>
                       </DropdownItem>
+                    </DropdownItem>
+                    <DropdownItem divider />
+                    <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
+                      Technology Needs Assessment
                       </DropdownItem>
-                      <DropdownItem divider />
-                      <DropdownItem onClick={() => { location.hash="ComingSoon"}}>
-                        Technology Needs Assessment
+                    <DropdownItem divider />
+                    <DropdownItem onClick={() => { window.open("http://www.letsrespondtoolkit.org/", "_blank") }}>
+                      Let's Respond Toolkit
                       </DropdownItem>
-                      <DropdownItem divider />
-                      <DropdownItem onClick={() => { window.open("http://www.letsrespondtoolkit.org/", "_blank") }}>
-                        Let's Respond Toolkit
-                      </DropdownItem>
-                      <DropdownItem divider />
-                      <DropdownItem onClick={() => { location.hash="ComingSoon"}}>
-                        Climate Finance
+                    <DropdownItem divider />
+                    <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
+                      Climate Finance
                       </DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
               </NavItem>
               <NavItem >
-                <NavLink  to='/ComingSoon'><b>Events and News</b></NavLink>
+                <NavLink to='/ComingSoon'><b>Events and News</b></NavLink>
               </NavItem>
               <NavItem >
-                <a style={{color: '#212529', marginLeft: '10px', lineHeight: '40px', fontSize: '16px'}} href="http://sarva2.dirisa.org/"><b>Risk and Vulnerability</b></a>
+                <a style={{ color: '#212529', marginLeft: '10px', lineHeight: '40px', fontSize: '16px' }} href="http://sarva2.dirisa.org/"><b>Risk and Vulnerability</b></a>
               </NavItem>
-                  
-{/* 
+
+              {/* 
               <DropdownItem onClick={() => { window.open("https://unfccc.int/sites/default/files/resource/South%20African%20TNC%20Report%20%20to%20the%20UNFCCC_31%20Aug.pdf", "_blank") }}>
                       Third National Communication to UNFCCC
                     </DropdownItem> */}

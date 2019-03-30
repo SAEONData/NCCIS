@@ -14,7 +14,6 @@ const mapImages = [map1, map2, map3, map4, map5]
 const CarouselPage = () => {
   return (
     <>
-      {/* <MDBContainer > */}
       <MDBCarousel
         activeItem={1}
         interval={10000}
@@ -27,7 +26,7 @@ const CarouselPage = () => {
           width: 'auto',
           textAlign: 'center',
           backgroundColor: "#6198c3",
-          position: 'relative', zIndex: 2 
+          position: 'relative', zIndex: 2
         }}
       >
         <MDBCarouselInner>
@@ -35,7 +34,7 @@ const CarouselPage = () => {
             mapImages.map(map => {
               let index = mapImages.indexOf(map) + 1
               return (
-                <MDBCarouselItem itemId={index}>
+                <MDBCarouselItem key={`ci_${index}`} itemId={index}>
                   <MDBView styles={{ height: '400px', width: 'auto', margin: '0, auto' }}>
                     <img src={map} style={{ margin: "auto", maxHeight: 400 }} />
                   </MDBView>
@@ -45,7 +44,6 @@ const CarouselPage = () => {
           }
         </MDBCarouselInner>
       </MDBCarousel>
-      {/* </MDBContainer> */}
     </>
   )
 }

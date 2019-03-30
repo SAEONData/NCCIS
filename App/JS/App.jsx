@@ -18,9 +18,9 @@ import Footer from './components/navigation/Footer.jsx'
 import CallbackPage from '../js/components/authentication/callback.jsx';
 import LoadingPanel from './components/input/LoadingPanel.jsx'
 import Header from './components/navigation/Header.jsx';
-import AME from './components/pages/Adaptation/MonitoringEvaluation/AME.jsx';
+// import AME from './components/pages/Adaptation/MonitoringEvaluation/AME.jsx';
 import SideNav from './components/navigation/SideNav.jsx'
-import ComingSoon from './Components/Pages/Home/ComingSoon.jsx'
+import ComingSoon from './Components/Pages/ComingSoonAE.jsx' //Created my own temp component
 import userManager from './components/authentication/userManager'
 
 //Data
@@ -101,7 +101,7 @@ class App extends React.Component {
     let { navbar } = this.state
 
     return (
-      <div style={{ backgroundColor: "white" }}>
+      <div style={{ backgroundColor: "white", overflowX: 'hidden' }}>
         <Router>
           <div>
 
@@ -122,7 +122,7 @@ class App extends React.Component {
                   <Route path="/login" component={Login} exact />
                   <Route path="/logout" component={Logout} exact />
                   <Route path="/callback" component={CallbackPage} />
-                  <Route path="/ame" component={AME} />
+                  {/* <Route path="/ame" component={AME} /> */}
                   <Route path="/ComingSoon" component={ComingSoon} />
                   <Redirect to="/" />
                 </Switch>

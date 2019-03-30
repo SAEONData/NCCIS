@@ -145,13 +145,13 @@ class Footer extends React.Component {
           </Row>
         </div>
 
-        <Modal isOpen={showModal} toggle={() => this.toggleModal(false)} size="fluid" style={{ width: "95%" }} >
+        <Modal isOpen={showModal} toggle={() => this.toggleModal(false)} size="fluid" fullHeight position="bottom" style={{ width: "95%" }} >
           <ModalHeader toggle={() => this.toggleModal(false)}>{modalHeader}</ModalHeader>
           <ModalBody>
             <iframe
               style={{
                 width: "100%",
-                height: "500px",
+                height: "83vh", //"500px",
                 margin: "0px",
                 border: "1px solid gainsboro",
                 // backgroundImage: `url(${loader})`,
