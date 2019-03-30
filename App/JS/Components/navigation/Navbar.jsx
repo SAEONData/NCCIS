@@ -12,6 +12,7 @@ import NCCRD from '../pages/Tools/NCCRD.jsx';
 import NWIS from '../pages/Tools/NWIS.jsx';
 import SARVA from '../pages/Tools/SARVA.jsx';
 import { data as NavData } from '../../../data/sideNavData'
+// import ComingSoon from '../pages/home/ComingSoon.jsx'
 
 const _gf = require('../../globalFunctions')
 
@@ -113,21 +114,34 @@ class Navbar extends React.Component {
               </NavItem> */}
 
               {/* GHG */}
-              <NavItem style={{ borderBottom: (locationHash === "#/" ? "4px solid dimgrey" : "0px solid white"), marginRight: "15px" }}>
+              {/* <NavItem style={{ borderBottom: (locationHash === "#/" ? "4px solid dimgrey" : "0px solid white"), marginRight: "15px" }}>
                 <NavLink to="/"><b>GHG Emissions</b></NavLink>
+              </NavItem> */}
+              <NavItem >
+                <NavLink to='/ComingSoon'><b>GHG Emissions </b></NavLink>
               </NavItem>
 
-              {/* Evidence for Climate Change */}
-
+              {/* Climate Change */}
               <NavItem>
                 <Dropdown>
                   <DropdownToggle nav caret style={{ color: "black" }}>
-                    <b>Evidence for Climate Change</b>
+                    <b>Climate Change</b>
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem href="#">
-                      Third National Communication
+                    <DropdownItem header style={{ marginLeft: "-16px", fontWeight: "400", fontSize: "16px", color: "black" }}>
+                        Climate Trends
                     </DropdownItem>
+                    <DropdownItem divider />
+                    <DropdownItem onClick={() => { location.hash="ComingSoon"}}>
+                      Historical Observations
+                    </DropdownItem>
+                    <DropdownItem onClick={() => { location.hash="ComingSoon"}}>
+                      Projections
+                    </DropdownItem>
+                  </DropdownMenu>
+                
+                  <DropdownMenu>
+                    
                   </DropdownMenu>
                 </Dropdown>
               </NavItem>
@@ -139,7 +153,8 @@ class Navbar extends React.Component {
                     <b>Disaster Management</b>
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem href="#">
+                    <DropdownItem onClick={() => { window.open("https://gis-portal.ndmc.gov.za/portal/home/index.html ", "_blank") }}>
+                      Disaster Trends
                     </DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
@@ -152,7 +167,7 @@ class Navbar extends React.Component {
                     <b>Responding to Climate Change</b>
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem onClick={() => { this.setState({ showNDMC: true }) }}>
+                    <DropdownItem onClick={() => { window.open("http://app01.saeon.ac.za/ndaotestsite/#/ ", "_blank") }}>
                       National Desired Adaptation Outcomes
                     </DropdownItem>
                     <DropdownItem divider />
@@ -160,27 +175,57 @@ class Navbar extends React.Component {
                       National Climate Change Response Database
                     </DropdownItem>
                     <DropdownItem divider />
-                    <DropdownItem href="#">
+                    <DropdownItem onClick={() => { window.open("http://app01.saeon.ac.za/ndaotestsite/#/ ", "_blank") }}>
                       Tracking and Evaluation System
                     </DropdownItem>
                     <DropdownItem divider />
-                    <DropdownItem onClick={() => { window.open("https://south-africa-platform.vizzuality.com/ ", "_blank") }}>
-                      Biennial Update Reporting
-                    </DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem href="#">
-                      Technology Needs Assessment
-                    </DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem onClick={() => { window.open("http://www.letsrespondtoolkit.org/", "_blank") }}>
-                      Let's Respond Toolkit
-                    </DropdownItem>
+                    <DropdownItem onClick={() => { location.hash="ComingSoon"}}>
+                      Reports and Publications
+                      <DropdownItem onClick={() => { location.hash="ComingSoon"}}>
+                        Strategic Documents
+                      </DropdownItem>
+                      <DropdownItem onClick={() => { location.hash="ComingSoon"}}>
+                        Research
+                      </DropdownItem>
+                      <DropdownItem onClick={() => { location.hash="ComingSoon"}}>
+                        Legislation
+                      </DropdownItem>
+                      <DropdownItem>
+                        Reports
+                        <DropdownItem onClick={() => { window.open("https://unfccc.int/sites/default/files/resource/South%20African%20TNC%20Report%20%20to%20the%20UNFCCC_31%20Aug.pdf", "_blank") }}>
+                          Third National Communication to UNFCCC
+                        </DropdownItem>
+                        <DropdownItem onClick={() => { window.open("https://www.environment.gov.za/sites/default/files/docs/SAdraft3rdbiennialupdatereport_unnfccc2018.pdf", "_blank") }}>
+                          Third National Communication to UNFCCC
+                        </DropdownItem>
+                      </DropdownItem>
+                      </DropdownItem>
+                      <DropdownItem divider />
+                      <DropdownItem onClick={() => { location.hash="ComingSoon"}}>
+                        Technology Needs Assessment
+                      </DropdownItem>
+                      <DropdownItem divider />
+                      <DropdownItem onClick={() => { window.open("http://www.letsrespondtoolkit.org/", "_blank") }}>
+                        Let's Respond Toolkit
+                      </DropdownItem>
+                      <DropdownItem divider />
+                      <DropdownItem onClick={() => { location.hash="ComingSoon"}}>
+                        Climate Finance
+                      </DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
               </NavItem>
-
-
-
+              <NavItem >
+                <NavLink  to='/ComingSoon'><b>Events and News</b></NavLink>
+              </NavItem>
+              <NavItem >
+                <a style={{color: '#212529', marginLeft: '10px', lineHeight: '40px', fontSize: '16px'}} href="http://sarva2.dirisa.org/"><b>Risk and Vulnerability</b></a>
+              </NavItem>
+                  
+{/* 
+              <DropdownItem onClick={() => { window.open("https://unfccc.int/sites/default/files/resource/South%20African%20TNC%20Report%20%20to%20the%20UNFCCC_31%20Aug.pdf", "_blank") }}>
+                      Third National Communication to UNFCCC
+                    </DropdownItem> */}
 
               {/* Adaptation */}
               {/* <NavItem>
