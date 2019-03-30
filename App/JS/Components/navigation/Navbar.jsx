@@ -160,7 +160,7 @@ class Navbar extends React.Component {
                       National Desired Adaptation Outcomes
                     </DropdownItem>
                     <DropdownItem divider />
-                    <DropdownItem onClick={() => { this.setState({ showNCCRD: true }) }}>
+                    <DropdownItem onClick={() => { window.open("http://app01.saeon.ac.za/nccrdtestsite/#/ ", "_blank") /*this.setState({ showNCCRD: true })*/ }}>
                       National Climate Change Response Database
                     </DropdownItem>
                     <DropdownItem divider />
