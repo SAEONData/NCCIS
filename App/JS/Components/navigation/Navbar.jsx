@@ -83,10 +83,13 @@ class Navbar extends React.Component {
           light
           expand="md"
           style={{
-            boxShadow: "0px 15px 10px -15px gainsboro",
-            borderTop: "1px solid #E8E8E8",
+            // boxShadow: "0px 15px 10px -15px gainsboro",
+            // borderTop: "1px solid #E8E8E8",
+            boxShadow: "rgba(0, 0, 0, 0.3) 0px 15px 10px -15px",
+            borderTop: "1px solid rgba(0, 0, 0, 0.3)",
             paddingTop: 2,
-            paddingBottom: 2
+            paddingBottom: 2,
+            zIndex: 3
           }}
         >
 
@@ -127,9 +130,9 @@ class Navbar extends React.Component {
                     </DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
-               </NavItem>
+              </NavItem>
 
-            {/* Disaster Man*/}
+              {/* Disaster Man*/}
               <NavItem>
                 <Dropdown>
                   <DropdownToggle nav caret style={{ color: "black" }}>
@@ -142,7 +145,7 @@ class Navbar extends React.Component {
                 </Dropdown>
               </NavItem>
 
-            {/* Resp Climate Change*/}
+              {/* Resp Climate Change*/}
               <NavItem>
                 <Dropdown>
                   <DropdownToggle nav caret style={{ color: "black" }}>
@@ -175,9 +178,9 @@ class Navbar extends React.Component {
                   </DropdownMenu>
                 </Dropdown>
               </NavItem>
-                  
 
-   
+
+
 
               {/* Adaptation */}
               {/* <NavItem>

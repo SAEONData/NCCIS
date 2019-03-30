@@ -266,11 +266,16 @@ class Home extends React.Component {
     } = this.state
 
     return (
-      <div style={{ padding: "0px 15px 15px 15px", borderRadius: "10px" }}>
+      <>
 
-      <Carousel />
-      
-{/* 
+        <div style={{ margin: "-15px -15px 0 -15px", position: 'relative', zIndex: 2 }}>
+          <Carousel />
+        </div>
+
+        <div style={{ padding: "0px 15px 15px 15px", borderRadius: "10px" }}>
+
+
+          {/* 
         <AME_Banner />
 
 
@@ -371,7 +376,7 @@ class Home extends React.Component {
         </div>
 
         {/* <br /> */}
-        {/* <div style={{ height: 12 }} />
+          {/* <div style={{ height: 12 }} />
 
         {
           (trafficLightFull === true) &&
@@ -407,8 +412,8 @@ class Home extends React.Component {
               />
             </Col>
           </Row> */}
-        
-{/* 
+
+          {/* 
         {
           (trafficLightFull === false && mapFullView === false) &&
           <Row>
@@ -416,18 +421,18 @@ class Home extends React.Component {
 
               <Row>
                 <Col md="12"> */}
-                  {/* selected goal details ??? */}
-                  {/* <GoalDetails goal={filterGoal} />
+          {/* selected goal details ??? */}
+          {/* <GoalDetails goal={filterGoal} />
                 </Col>
-              </Row> */} 
+              </Row> */}
 
-              {/* <br /> */}
-              {/* <div style={{ height: 10 }} />
+          {/* <br /> */}
+          {/* <div style={{ height: 10 }} />
 
               <Row>
                 <Col md="12"> */}
-                  {/* traffic lights */}
-                  {/* <TrafficLights
+          {/* traffic lights */}
+          {/* <TrafficLights
                     goalData={goalData}
                     filterYear={filterYear}
                     height={200}
@@ -460,53 +465,52 @@ class Home extends React.Component {
             </Col>
 
           </Row> */}
-        
 
-        <div style={{
-          marginTop: "15px",
-          marginBottom: "15px",
-          paddingTop: "15px",
-          paddingBottom: "15px",
-          borderTop: "1px solid gainsboro",
-          borderBottom: "1px solid gainsboro"
-        }}>
-          <Row>
 
-            <Col>
-              <FundingIGFX data={goalDataUnfiltered} year={filterYear} />
-            </Col>
-            <Col>
-              <PlansIGFX data={goalDataUnfiltered} year={filterYear} />
-            </Col>
-            <Col>
-              <GovernmentsIGFX data={goalDataUnfiltered} year={filterYear} />
-            </Col>
-            <Col>
-              <GHGReductionIGFX data={goalDataUnfiltered} year={filterYear} />
-            </Col>
-            <Col>
-              <SectorsIGFX data={goalDataUnfiltered} year={filterYear} />
-            </Col>
-          </Row>
-        </div>
+          <div style={{
+            marginTop: "15px",
+            marginBottom: "15px",
+            paddingTop: "15px",
+            // paddingBottom: "15px",
+            borderTop: "1px solid gainsboro",
+            // borderBottom: "1px solid gainsboro"
+          }}>
+            <Row>
 
-        <div style={{
-          marginTop: "15px",
-          marginBottom: "15px",
-          paddingTop: "15px",
-          paddingBottom: "15px",
-          borderTop: "1px solid gainsboro",
-          borderBottom: "1px solid gainsboro"
-        }}>
-          <Row>
+              <Col>
+                <FundingIGFX data={goalDataUnfiltered} year={filterYear} />
+              </Col>
+              <Col>
+                <PlansIGFX data={goalDataUnfiltered} year={filterYear} />
+              </Col>
+              <Col>
+                <GovernmentsIGFX data={goalDataUnfiltered} year={filterYear} />
+              </Col>
+              <Col>
+                <GHGReductionIGFX data={goalDataUnfiltered} year={filterYear} />
+              </Col>
+              <Col>
+                <SectorsIGFX data={goalDataUnfiltered} year={filterYear} />
+              </Col>
+            </Row>
+          </div>
 
-            <Col>
-            <About />
-            </Col>
-          </Row>
-        </div>
+          <div style={{
+            marginTop: "15px",
+            marginBottom: "15px",
+            paddingTop: "15px",
+            paddingBottom: "15px",
+            borderTop: "1px solid gainsboro",
+            borderBottom: "1px solid gainsboro"
+          }}>
+            <Row>
+              <Col>
+                <About />
+              </Col>
+            </Row>
+          </div>
 
-        {/* <Row>
+          {/* <Row>
 
           <Col md="4">
             <SARVA_Preview />
@@ -523,7 +527,8 @@ class Home extends React.Component {
         </Row> */}
 
 
-      </div>
+        </div>
+      </>
     )
   }
 }
