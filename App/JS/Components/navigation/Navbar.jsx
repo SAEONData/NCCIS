@@ -4,7 +4,7 @@ import { Button, Collapse, Dropdown, DropdownItem, DropdownMenu, DropdownToggle,
 import React from 'react';
 import { connect } from 'react-redux';
 import { DEAGreen } from "../../config/colours.js";
-import { ssoBaseURL } from '../../../js/config/serviceURLs.js';
+import { ssoBaseURL, ccrdSiteBaseURL, ndaoSiteBaseURL } from '../../../js/config/serviceURLs.js';
 import DASL from '../pages/Tools/DASL.jsx';
 import NDMC from '../pages/Tools/NDMC.jsx';
 import LRT from '../pages/Tools/LRT.jsx';
@@ -156,15 +156,15 @@ class Navbar extends React.Component {
                     <b>Responding to Climate Change</b>
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem onClick={() => { window.open("http://app01.saeon.ac.za/ndaotestsite/#/ ", "_blank") }}>
+                    <DropdownItem onClick={() => { window.open(ndaoSiteBaseURL, "_blank") }}>
                       National Desired Adaptation Outcomes
                     </DropdownItem>
                     <DropdownItem divider />
-                    <DropdownItem onClick={() => { window.open("http://app01.saeon.ac.za/nccrdtestsite/#/ ", "_blank") /*this.setState({ showNCCRD: true })*/ }}>
+                    <DropdownItem onClick={() => { window.open(ccrdSiteBaseURL, "_blank") /*this.setState({ showNCCRD: true })*/ }}>
                       National Climate Change Response Database
                     </DropdownItem>
                     <DropdownItem divider />
-                    <DropdownItem onClick={() => { window.open("http://app01.saeon.ac.za/ndaotestsite/#/ ", "_blank") }}>
+                    <DropdownItem onClick={() => { location.hash = "ComingSoon" /*window.open("", "_blank")*/ }}>
                       Tracking and Evaluation System
                     </DropdownItem>
                     <DropdownItem divider />
