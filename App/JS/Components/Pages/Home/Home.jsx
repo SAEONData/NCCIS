@@ -9,8 +9,17 @@ import PlansIGFX from './InfoGraphics/PlansIGFX.jsx'
 import GovernmentsIGFX from './InfoGraphics/GovernmentsIGFX.jsx'
 import GHGReductionIGFX from './InfoGraphics/GHGReductionIGFX.jsx'
 import SectorsIGFX from './InfoGraphics/SectorsIGFX.jsx'
+// import IconList from '../../navigation/IconList.jsx';
 import About from './../About.jsx'
-import Carousel from './Carousel.jsx'
+// import Carousel from './Carousel.jsx'
+
+// Images
+import sarva_ct from '../../../../Images/Maps/sarva_ct.png'
+import sarva_gp from '../../../../Images/Maps/sarva_gp.png'
+import sarva_kzn from '../../../../Images/Maps/sarva_kzn.png'
+import static_maps_gp from '../../../../Images/Maps/static_maps_gp.png'
+import static_maps_sa from '../../../../Images/Maps/static_maps_sa.png'
+
 
 const mapStateToProps = (state, props) => {
   return {}
@@ -248,17 +257,52 @@ class Home extends React.Component {
     return (
       <>
 
-        <div style={{ margin: "-15px -15px 0 -15px", position: 'relative', zIndex: 2 }}>
-          <Carousel />
-        </div>
+       <section class="ea-content">
+          <div class="container-fluid mt-4">
+          <div class="row d-sm-none d-md-none d-lg-none">
+            <div class="col-6"><h5>Actions</h5></div>
+            <div className="col-6">
+              {/* <IconList></IconList> */}
+            </div>
+          </div>
+          <Row>
+          <Col md="auto"><button type="button" class="btn btn-success btn-lg"><em class="fa fa-plus mr-1"></em> Submit a climate change response project</button></Col>
+          <Col md="auto"><button type="button" class="btn btn-success btn-lg"><em class="fa fa-plus mr-1"></em> Design a climate change plan</button></Col>
+          <Col md="auto"><button type="button" class="btn btn-success btn-lg"><em class="fa fa-plus mr-1"></em> Evaluate a climate change plan</button></Col>
+          <Col md="auto"><button type="button" class="btn btn-success btn-lg"><em class="fa fa-plus mr-1"></em> Review Report</button></Col>
+          </Row>
+          <hr class="hr-thin" />
+          </div>
+          </section>
+          
+          {/* <Carousel /> */}
+       
 
-        <div style={{ padding: "0px 15px 15px 15px", borderRadius: "10px" }}>
-          <div style={{
-            marginTop: "15px",
-            marginBottom: "15px",
-            paddingTop: "15px",
-            borderTop: "1px solid gainsboro",
-          }}>
+        
+
+        <section class="ea-content">
+          <div class="container-fluid mt-4">
+          <Row class="home-map">
+            <div class="col-3 pb-1 text-center">
+              <div class="round-edge green-bg pl-3 pr-3 pt-4 ml-n2 h-100 d-flex align-items-start flex-column">
+                <h4 class="mt-4 mb-5">Monitoring and Evaluation of Climate Change Adaptation and Mitigation</h4>
+                <p class="mt-3">The CCIS is part of the national effort to track South Africa's overall transition to a low carbon and climate resilient economy by offering a series of decision support tools to inform policy and decision-making.</p>
+                <p>The system monitors and evaluates climate change drivers, events, links to national objectives, targets and strategies in respect of climate change mitigation and adaptation monitoring and assessment of actions taken by stakeholders.</p>
+              </div>
+            </div>
+            <div class="col-9">
+                <iframe src="http://127.0.0.1:8080/" class="ea-map-frame round-edge" /> 
+            </div>
+          </Row>
+          <hr class="hr-thin" />
+          </div>
+        </section>
+
+        
+
+       
+          <section class="mt-4 mb-4 ea-content">
+            <div class="container-fluid">
             <Row>
               <Col>
                 <FundingIGFX data={goalDataUnfiltered} year={filterYear} />
@@ -276,24 +320,38 @@ class Home extends React.Component {
                 <SectorsIGFX data={goalDataUnfiltered} year={filterYear} />
               </Col>
             </Row>
-          </div>
+            </div>
+          </section>
 
-          <div style={{
-            marginTop: "15px",
-            marginBottom: "15px",
-            paddingTop: "15px",
-            paddingBottom: "15px",
-            borderTop: "1px solid gainsboro",
-            borderBottom: "1px solid gainsboro"
-          }}>
+          <section class="ea-home-maps ea-content light-bg pt-5 pb-5">
+            <div class="container-fluid">
             <Row>
               <Col>
-                <About />
+                <a href="#" class="border-light-radius d-block text-dark">
+                <img src={sarva_gp} />
+                <h5>Events</h5></a>
               </Col>
+              <Col>
+                <a href="#" class="border-light-radius d-block text-dark">
+                <img src={static_maps_sa} />
+                <h5>Risk and Vulnerability</h5></a>
+              </Col>
+              <Col>
+                <a href="#" class="border-light-radius d-block text-dark">
+                <img src={sarva_ct} />
+                <h5>Projects</h5></a>
+              </Col>
+              <Col>
+                <a href="#" class="border-light-radius d-block text-dark">
+                <img src={static_maps_gp} />
+                <h5>Adaptation Plan Status</h5></a>
+              </Col>
+              
             </Row>
-          </div>
+            </div>
+          </section>
 
-        </div>
+
       </>
     )
   }

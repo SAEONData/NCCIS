@@ -12,7 +12,7 @@ import NCCRD from '../pages/Tools/NCCRD.jsx';
 import NWIS from '../pages/Tools/NWIS.jsx';
 import SARVA from '../pages/Tools/SARVA.jsx';
 import { data as NavData } from '../../../data/sideNavData';
-import IconList from  '../navigation/IconList.jsx';
+
 import EASearch from '../search/search.jsx';
 
 
@@ -188,7 +188,7 @@ class Navbar extends React.Component {
                 </Dropdown>
               </NavItem>
               <NavItem right>
-                <IconList></IconList>
+                
               </NavItem>
               {/* Username */}
               {(user && !user.expired) &&

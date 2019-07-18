@@ -14,7 +14,7 @@ module.exports = {
   mode,
   devServer: {
     historyApiFallback: true,
-    port: 8091
+    port: 8093
   },
   entry: {
     app: ["babel-polyfill", './js/index.jsx'],
