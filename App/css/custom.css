@@ -1,0 +1,214 @@
+button:hover{
+    cursor: pointer;
+}
+.round-edge,.btn{
+    border-radius: 10px;
+}
+.green-bg{
+    background-color: #719062;
+    color:#fff;
+}
+.dark-grey-bg{
+    background-color: #ddd;
+}
+.light-bg{
+    background-color:#fff;
+}
+.border-light-radius{
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    padding: 10px;
+}
+.home-map .col{
+    min-height:400px;
+}
+h5{
+    font-weight:bold;
+}
+#ea-header,.ea-parent span:after{
+    -webkit-transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+}
+/* Tooltip links */
+.ea-links{
+    text-align: right;
+    list-style: none;
+    padding:0;
+}
+.ea-links li{
+    float:right;
+    margin-left:20px;
+}
+
+.ea-links a{
+    color:#000;
+    font-size:30px;
+}
+/* Body */
+#ea-body{
+    background-color: #f5f5f5;
+    position: absolute;
+}
+
+@media (min-width: 768px){
+    #ea-body {
+        padding-top: 148px;
+    }
+    .ea-content{
+        padding: 0 20px;
+    }
+}
+/* Body END*/
+/* Custom Tooltip */
+.tooltip-ea{
+    display: inline;
+    position: relative;
+}
+.tooltip-ea:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: 26px;
+    color: #fff;
+    content: attr(title);
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 220px;
+    font-size:14px;
+    text-align: left;
+}
+.tooltip-ea-right:hover:after {
+    bottom: 41px;
+    right: 20%;
+    left: auto;
+    margin-right: -9px;
+}
+.tooltip-ea:hover:before{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
+.tooltip-ea-right:hover:before {
+    bottom: 35px;
+}
+/* Custom Tooltip END*/
+/* header */
+#ea-header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+    margin-top:0px;
+}
+@media (min-width: 768px){
+    .navbar-expand-md .navbar-nav .dropdown-menu.show {
+        transform: translate3d(0px, 45px, 0px)!important;
+    }
+    #ea-header.scrollnav{
+        margin-top:-100px;
+    }
+    .navbar-nav.ml-auto .dropdown-menu.show{
+        left: auto!important;
+        right: 0!important;
+    }
+    .nav-link{
+        padding-top: 10px;
+    }
+    .nav-item input{
+        margin-top: 4px;
+    }
+}
+/* header END */
+/* Footer */
+@media (min-width: 768px){
+    footer .container-fluid{
+        padding-left: 45px!important;
+        padding-right: 45px!important;
+        font-size: 14px;
+    }
+    footer img{
+        max-height: 100px;
+    }
+}
+/* Footer END */
+/* Home page */
+.ea-home-maps img{
+    max-width:100%;
+    width:100%;
+}
+.ea-home-maps h5{
+    padding-top:15px;
+}
+.ea-home-maps a:hover{
+    background-color:#f9f9f9;
+}
+@media (min-width: 768px){
+    .ea-home-maps .col{
+        width:20%;
+    }
+}
+/* Home page END */
+/* Side navigation */
+.ea-side-nav{
+    list-style: none;
+    padding: 0;
+}
+.ea-side-nav li{
+    padding: 5px 0 5px 15px;
+    font-size: 15px;
+}
+.ea-side-nav li:hover{
+    cursor: pointer;
+}
+.ea-parent span {
+    position:relative;
+}
+.ea-parent span:after {
+    display: block;
+    position: absolute;
+    top:6px;
+    left: -19px;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    transform: rotate(-90deg);
+}
+.ea-parent span.ea-open-child:after {
+    transform: rotate(0deg);
+}
+.ea-child{
+    display:none;
+}
+/* Side navigation END*/
+/* map iframe */
+.ea-map-frame{
+    border: none;
+    width: 100%;
+    min-height: 600px;
+    overflow: hidden;
+}
+/* map iframe END */
+/* overwrites */
+.btn-success {
+    background-color: #719062!important;
+    border-color: #719062!important;
+}
+.btn-success:hover {
+    background-color: #004101!important;
+    border-color: #004101!important;
+}

@@ -22,6 +22,8 @@ import Header from './components/navigation/Header.jsx';
 import SideNav from './components/navigation/SideNav.jsx'
 import ComingSoon from './Components/Pages/ComingSoonAE.jsx' //Created my own temp component
 import userManager from './components/authentication/userManager'
+import '../css/custom.css';
+import './custom';
 
 //Data
 const Oidc = require("oidc-client")
