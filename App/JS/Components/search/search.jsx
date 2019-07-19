@@ -69,12 +69,17 @@ class EASearch extends React.Component {
       this.searchTermsList()
     }
   }
+  hidelist(){
+    var hidesearch = document.getElementById('search-list');
+    hidesearch.style.display = "none";
+  }
   searchTermsList() {
         var input, filter, ul, li, a, i, txtValue;
         input = document.getElementById('searchInput');
         filter = input.value.toUpperCase();
         ul = document.getElementById("search-list");
         li = ul.getElementsByTagName('li');
+        ul.style.display = "block";
 
         // Loop through all list items, and hide those who don't match the search query
         
@@ -93,9 +98,9 @@ class EASearch extends React.Component {
       return (
           <>
         <input className="form-control mr-sm-2" id="searchInput" type="text" placeholder="Search" 
-        onKeyUp={() => this.checkkeys()}
+        onKeyUp={() => this.checkkeys()} 
         ></input>
-        <ul id="search-list">
+        <ul id="search-list" onMouseLeave={() => this.hidelist()}>
         <li><a href="https://ccis.environment.gov.za/ndao/#/">Climate Change</a></li>
 <li><a href="https://ccis.environment.gov.za/ndao/#/">Climate Change Plan</a></li>
 <li><a href="https://ccis.environment.gov.za/ndao/#/">Climate Change Project</a></li>
