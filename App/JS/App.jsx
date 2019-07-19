@@ -7,23 +7,24 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'mdbreact/dist/css/mdb.css'
 
 //Components
-import React from 'react'
-import { connect } from 'react-redux'
-import { HashRouter as Router, Redirect, Switch, Route } from 'react-router-dom'
-import Home from './components/pages/Home/Home.jsx'
-import Login from './components/authentication/Login.jsx'
-import Logout from './components/authentication/Logout.jsx'
-import Navbar from './components/navigation/Navbar.jsx'
-import Footer from './components/navigation/Footer.jsx'
+import React from 'react';
+import { connect } from 'react-redux';
+import { HashRouter as Router, Redirect, Switch, Route } from 'react-router-dom';
+import Home from './components/pages/Home/Home.jsx';
+import Login from './components/authentication/Login.jsx';
+import Logout from './components/authentication/Logout.jsx';
+import Navbar from './components/navigation/Navbar.jsx';
+import Footer from './components/navigation/Footer.jsx';
 import CallbackPage from '../js/components/authentication/callback.jsx';
-import LoadingPanel from './components/input/LoadingPanel.jsx'
+import LoadingPanel from './components/input/LoadingPanel.jsx';
 import Header from './components/navigation/Header.jsx';
 // import AME from './components/pages/Adaptation/MonitoringEvaluation/AME.jsx';
-import SideNav from './components/navigation/SideNav.jsx'
-import ComingSoon from './Components/Pages/ComingSoonAE.jsx' //Created my own temp component
-import userManager from './components/authentication/userManager'
+import SideNav from './components/navigation/SideNav.jsx';
+import ComingSoon from './Components/Pages/ComingSoonAE.jsx'; //Created my own temp component
+import userManager from './components/authentication/userManager';
 import '../css/custom.css';
 import './custom';
+
 
 //Data
 const Oidc = require("oidc-client")
@@ -106,19 +107,18 @@ class App extends React.Component {
       <div style={{ backgroundColor: "white", overflowX: 'hidden' }}>
         <Router>
           <div>
-
+            <header id="ea-header">
             {navbar && <Header />}
             {navbar && <Navbar />}
-
+            </header>
             {
               NavData.enabled &&
               <SideNav data={NavData} isOpen={showSideNav} />
             }
 
-            <div style={{ height: "15px", backgroundColor: "whitesmoke" }} />
+            <section id="ea-body">
+              <div id="ea-content">
 
-            <div style={{ backgroundColor: "whitesmoke" }}>
-              <div style={{ margin: "0px 15px 0px 15px" }}>
                 <Switch>
                   <Route path="/" component={Home} exact />
                   <Route path="/login" component={Login} exact />
@@ -129,12 +129,10 @@ class App extends React.Component {
                   <Redirect to="/" />
                 </Switch>
               </div>
-            </div>
-
-            <div style={{ height: "15px", backgroundColor: "whitesmoke" }} />
+            
 
             <Footer />
-
+            </section>
             <LoadingPanel enabled={loading} />
 
           </div>

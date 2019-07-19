@@ -9,7 +9,7 @@ import PlansIGFX from './InfoGraphics/PlansIGFX.jsx'
 import GovernmentsIGFX from './InfoGraphics/GovernmentsIGFX.jsx'
 import GHGReductionIGFX from './InfoGraphics/GHGReductionIGFX.jsx'
 import SectorsIGFX from './InfoGraphics/SectorsIGFX.jsx'
-// import IconList from '../../navigation/IconList.jsx';
+import IconList from '../../Iconlist/index.jsx';
 import About from './../About.jsx'
 // import Carousel from './Carousel.jsx'
 
@@ -262,7 +262,7 @@ class Home extends React.Component {
           <div class="row d-sm-none d-md-none d-lg-none">
             <div class="col-6"><h5>Actions</h5></div>
             <div className="col-6">
-              {/* <IconList></IconList> */}
+              <IconList></IconList>
             </div>
           </div>
           <Row>
@@ -291,7 +291,7 @@ class Home extends React.Component {
               </div>
             </div>
             <div class="col-9">
-                <iframe src="http://127.0.0.1:8080/" class="ea-map-frame round-edge" /> 
+                {/* <iframe src="http://ulwazi.saeon.ac.za:8000/" class="ea-map-frame round-edge" />  */}
             </div>
           </Row>
           <hr class="hr-thin" />
