@@ -266,10 +266,14 @@ class Home extends React.Component {
             </div>
           </div>
           <Row>
-          <Col md="auto"><button type="button" class="btn btn-success btn-lg"><em class="fa fa-plus mr-1"></em> Submit a climate change response project</button></Col>
-          <Col md="auto"><button type="button" class="btn btn-success btn-lg"><em class="fa fa-plus mr-1"></em> Design a climate change plan</button></Col>
-          <Col md="auto"><button type="button" class="btn btn-success btn-lg"><em class="fa fa-plus mr-1"></em> Evaluate a climate change plan</button></Col>
-          <Col md="auto"><button type="button" class="btn btn-success btn-lg"><em class="fa fa-plus mr-1"></em> Review Report</button></Col>
+          <Col md="auto"><button type="button" class="btn btn-success btn-lg">
+            <em class="fa fa-plus mr-1"></em> Submit a climate change response project</button></Col>
+          <Col md="auto"><button type="button" class="btn btn-success btn-lg">
+            <em class="fa fa-plus mr-1"></em> Design a climate change plan</button></Col>
+          <Col md="auto"><button type="button" class="btn btn-success btn-lg">
+            <em class="fa fa-plus mr-1"></em> Evaluate a climate change plan</button></Col>
+          <Col md="auto"><button type="button" class="btn btn-disabled btn-lg" disabled>
+            <em class="fa fa-plus mr-1"></em> Review Report</button></Col>
           </Row>
           <hr class="hr-thin" />
           </div>

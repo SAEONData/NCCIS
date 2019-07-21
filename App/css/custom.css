@@ -44,6 +44,9 @@ h5{
     .ea-content{
         padding: 0 20px;
     }
+    .ea-content-full{
+        padding: 0 35px;
+    }
 }
 /* Body END*/
 /* header */
@@ -154,6 +157,11 @@ h5{
     border-color: #719062!important;
 }
 .btn-success:hover {
+    background-color: #004101!important;
+    border-color: #004101!important;
+}
+
+.btn-success-active {
     background-color: #004101!important;
     border-color: #004101!important;
 }

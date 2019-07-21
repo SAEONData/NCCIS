@@ -114,16 +114,16 @@ class Navbar extends React.Component {
                     <b>Climate Information Center</b>
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
+                    <DropdownItem onClick={() => { location.hash = "cic-ghg" }}>
                       GHG Emissions Database
                     </DropdownItem>
-                    <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
+                    <DropdownItem onClick={() => { location.hash = "cic-trends" }}>
                       Trends
                     </DropdownItem>
-                    <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
+                    <DropdownItem onClick={() => { location.hash = "cic-projections" }}>
                       Projections
                     </DropdownItem>
-                    <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
+                    <DropdownItem onClick={() => { location.hash = "cic-impacts" }}>
                       Impacts
                     </DropdownItem>
                   </DropdownMenu>
@@ -175,7 +175,7 @@ class Navbar extends React.Component {
                     <b>About</b>
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
+                    <DropdownItem onClick={() => { location.hash = "info-about" }}>
                     About the NCCIS
                     </DropdownItem>
                     <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
