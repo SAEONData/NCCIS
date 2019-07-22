@@ -25,11 +25,38 @@ button:hover{
 h5{
     font-weight:bold;
 }
+img{
+    max-width:100%;
+}
+.ea-table{
+    width:100%;
+}
+.ea-table td{
+    border: 1px solid gainsboro;
+    padding:10px;
+}
 #ea-header,.ea-parent span:after{
     -webkit-transition: all 0.7s ease-out;
     -moz-transition: all 0.7s ease-out;
     -o-transition: all 0.7s ease-out;
     transition: all 0.7s ease-out;
+}
+/* tabs */
+.ea-tabs .tab-child{
+    display: none;
+}
+.ea-tabs .tab-parent{
+    border: 1px solid gainsboro;
+    padding:10px;
+    border-radius: 10px;
+    margin-bottom:30px;
+}
+.ea-tabs .tab-parent h3{
+    font-size:22px;
+    font-weight: bold;
+}
+.ea-tabs .tab-parent h3:hover{
+    cursor: pointer;
 }
 /* Body */
 #ea-body{
@@ -76,6 +103,22 @@ h5{
     }
 }
 /* header END */
+/* slider */
+.ea-slider img{
+    max-width:100%;
+}
+.carousel-multi-item .controls-top .btn-floating {
+    background: #719062;
+}
+.carousel-multi-item .controls-top .btn-floating:hover {
+    background: #004101;
+}
+.carousel-multi-item .carousel-indicators li {
+    background-color: #719062;
+}
+.carousel-multi-item .carousel-indicators .active {
+    background-color: #004101;
+}
 /* Footer */
 @media (min-width: 768px){
     footer .container-fluid{
@@ -165,3 +208,5 @@ h5{
     background-color: #004101!important;
     border-color: #004101!important;
 }
+
+

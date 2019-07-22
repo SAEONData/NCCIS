@@ -16,3 +16,9 @@ $('body').on('click', '.ea-parent span', function(){
     $(this).toggleClass('ea-open-child');
     $(ea_child).slideToggle(300);
 });
+
+/* Tabs */
+$('body').on('click', '.tab-parent', function(){
+    var ea_tab_child = $(this).find('.tab-child');
+    $(ea_tab_child).slideToggle(300);
+});

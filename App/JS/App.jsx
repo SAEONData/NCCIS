@@ -22,9 +22,12 @@ import Header from './components/navigation/Header.jsx';
 import SideNav from './components/navigation/SideNav.jsx';
 import ComingSoon from './Components/Pages/ComingSoonAE.jsx'; //Created my own temp component
 import CICtrends from './Components/Pages/cic-trends.jsx';
+import CICtrendsp from './Components/Pages/cic-trends-prov.jsx';
+import CICtrendse from './Components/Pages/cic-trends-extreme.jsx';
 import CICghg from './Components/Pages/cic-ghg.jsx';
 import CICimpacts from './Components/Pages/cic-impacts.jsx';
 import CICprojections from './Components/Pages/cic-projections.jsx';
+import CICprojectionsp from './Components/Pages/cic-projections-prov.jsx';
 import INFOabout from './Components/Pages/info-about.jsx';
 import userManager from './components/authentication/userManager';
 import '../css/custom.css';
@@ -132,8 +135,11 @@ class App extends React.Component {
                   {/* <Route path="/ame" component={AME} /> */}
                   <Route path="/ComingSoon" component={ComingSoon} />
                   <Route path="/cic-trends" component={CICtrends} />
+                  <Route path="/cic-trends-provincial" component={CICtrendsp} />
+                  <Route path="/cic-trends-events" component={CICtrendse} />
                   <Route path="/cic-ghg" component={CICghg} />
                   <Route path="/cic-projections" component={CICprojections} />
+                  <Route path="/cic-projections-provincial" component={CICprojectionsp} />
                   <Route path="/cic-impacts" component={CICimpacts} />
                   <Route path="/info-about" component={INFOabout} />
                   <Redirect to="/" />
