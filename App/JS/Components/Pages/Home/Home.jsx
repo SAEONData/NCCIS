@@ -295,7 +295,7 @@ class Home extends React.Component {
               </div>
             </div>
             <div class="col-9">
-                {/* <iframe src="http://ulwazi.saeon.ac.za:8000/" class="ea-map-frame round-edge" />  */}
+                <iframe src="http://ulwazi.saeon.ac.za:8000/" class="ea-map-frame round-edge" /> 
             </div>
           </Row>
           <hr class="hr-thin" />
