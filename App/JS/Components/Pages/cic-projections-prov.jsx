@@ -4,6 +4,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { Row, Col, Button } from 'mdbreact'
 import CollapsePage from './cic-projections-prov-a.jsx'
+import SouthAfricaMap from '../../../Images/Maps/southafrica.jsx'
 
 
 const mapStateToProps = (state, props) => {
@@ -53,7 +54,14 @@ class CICprojectionsp extends React.Component {
 
           <section className="ea-content-full mt-4 pt-4 pb-4 light-bg">
           <div className="container-fluid">
-            <CollapsePage />
+            <div className="row">
+              <div className="col-4">
+              <SouthAfricaMap />
+              </div>
+              <div className="col-8">
+              <CollapsePage />
+              </div>
+            </div>
           </div>
           </section>
     </>
