@@ -111,7 +111,7 @@ class Navbar extends React.Component {
               <NavItem>
                 <Dropdown>
                   <DropdownToggle nav caret>
-                    <b>Climate Information Center</b>
+                    <b>Climate Information Centre</b>
                   </DropdownToggle>
                   <DropdownMenu>
                     <DropdownItem onClick={() => { location.hash = "cic-ghg" }}>
@@ -175,13 +175,13 @@ class Navbar extends React.Component {
                     <b>About</b>
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem onClick={() => { location.hash = "info-about" }}>
+                    <DropdownItem onClick={() => { location.hash = "/info-about" }}>
                     About the NCCIS
                     </DropdownItem>
-                    <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
+                    <DropdownItem onClick={() => { location.hash = "/info-glossary" }}>
                     Glossary
                     </DropdownItem>
-                    <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
+                    <DropdownItem onClick={() => { location.hash = "/info-documents" }}>
                     Documents
                     </DropdownItem>
                   </DropdownMenu>

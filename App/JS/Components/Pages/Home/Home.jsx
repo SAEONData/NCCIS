@@ -257,25 +257,25 @@ class Home extends React.Component {
     return (
       <>
 
-       <section class="ea-content">
-          <div class="container-fluid mt-4">
-          <div class="row d-sm-none d-md-none d-lg-none">
-            <div class="col-6"><h5>Actions</h5></div>
+       <section className="ea-content">
+          <div className="container-fluid mt-4">
+          <div className="row d-sm-none d-md-none d-lg-none">
+            <div className="col-6"><h5>Actions</h5></div>
             <div className="col-6">
               <IconList></IconList>
             </div>
           </div>
           <Row>
-          <Col md="auto"><button type="button" class="btn btn-success btn-lg">
-            <em class="fa fa-plus mr-1"></em> Submit a climate change response project</button></Col>
-          <Col md="auto"><button type="button" class="btn btn-success btn-lg">
-            <em class="fa fa-plus mr-1"></em> Design a climate change plan</button></Col>
-          <Col md="auto"><button type="button" class="btn btn-success btn-lg">
-            <em class="fa fa-plus mr-1"></em> Evaluate a climate change plan</button></Col>
-          <Col md="auto"><button type="button" class="btn btn-disabled btn-lg" disabled>
-            <em class="fa fa-plus mr-1"></em> Review Report</button></Col>
+          <Col md="auto"><button type="button" className="btn btn-success btn-lg" onClick={() => { location = "http://app01.saeon.ac.za/nccrdtestsite/#/" }}>
+            <em className="fa fa-plus mr-1"></em> Submit a climate change response project</button></Col>
+          <Col md="auto"><button type="button" className="btn btn-success btn-lg" onClick={() => { location = "http://app01.saeon.ac.za/nccrdtestsite/#/" }}>
+            <em className="fa fa-plus mr-1"></em> Design a climate change plan</button></Col>
+          <Col md="auto"><button type="button" className="btn btn-success btn-lg" onClick={() => { location = "http://app01.saeon.ac.za/ndaotestsite/#/" }}>
+            <em className="fa fa-plus mr-1"></em> Evaluate a climate change plan</button></Col>
+          <Col md="auto"><button type="button" className="btn btn-disabled btn-lg" disabled>
+            <em className="fa fa-plus mr-1"></em> Review Report</button></Col>
           </Row>
-          <hr class="hr-thin" />
+          <hr className="hr-thin" />
           </div>
           </section>
           
@@ -284,29 +284,29 @@ class Home extends React.Component {
 
         
 
-        <section class="ea-content">
-          <div class="container-fluid mt-4">
-          <Row class="home-map">
-            <div class="col-3 pb-1 text-center">
-              <div class="round-edge green-bg pl-3 pr-3 pt-4 ml-n2 h-100 d-flex align-items-start flex-column">
-                <h4 class="mt-4 mb-5">Monitoring and Evaluation of Climate Change Adaptation and Mitigation</h4>
-                <p class="mt-3">The CCIS is part of the national effort to track South Africa's overall transition to a low carbon and climate resilient economy by offering a series of decision support tools to inform policy and decision-making.</p>
+        <section className="ea-content">
+          <div className="container-fluid mt-4">
+          <Row className="home-map">
+            <div className="col-3 pb-1 text-center">
+              <div className="round-edge green-bg pl-3 pr-3 pt-4 ml-n2 h-100 d-flex align-items-start flex-column">
+                <h4 className="mt-4 mb-5">Monitoring and Evaluation of Climate Change Adaptation and Mitigation</h4>
+                <p className="mt-3">The CCIS is part of the national effort to track South Africa's overall transition to a low carbon and climate resilient economy by offering a series of decision support tools to inform policy and decision-making.</p>
                 <p>The system monitors and evaluates climate change drivers, events, links to national objectives, targets and strategies in respect of climate change mitigation and adaptation monitoring and assessment of actions taken by stakeholders.</p>
               </div>
             </div>
-            <div class="col-9">
+            <div className="col-9">
                 <iframe src="http://ulwazi.saeon.ac.za:8000/" class="ea-map-frame round-edge" /> 
             </div>
           </Row>
-          <hr class="hr-thin" />
+          <hr className="hr-thin" />
           </div>
         </section>
 
         
 
        
-          <section class="mt-4 mb-4 ea-content">
-            <div class="container-fluid">
+          <section className="mt-4 mb-4 ea-content">
+            <div className="container-fluid">
             <Row>
               <Col>
                 <FundingIGFX data={goalDataUnfiltered} year={filterYear} />
@@ -327,26 +327,26 @@ class Home extends React.Component {
             </div>
           </section>
 
-          <section class="ea-home-maps ea-content light-bg pt-5 pb-5">
-            <div class="container-fluid">
+          <section className="ea-home-maps ea-content light-bg pt-5 pb-5">
+            <div className="container-fluid">
             <Row>
               <Col>
-                <a href="#" class="border-light-radius d-block text-dark">
+                <a href="#" className="border-light-radius d-block text-dark">
                 <img src={sarva_gp} />
                 <h5>Events</h5></a>
               </Col>
               <Col>
-                <a href="#" class="border-light-radius d-block text-dark">
+                <a href="#" className="border-light-radius d-block text-dark">
                 <img src={static_maps_sa} />
                 <h5>Risk and Vulnerability</h5></a>
               </Col>
               <Col>
-                <a href="#" class="border-light-radius d-block text-dark">
+                <a href="#" className="border-light-radius d-block text-dark">
                 <img src={sarva_ct} />
                 <h5>Projects</h5></a>
               </Col>
               <Col>
-                <a href="#" class="border-light-radius d-block text-dark">
+                <a href="#" className="border-light-radius d-block text-dark">
                 <img src={static_maps_gp} />
                 <h5>Adaptation Plan Status</h5></a>
               </Col>

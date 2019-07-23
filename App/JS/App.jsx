@@ -29,6 +29,8 @@ import CICimpacts from './Components/Pages/cic-impacts.jsx';
 import CICprojections from './Components/Pages/cic-projections.jsx';
 import CICprojectionsp from './Components/Pages/cic-projections-prov.jsx';
 import INFOabout from './Components/Pages/info-about.jsx';
+import INFOglossary from './Components/Pages/info-glossary.jsx';
+import INFOdocuments from './Components/Pages/info-documents.jsx';
 import userManager from './components/authentication/userManager';
 import '../css/custom.css';
 import './custom';
@@ -142,6 +144,8 @@ class App extends React.Component {
                   <Route path="/cic-projections-provincial" component={CICprojectionsp} />
                   <Route path="/cic-impacts" component={CICimpacts} />
                   <Route path="/info-about" component={INFOabout} />
+                  <Route path="/info-glossary" component={INFOglossary} />
+                  <Route path="/info-documents" component={INFOdocuments} />
                   <Redirect to="/" />
                 </Switch>
               </div>
