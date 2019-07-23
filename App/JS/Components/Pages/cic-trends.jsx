@@ -71,29 +71,28 @@ class CICtrends extends React.Component {
  <Carousel />
 
  <table className="ea-table">
-<tr><td>	1	</td><td>	TX90P	</td><td>	Change in the annual number of hot days (1931-2015) defined as the number of days when the maximum temperature (TX) > 90th percentile of the baseline average.	</td></tr>
-<tr><td>	2	</td><td>	TX10P	</td><td>	Change in the annual number of cool days (1931-2015) defined as the number of days when the maximum temperature (TX) &lt; 90th percentile of the baseline average.	</td></tr>
-<tr><td>	3	</td><td>	TXx	</td><td>	Change in the daytime hottest temperature (1931-2015) expressed as deg C and defined as the maximum value of maximum temperature (TX).	</td></tr>
-<tr><td>	4	</td><td>	TXn	</td><td>	Change in the daytime coolest temperature (1931-2015) expressed as deg C and defined as the minimum value of maximum temperature (TX).	</td></tr>
-<tr><td>	5	</td><td>	WSDI	</td><td>	Change in the longest hot spell (1931-2015) defined as the number of days with at least 6 consecutive days when maximum temperature (TX) > 90th percentile of the baseline average.	</td></tr>
-<tr><td>	6	</td><td>	TNx	</td><td>	Change in the annual night time warmest temperature (1931-2015) defined as the annual maximum value of minimum temperature (TN)	</td></tr>
-<tr><td>	7	</td><td>	TNn	</td><td>	Change in the annual night time coldest temperature (1931-2015) defined as the annual minimum value of minimum temperature (TN)	</td></tr>
-<tr><td>	8	</td><td>	TN90P	</td><td>	Change in the annual number of warm nights (1931-2015) defined as the annual number of days when minimum temperature (TN) > 90th percentile	</td></tr>
-<tr><td>	9	</td><td>	TN10P	</td><td>	Change in the annual number of cold nights (1931-2015) defined as the annual number of days when minimum temperature (TN) &lt; 10th percentile	</td></tr>
-<tr><td>	10	</td><td>	CSDI	</td><td>	Change in the annual longest cold spell (1931-2015) defined as the annual number of days with at least 6 consecutive days when minimum temperature (TN) &lt; 10th percentile	</td></tr>
-<tr><td>	11	</td><td>	prcptot	</td><td>	Change in the annual total precipitation when daily precipitation ≥1 mm	</td></tr>
-<tr><td>	12	</td><td>	r95p	</td><td>	Change in the annual total precipitation from high daily rainfall (1921-2015) defined as when daily rainfall (RR) > 95th percentile of the baseline average	</td></tr>
-<tr><td>	13	</td><td>	r99p	</td><td>	Change in the annual total precipitation from very high daily rainfall (1921-2015) defined as when daily rainfall (RR) > 99th percentile of the baseline average	</td></tr>
-<tr><td>	14	</td><td>	rx1day	</td><td>	Change in the highest daily rainfall per year (1921-2015) defined as the annual maximum 1-day precipitation	</td></tr>
-<tr><td>	15	</td><td>	rx5day	</td><td>	Change in the highest daily rainfall per year (1921-2015) defined as the annual maximum 5-day precipitation	</td></tr>
-<tr><td>	16	</td><td>	r10mm	</td><td>	Change in the annual number of days with moderate rainfall (1921-2015) defined as the count of days when precipitation ≥ 10mm	</td></tr>
-<tr><td>	17	</td><td>	r20mm	</td><td>	Change in the annual number of days with moderate to high rainfall (1921-2015) as defined as the annual count of days when precipitation ≥ 20mm	</td></tr>
-<tr><td>	18	</td><td>	r25mm	</td><td>	Change in the annual number of days with moderate to high rainfall (1921-2015) as defined as the annual count of days when precipitation ≥ 25mm	</td></tr>
-<tr><td>	19	</td><td>	SDII	</td><td>	Change in the annual mean amount of daily rainfall, indicating mean daily rainfall intensity (1921-2015)	</td></tr>
-<tr><td>	20	</td><td>	CWD	</td><td>	Change in the annual maximum length of wet spell (1921-2015) as defined as the maximum number of consecutive days with precipitation ≥ 1mm	</td></tr>
-<tr><td>	21	</td><td>	CDD	</td><td>	Change in the length of dry spell (1921-2015) defined as the maximum number of consecutive days with precipitation &lt; 1mm	</td></tr>
+  <tr><td>	1	</td><td>	CDD	</td><td>	Change in the length of dry spell (1921-2015) defined as the maximum number of consecutive days with precipitation &lt; 1mm	</td></tr>
+  <tr><td>	2	</td><td>	CSDI	</td><td>	Change in the annual longest cold spell (1931-2015) defined as the annual number of days with at least 6 consecutive days when minimum temperature (TN) &lt; 10th percentile	</td></tr>
+  <tr><td>	3	</td><td>	CWD	</td><td>	Change in the annual maximum length of wet spell (1921-2015) as defined as the maximum number of consecutive days with precipitation ≥ 1mm	</td></tr>
+  <tr><td>	4	</td><td>	prcptot	</td><td>	Change in the annual total precipitation when daily precipitation ≥1 mm	</td></tr>
+  <tr><td>	5	</td><td>	r10mm	</td><td>	Change in the annual number of days with moderate rainfall (1921-2015) defined as the count of days when precipitation ≥ 10mm	</td></tr>
+  <tr><td>	6	</td><td>	r20mm	</td><td>	Change in the annual number of days with moderate to high rainfall (1921-2015) as defined as the annual count of days when precipitation ≥ 20mm	</td></tr>
+  <tr><td>	7	</td><td>	r25mm	</td><td>	Change in the annual number of days with moderate to high rainfall (1921-2015) as defined as the annual count of days when precipitation ≥ 25mm	</td></tr>
+  <tr><td>	8	</td><td>	r95p	</td><td>	Change in the annual total precipitation from high daily rainfall (1921-2015) defined as when daily rainfall (RR) > 95th percentile of the baseline average	</td></tr>
+  <tr><td>	9	</td><td>	r99p	</td><td>	Change in the annual total precipitation from very high daily rainfall (1921-2015) defined as when daily rainfall (RR) > 99th percentile of the baseline average	</td></tr>
+  <tr><td>	10	</td><td>	rx1day	</td><td>	Change in the highest daily rainfall per year (1921-2015) defined as the annual maximum 1-day precipitation	</td></tr>
+  <tr><td>	11	</td><td>	rx5day	</td><td>	Change in the highest daily rainfall per year (1921-2015) defined as the annual maximum 5-day precipitation	</td></tr>
+  <tr><td>	12	</td><td>	SDII	</td><td>	Change in the annual mean amount of daily rainfall, indicating mean daily rainfall intensity (1921-2015)	</td></tr>
+  <tr><td>	13	</td><td>	TN10P	</td><td>	Change in the annual number of cold nights (1931-2015) defined as the annual number of days when minimum temperature (TN) &lt; 10th percentile	</td></tr>
+  <tr><td>	14	</td><td>	TN90P	</td><td>	Change in the annual number of warm nights (1931-2015) defined as the annual number of days when minimum temperature (TN) > 90th percentile	</td></tr>
+  <tr><td>	15	</td><td>	TNn	</td><td>	Change in the annual night time coldest temperature (1931-2015) defined as the annual minimum value of minimum temperature (TN)	</td></tr>
+  <tr><td>	16	</td><td>	TNx	</td><td>	Change in the annual night time warmest temperature (1931-2015) defined as the annual maximum value of minimum temperature (TN)	</td></tr>
+  <tr><td>	17	</td><td>	TX10P	</td><td>	Change in the annual number of cool days (1931-2015) defined as the number of days when the maximum temperature (TX) &lt; 90th percentile of the baseline average.	</td></tr>
+  <tr><td>	18	</td><td>	TX90P	</td><td>	Change in the annual number of hot days (1931-2015) defined as the number of days when the maximum temperature (TX) > 90th percentile of the baseline average.	</td></tr>
+  <tr><td>	19	</td><td>	TXn	</td><td>	Change in the daytime coolest temperature (1931-2015) expressed as deg C and defined as the minimum value of maximum temperature (TX).	</td></tr>
+  <tr><td>	20	</td><td>	TXx	</td><td>	Change in the daytime hottest temperature (1931-2015) expressed as deg C and defined as the maximum value of maximum temperature (TX).	</td></tr>
+  <tr><td>	21	</td><td>	WSDI	</td><td>	Change in the longest hot spell (1931-2015) defined as the number of days with at least 6 consecutive days when maximum temperature (TX) > 90th percentile of the baseline average.	</td></tr>
  </table>
-
 </div>
           </section>
     </>

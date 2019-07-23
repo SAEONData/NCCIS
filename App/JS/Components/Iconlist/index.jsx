@@ -24,7 +24,7 @@ class IconList extends React.Component {
         </a>
         </li>
         <li>
-        <a onClick={() => { location.hash = "/info-documents" }} title="Access useful climate tools" className="tooltip-ea tooltip-ea-r">
+        <a onClick={() => { location.hash = "/info-tools" }} title="Access useful climate tools" className="tooltip-ea tooltip-ea-r">
         <i className="fa fa-link"></i>
         </a>
         </li>

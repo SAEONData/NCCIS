@@ -268,7 +268,7 @@ class Home extends React.Component {
           <Row>
           <Col md="auto"><button type="button" className="btn btn-success btn-lg" onClick={() => { location = "http://app01.saeon.ac.za/nccrdtestsite/#/" }}>
             <em className="fa fa-plus mr-1"></em> Submit a climate change response project</button></Col>
-          <Col md="auto"><button type="button" className="btn btn-success btn-lg" onClick={() => { location = "http://app01.saeon.ac.za/nccrdtestsite/#/" }}>
+          <Col md="auto"><button type="button" className="btn btn-disabled btn-lg" disabled >
             <em className="fa fa-plus mr-1"></em> Design a climate change plan</button></Col>
           <Col md="auto"><button type="button" className="btn btn-success btn-lg" onClick={() => { location = "http://app01.saeon.ac.za/ndaotestsite/#/" }}>
             <em className="fa fa-plus mr-1"></em> Evaluate a climate change plan</button></Col>
@@ -338,7 +338,7 @@ class Home extends React.Component {
               <Col>
                 <a className="border-light-radius d-block text-dark">
                 <img src={home_map_2} />
-                <h5>Historical Climate Trends</h5></a>
+                <h5>Impacts</h5></a>
               </Col>
               <Col>
                 <a className="border-light-radius d-block text-dark">
@@ -353,7 +353,7 @@ class Home extends React.Component {
               <Col>
                 <a className="border-light-radius d-block text-dark">
                 <img src={home_map_5} />
-                <h5>Impacts</h5></a>
+                <h5>Historical Climate Trends</h5></a>
               </Col>
               
               

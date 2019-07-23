@@ -33,6 +33,7 @@ import INFOabout from './Components/Pages/info-about.jsx';
 import INFOglossary from './Components/Pages/info-glossary.jsx';
 import INFOdocuments from './Components/Pages/info-documents.jsx';
 import INFOevents from './Components/Pages/info-events.jsx';
+import INFOtools from './Components/Pages/info-tools.jsx';
 import userManager from './components/authentication/userManager';
 import '../css/custom.css';
 import './custom';
@@ -147,6 +148,7 @@ class App extends React.Component {
                   <Route path="/cic-projections-provincial" component={CICprojectionsp} />
                   <Route path="/cic-impacts" component={CICimpacts} />
                   <Route path="/info-about" component={INFOabout} />
+                  <Route path="/info-tools" component={INFOtools} />
                   <Route path="/info-glossary" component={INFOglossary} />
                   <Route path="/info-documents" component={INFOdocuments} />
                   <Route path="/info-events" component={INFOevents} />

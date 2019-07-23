@@ -3,7 +3,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Row, Col, Button } from 'mdbreact'
-import Carousel from './Home/Carousel-saws.jsx'
+import home_map_3 from '../../../Images/Maps/home/3.gif'
 
 
 const mapStateToProps = (state, props) => {
@@ -54,11 +54,11 @@ class CICtrendse extends React.Component {
           </section>
 
           <section className="ea-content-full mt-4 pt-4 pb-4 light-bg">
-          <div className="container-fluid">
+          <div className="container-fluid text-center">
           <div className="row">
             <div className="col-12">
               <p className="mb-4">South Africa is susceptible to a number of extreme weather events with the most common being floods, droughts, fires and large storms. Climate events account for the largest percentage of natural disaster deaths. </p>
-              <iframe width="100%" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMDEyMWEzZjYtMWNmNi00YjRiLWFhMmUtZWZhNjllMmRiYWZmIiwidCI6IjgyZmNmOTdlLWJmMGItNDVlMy1iNzIwLTRhNzIzYmJmZWY4MiIsImMiOjl9" frameborder="0" allowfullscreen="true"></iframe>
+              <img src={home_map_3}  className="m-auto" />
             </div>
           </div>
           </div>

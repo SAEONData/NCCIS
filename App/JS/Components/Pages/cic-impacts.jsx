@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { connect } from 'react-redux'
-import { Row, Col, Button } from 'mdbreact'
+import { Row, Col, Button,Card,CardBody } from 'mdbreact'
 
 
 const mapStateToProps = (state, props) => {
@@ -56,11 +56,24 @@ class CICimpacts extends React.Component {
 
           <section className="ea-content-full mt-4 pt-4 pb-4 light-bg">
           <div className="container-fluid">
-            <p>Determining future climate</p>
-            <p>Global climate models, or global circulation models (GCMs), comprise the fundamental tools used for assessing the causes of past change and to project long-term future change (2030–2060). These complex computer models represent interactions between the different components of the climate system, such as the land surface, the atmosphere and the oceans. Projected changes in climate are dependent on the future levels of greenhouse gas emissions in the atmosphere which in turn are crucially dependent on society’s behaviour and policy choices. Global climate models (GCMs) simulate climate under a range of emission scenarios each representing a plausible future. The IPCC Special Report on Emissions Scenarios (SRES) described four possible ‘story lines’ (A1, B1, A2 and B2), each assuming different paths of development for the world. In the IPCC Fifth Assessment Report (AR5), Representative Concentration Pathways (RCPs) replaced the SRES emission scenarios and were used as the basis of the climate projections presented in AR5. The RCP’s are named according to their 2100 radiative forcing level. There are four pathways - RCP2.6, RCP4.5, RCP6.0 and RCP8.5. Whilst RCPs have replaced the SRES emission scenarios in current assessments, the outputs of older SRES GCM simulations and associated downscaled models remain valid.</p>
-            <p>GCM's have a very coarse resolution (200-300 km) and often cannot capture the physical processes and features of the landscape which are important determinants of local and regional climates. Downscaling techniques translate the changes in the large-scale atmospheric circulation to finer spatial scales.</p>
-            <p>Two main types of downscaling methodologies may be employed, namely statistical (empirical) and dynamical downscaling</p>
-          
+        
+            <Card>
+        <CardBody>
+          <div
+            style={{ backgroundColor: 'white', border: '1px solid gainsboro', borderRadius: 10, padding: '15px 15px 5px' }}
+          >
+            <h5 style={{ margin: 0 }}>
+              <b>Coming Soon</b>
+            </h5>
+
+            <hr style={{ marginTop: 10 }} />
+
+            <p style={{ overflowY: 'auto', paddingRight: 15 }}>
+              This page will be online in our next release. Come back to check for feature additions
+            </p>
+          </div>
+        </CardBody>
+      </Card>
           </div>
           </section>
     </>

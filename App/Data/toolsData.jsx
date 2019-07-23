@@ -66,7 +66,7 @@ const ToolsData = () => {
       },
       {
         title: "NDMC Disaster Atlas",
-        description: "",
+        description: "The information required on hazardous events is coordinated and managed by the National Disaster Management Centre (NDMC)",
         link: [<button onClick={(event) => {event.preventDefault(); window.open("https://gis-portal.ndmc.gov.za/portal/apps/webappviewer/index.html?id=700928590ea84665b234b038eb96c210");}}>link</button>]
       },
       {
