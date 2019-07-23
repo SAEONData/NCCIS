@@ -343,7 +343,7 @@ class Home extends React.Component {
               <Col>
                 <a className="border-light-radius d-block text-dark">
                 <img src={home_map_3} />
-                <h5>Disasterous Events</h5></a>
+                <h5>Disastrous Events</h5></a>
               </Col>
               <Col>
                 <a className="border-light-radius d-block text-dark">
