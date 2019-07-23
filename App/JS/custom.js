@@ -39,10 +39,11 @@ $('body').on('click', '#svg2 path', function(){
     $(parent_info).addClass('active-tab').find('.tab-child').slideDown(300);
 });
 /* custom tabs */
-$('body').on('click', '.ea-tabs a', function(){
+$('body').on('click', '.ea-tabs .nav-tabs a', function(){
     var tab_label = $(this).attr('tab-link');
     $('.ea-tabs a.active').removeClass('active');
     $(this).addClass('active');
     $('.ea-tabs .tab-pane').hide();
     $('#'+tab_label).slideDown(300);
 });
+

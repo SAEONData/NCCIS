@@ -49,8 +49,9 @@ class INFOglossary extends React.Component {
             <em className="fa fa-chevron-right mr-1"></em> Glossary</Button></Col>
           <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/info-documents" }}>
             <em className="fa fa-chevron-right mr-1"></em> Documents</Button></Col>
+          <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/info-events" }}>
+            <em className="fa fa-chevron-right mr-1"></em> Events and News</Button></Col>
           </Row>
-          <hr className="hr-thin" />
           </div>
           </section>
 

@@ -7,25 +7,25 @@ class IconList extends React.Component {
     render() {
       return (
           <>
-        <ul class="ea-links">
+        <ul className="ea-links">
         <li>
-        <a href="#" title="Events and news" class="tooltip-ea tooltip-ea-r">
-        <i class="fa fa-newspaper-o"></i>
+        <a onClick={() => { location.hash = "/info-events" }} title="Events and news" className="tooltip-ea tooltip-ea-r">
+        <i className="fa fa-newspaper-o"></i>
         </a>
         </li>
         <li>
-        <a href="#" title="Help and guidance" class="tooltip-ea tooltip-ea-r">
-        <i class="fa fa-question-circle"></i>
+        <a onClick={(event) => {event.preventDefault(); window.open("http://192.168.100.108/moodle/web/");}} title="Help and guidance" className="tooltip-ea tooltip-ea-r">
+        <i className="fa fa-question-circle"></i>
         </a>
         </li>
         <li>
-        <a href="#" title="List of climate documents" class="tooltip-ea tooltip-ea-r">
-        <i class="fa fa-folder"></i>
+        <a onClick={() => { location.hash = "/info-documents" }} title="List of climate documents" className="tooltip-ea tooltip-ea-r">
+        <i className="fa fa-folder"></i>
         </a>
         </li>
         <li>
-        <a href="#" title="Access useful climate tools" class="tooltip-ea tooltip-ea-r">
-        <i class="fa fa-link"></i>
+        <a onClick={() => { location.hash = "/info-documents" }} title="Access useful climate tools" className="tooltip-ea tooltip-ea-r">
+        <i className="fa fa-link"></i>
         </a>
         </li>
         </ul>

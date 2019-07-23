@@ -19,7 +19,7 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-class INFOabout extends React.Component {
+class INFOevents extends React.Component {
 
   constructor(props) {
     super(props);
@@ -41,17 +41,18 @@ class INFOabout extends React.Component {
               {/* <IconList></IconList> */}
             </div>
           </div>
-          <h5>About the CCIS</h5>
+          <h5>Events and News</h5>
           <Row>
-          <Col md="auto"><Button type="button" className="btn btn-success-active btn-lg" onClick={() => { location.hash = "/info-about" }}>
+          <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/info-about" }}>
             <em className="fa fa-chevron-right mr-1"></em> About the CCIS</Button></Col>
           <Col md="auto"><Button type="button" className="btn btn-success btn-success btn-lg" onClick={() => { location.hash = "/info-glossary" }}>
             <em className="fa fa-chevron-right mr-1"></em> Glossary</Button></Col>
           <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/info-documents" }}>
             <em className="fa fa-chevron-right mr-1"></em> Documents</Button></Col>
-            <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/info-events" }}>
+            <Col md="auto"><Button type="button" className="btn btn-success-active btn-lg" onClick={() => { location.hash = "/info-events" }}>
             <em className="fa fa-chevron-right mr-1"></em> Events and News</Button></Col>
           </Row>
+
           </div>
           </section>
 
@@ -59,8 +60,14 @@ class INFOabout extends React.Component {
           <div className="container-fluid">
           <div className="row">
             <div className="col-6">
-            <p>The National Climate Change Information System (CCIS) is part of the national effort to track South Africa’s overall transition to a low carbon and climate resilient economy as required by the National Development Plan (Vision 2030) and the National Climate Change Response Policy (2011) as well as the South Africa’s Nationally Determined Contributions (NDC 2015) to the United Nations Framework Convention on Climate Change (UNFCCC). Climate change transparency is at the heart of the Paris Agreement and as such South Africa, along with other countries will need to enhance reporting on climate actions and their effects.</p>
-            <p>The system monitors and evaluates climate change drivers, events, links to national objectives, targets and strategies in respect of climate change mitigation and adaptation monitoring and assessment of actions taken by stakeholders.</p>
+              <h3>Workshops and Training Courses</h3>
+            <p>The Department of Environment, Forestry and Fisheries (DEFF) is running training workshops on the Climate Change Information System and other climate change related tools and systems developed by SAWS, SAEON and CSIR Green Book.  These tools can be used to track climate actions and inform policy and planning.  The workshops will also provide the opportunity to gather experience, data/information and knowledge needs from provincial stakeholders for shaping future development.</p>
+            <p>The workshops will run from August 2019 to November 2019, with each provincial workshop scheduled for 2 consecutive days.</p> 
+
+        <Button type="button" className="btn btn-success btn-lg"  onClick={(event) => {event.preventDefault(); window.open("https://drive.google.com/open?id=1LxwhV2NXx8zX-ptZsAT8CwZQtFmDg9Xw&authuser=claire@saeon.ac.za&usp=drive_fs");}} >
+            <em className="fa fa-file-pdf-o mr-1"></em> View invitation</Button>
+           
+            
             </div>
             <div className="col-6 text-center">
             
@@ -75,7 +82,6 @@ class INFOabout extends React.Component {
               </div>
             </div>
           </div>
-          {/* <iframe width="100%" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMDEyMWEzZjYtMWNmNi00YjRiLWFhMmUtZWZhNjllMmRiYWZmIiwidCI6IjgyZmNmOTdlLWJmMGItNDVlMy1iNzIwLTRhNzIzYmJmZWY4MiIsImMiOjl9" frameborder="0" allowfullscreen="true"></iframe> */}
           </div>
           </section>
     </>
@@ -83,4 +89,4 @@ class INFOabout extends React.Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(INFOabout)
+export default connect(mapStateToProps, mapDispatchToProps)(INFOevents)

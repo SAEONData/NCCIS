@@ -14,11 +14,11 @@ import About from './../About.jsx'
 // import Carousel from './Carousel.jsx'
 
 // Images
-import sarva_ct from '../../../../Images/Maps/sarva_ct.png'
-import sarva_gp from '../../../../Images/Maps/sarva_gp.png'
-import sarva_kzn from '../../../../Images/Maps/sarva_kzn.png'
-import static_maps_gp from '../../../../Images/Maps/static_maps_gp.png'
-import static_maps_sa from '../../../../Images/Maps/static_maps_sa.png'
+import home_map_1 from '../../../../Images/Maps/home/1.gif'
+import home_map_2 from '../../../../Images/Maps/home/2.gif'
+import home_map_3 from '../../../../Images/Maps/home/3.gif'
+import home_map_4 from '../../../../Images/Maps/home/4.gif'
+import home_map_5 from '../../../../Images/Maps/home/5.gif'
 
 
 const mapStateToProps = (state, props) => {
@@ -331,25 +331,31 @@ class Home extends React.Component {
             <div className="container-fluid">
             <Row>
               <Col>
-                <a href="#" className="border-light-radius d-block text-dark">
-                <img src={sarva_gp} />
-                <h5>Events</h5></a>
+                <a className="border-light-radius d-block text-dark">
+                <img src={home_map_1} />
+                <h5>Air Quality</h5></a>
               </Col>
               <Col>
-                <a href="#" className="border-light-radius d-block text-dark">
-                <img src={static_maps_sa} />
-                <h5>Risk and Vulnerability</h5></a>
+                <a className="border-light-radius d-block text-dark">
+                <img src={home_map_2} />
+                <h5>Historical Climate Trends</h5></a>
               </Col>
               <Col>
-                <a href="#" className="border-light-radius d-block text-dark">
-                <img src={sarva_ct} />
-                <h5>Projects</h5></a>
+                <a className="border-light-radius d-block text-dark">
+                <img src={home_map_3} />
+                <h5>Disasterous Events</h5></a>
               </Col>
               <Col>
-                <a href="#" className="border-light-radius d-block text-dark">
-                <img src={static_maps_gp} />
-                <h5>Adaptation Plan Status</h5></a>
+                <a className="border-light-radius d-block text-dark">
+                <img src={home_map_4} />
+                <h5>Climate Change Projections</h5></a>
               </Col>
+              <Col>
+                <a className="border-light-radius d-block text-dark">
+                <img src={home_map_5} />
+                <h5>Impacts</h5></a>
+              </Col>
+              
               
             </Row>
             </div>

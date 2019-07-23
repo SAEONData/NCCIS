@@ -109,11 +109,28 @@ class Navbar extends React.Component {
                 </Button>
               }
               <NavItem>
+                <Button size="sm" onClick={() => { location.hash = "/" }}
+                  style={{ 
+                    width: "45px", marginLeft: "0px", marginRight: "0px", paddingLeft: "18px", float: "left",
+                    color: "#000",
+                    boxShadow: "none",
+                    fontSize: "20px",
+                    padding: "0"
+                    }}>
+                  <Fa icon="home" />
+                </Button>
+              </NavItem>
+              <NavItem>
+                
                 <Dropdown>
                   <DropdownToggle nav caret>
                     <b>Climate Information Centre</b>
                   </DropdownToggle>
                   <DropdownMenu>
+                  <DropdownItem onClick={() => { location.hash = "cic" }}>
+                    Climate Information Centre
+                    </DropdownItem>
+                    <hr style={{ marginTop: "0px"}} />
                     <DropdownItem onClick={() => { location.hash = "cic-ghg" }}>
                       GHG Emissions Database
                     </DropdownItem>

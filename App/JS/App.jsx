@@ -25,12 +25,14 @@ import CICtrends from './Components/Pages/cic-trends.jsx';
 import CICtrendsp from './Components/Pages/cic-trends-prov.jsx';
 import CICtrendse from './Components/Pages/cic-trends-extreme.jsx';
 import CICghg from './Components/Pages/cic-ghg.jsx';
+import CIChome from './Components/Pages/cic-home.jsx';
 import CICimpacts from './Components/Pages/cic-impacts.jsx';
 import CICprojections from './Components/Pages/cic-projections.jsx';
 import CICprojectionsp from './Components/Pages/cic-projections-prov.jsx';
 import INFOabout from './Components/Pages/info-about.jsx';
 import INFOglossary from './Components/Pages/info-glossary.jsx';
 import INFOdocuments from './Components/Pages/info-documents.jsx';
+import INFOevents from './Components/Pages/info-events.jsx';
 import userManager from './components/authentication/userManager';
 import '../css/custom.css';
 import './custom';
@@ -136,6 +138,7 @@ class App extends React.Component {
                   <Route path="/callback" component={CallbackPage} />
                   {/* <Route path="/ame" component={AME} /> */}
                   <Route path="/ComingSoon" component={ComingSoon} />
+                  <Route path="/cic" component={CIChome} />
                   <Route path="/cic-trends" component={CICtrends} />
                   <Route path="/cic-trends-provincial" component={CICtrendsp} />
                   <Route path="/cic-trends-events" component={CICtrendse} />
@@ -146,6 +149,7 @@ class App extends React.Component {
                   <Route path="/info-about" component={INFOabout} />
                   <Route path="/info-glossary" component={INFOglossary} />
                   <Route path="/info-documents" component={INFOdocuments} />
+                  <Route path="/info-events" component={INFOevents} />
                   <Redirect to="/" />
                 </Switch>
               </div>
