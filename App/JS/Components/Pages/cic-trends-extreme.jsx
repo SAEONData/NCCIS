@@ -3,7 +3,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Row, Col, Button } from 'mdbreact'
-import home_map_3 from '../../../Images/Maps/home/3.gif'
+import home_map_4 from '../../../Images/Maps/home/4.gif'
 
 
 const mapStateToProps = (state, props) => {
@@ -58,7 +58,7 @@ class CICtrendse extends React.Component {
           <div className="row">
             <div className="col-12">
               <p className="mb-4">South Africa is susceptible to a number of extreme weather events with the most common being floods, droughts, fires and large storms. Climate events account for the largest percentage of natural disaster deaths. </p>
-              <img src={home_map_3}  className="m-auto" />
+              <img src={home_map_4}  className="m-auto" />
             </div>
           </div>
           </div>
