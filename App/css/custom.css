@@ -34,6 +34,9 @@ button:hover{
 h5{
     font-weight:bold;
 }
+h6{
+    font-weight:bolder;
+}
 img{
     max-width:100%;
 }

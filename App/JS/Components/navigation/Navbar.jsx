@@ -166,35 +166,13 @@ class Navbar extends React.Component {
                 </Dropdown>
               </NavItem>
 
-              {/* Climate Change */}
+              {/* Resources */}
               <NavItem>
                 <Dropdown>
                   <DropdownToggle nav caret>
-                    <b>Government Response</b>
+                    <b>Resources</b>
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
-                    Municipal Climate Change Response Plans
-                    </DropdownItem>
-                  </DropdownMenu>
-                </Dropdown>
-              </NavItem>
-
-            </NavbarNav>
-            {/* RIGHT */}
-            <NavbarNav right>
-              <NavItem>
-                <EASearch />
-              </NavItem>
-            <NavItem right>
-                <Dropdown>
-                  <DropdownToggle nav caret>
-                    <b>About</b>
-                  </DropdownToggle>
-                  <DropdownMenu>
-                    <DropdownItem onClick={() => { location.hash = "/info-about" }}>
-                    About the NCCIS
-                    </DropdownItem>
                     <DropdownItem onClick={() => { location.hash = "/info-glossary" }}>
                     Glossary
                     </DropdownItem>
@@ -203,6 +181,25 @@ class Navbar extends React.Component {
                     </DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
+              </NavItem>
+
+              {/* Tools */}
+              <NavItem>
+                <NavLink to="/info-tools">
+                <b>Tools</b>
+                </NavLink>
+              </NavItem>
+
+            </NavbarNav>
+            {/* RIGHT */}
+            <NavbarNav right>
+              <NavItem>
+                <EASearch />
+              </NavItem>
+              <NavItem right>
+                <NavLink to="/about">
+                <b>About</b>
+                </NavLink>
               </NavItem>
               <NavItem right>
                 <IconList></IconList>

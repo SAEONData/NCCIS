@@ -288,17 +288,18 @@ class Home extends React.Component {
           <div className="container-fluid mt-4">
           <Row className="home-map">
             <div className="col-3 pb-1 text-center">
-              <div className="round-edge green-bg pl-3 pr-3 pt-4 ml-n2 h-100 d-flex align-items-start flex-column">
-                <h4 className="mt-4 mb-5">Monitoring and Evaluation of Climate Change Adaptation and Mitigation</h4>
-                <p className="mt-3">The CCIS is part of the national effort to track South Africa's overall transition to a low carbon and climate resilient economy by offering a series of decision support tools to inform policy and decision-making.</p>
+              <div className="round-edge green-bg pl-3 pr-3 pt-4 ml-n2 h-100 d-table">
+                <div className="d-table-row"><h4 className="pt-4 mb-4">Climate Change Information System</h4></div>
+                <div className="m-auto">
+                <p>The CCIS is part of the national effort to track South Africa's overall transition to a low carbon and climate resilient economy by offering a series of decision support tools to inform policy and decision-making.</p>
                 <p>The system monitors and evaluates climate change drivers, events, links to national objectives, targets and strategies in respect of climate change mitigation and adaptation monitoring and assessment of actions taken by stakeholders.</p>
-              </div>
+              </div></div>
             </div>
             <div className="col-9">
                 <iframe src="http://ulwazi.saeon.ac.za:8000/" class="ea-map-frame round-edge" /> 
             </div>
           </Row>
-          <hr className="hr-thin" />
+          
           </div>
         </section>
 
@@ -307,6 +308,7 @@ class Home extends React.Component {
        
           <section className="mt-4 mb-4 ea-content">
             <div className="container-fluid">
+              <h5 className="pb-3">Facts and Figures</h5>
             <Row>
               <Col>
                 <FundingIGFX data={goalDataUnfiltered} year={filterYear} />
@@ -329,6 +331,7 @@ class Home extends React.Component {
 
           <section className="ea-home-maps ea-content light-bg pt-5 pb-5">
             <div className="container-fluid">
+            <h5 className="pb-3">Maps and Data</h5>
             <Row>
               <Col>
                 <a className="border-light-radius d-block text-dark">
