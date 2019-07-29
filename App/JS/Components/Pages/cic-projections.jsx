@@ -40,12 +40,14 @@ class CICprojections extends React.Component {
               {/* <IconList></IconList> */}
             </div>
           </div>
-          <h5>Climate Change Projections</h5>
+          <h5>National Climate Projections</h5>
           <Row>
           <Col md="auto"><Button type="button" className="btn btn-success-active btn-lg" onClick={() => { location.hash = "cic-projections" }}>
-            <em className="fa fa-chevron-right mr-1"></em> Climate Projections</Button></Col>
+            <em className="fa fa-chevron-right mr-1"></em> National Climate Projections</Button></Col>
           <Col md="auto"><Button type="button" className="btn btn-success btn-success btn-lg" onClick={() => { location.hash = "/cic-projections-provincial" }}>
             <em className="fa fa-chevron-right mr-1"></em> Provincial Changes in Climate</Button></Col>
+          <Col md="auto"><Button type="button" className="btn btn-success btn-success btn-lg" onClick={(event) => {event.preventDefault(); window.open("https://greenbook.co.za");}}>
+            <em className="fa fa-chevron-right mr-1"></em> Municipal Changes in Climate</Button></Col>
           </Row>
           <hr className="hr-thin" />
           </div>

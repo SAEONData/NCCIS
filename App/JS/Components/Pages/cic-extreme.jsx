@@ -18,7 +18,7 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-class CICtrendse extends React.Component {
+class CICextreme extends React.Component {
 
   constructor(props) {
     super(props);
@@ -43,7 +43,7 @@ class CICtrendse extends React.Component {
           <h5>Observed Trends in Historical Climate</h5>
           <Row>
           <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/cic-trends" }}>
-            <em className="fa fa-chevron-right mr-1"></em> Observed Trends in Historical Climate</Button></Col>
+            <em className="fa fa-chevron-right mr-1"></em> National Trends in Climate</Button></Col>
           <Col md="auto"><Button type="button" className="btn btn-success btn-success btn-lg" onClick={() => { location.hash = "/cic-trends-provincial" }}>
             <em className="fa fa-chevron-right mr-1"></em> Provincial Trends in Climate</Button></Col>
           <Col md="auto"><Button type="button" className="btn btn-success-active btn-lg" onClick={() => { location.hash = "/cic-trends-events" }}>
@@ -68,4 +68,4 @@ class CICtrendse extends React.Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(CICtrendse)
+export default connect(mapStateToProps, mapDispatchToProps)(CICextreme)

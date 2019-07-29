@@ -41,18 +41,18 @@ class CICghg extends React.Component {
               {/* <IconList></IconList> */}
             </div>
           </div>
-          <h5>GHG Emissions Database</h5>
+          <h5>Tracking and Evaluation System</h5>
           <Row>
           <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "cic" }}>
-            <em className="fa fa-chevron-right mr-1"></em> Climate Change</Button></Col>
+            <em className="fa fa-chevron-right mr-1"></em> What causes climate change?</Button></Col>
             <Col md="auto"><Button type="button" className="btn btn-success-active btn-lg" onClick={() => { location.hash = "cic-ghg" }}>
-            <em className="fa fa-chevron-right mr-1"></em> GHG Emissions Database</Button></Col>
+            <em className="fa fa-chevron-right mr-1"></em> Tracking and Evaluation System</Button></Col>
           <Col md="auto"><Button type="button" className="btn btn-success btn-success btn-lg" onClick={() => { location.hash = "/cic-trends" }}>
             <em className="fa fa-chevron-right mr-1"></em> Trends</Button></Col>
           <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/cic-projections" }}>
             <em className="fa fa-chevron-right mr-1"></em> Projections</Button></Col>
-          <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/cic-impacts" }}>
-            <em className="fa fa-chevron-right mr-1"></em> Impacts</Button></Col>
+          <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/cic-vulnerability" }}>
+            <em className="fa fa-chevron-right mr-1"></em> Vulnerability</Button></Col>
           </Row>
           <hr className="hr-thin" />
           </div>

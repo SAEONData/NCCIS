@@ -267,13 +267,13 @@ class Home extends React.Component {
           </div>
           <Row>
           <Col md="auto"><button type="button" className="btn btn-success btn-lg" onClick={() => { location = "http://app01.saeon.ac.za/nccrdtestsite/#/" }}>
-            <em className="fa fa-plus mr-1"></em> Submit a climate change response project</button></Col>
+            <em className="fa fa-pencil-square-o mr-1"></em> Submit a climate change response project</button></Col>
           <Col md="auto"><button type="button" className="btn btn-disabled btn-lg" disabled >
-            <em className="fa fa-plus mr-1"></em> Design a climate change plan</button></Col>
+            <em className="fa fa-pencil-square-o mr-1"></em> Design a climate change plan</button></Col>
           <Col md="auto"><button type="button" className="btn btn-success btn-lg" onClick={() => { location = "http://app01.saeon.ac.za/ndaotestsite/#/" }}>
-            <em className="fa fa-plus mr-1"></em> Evaluate a climate change plan</button></Col>
+            <em className="fa fa-pencil-square-o mr-1"></em> Evaluate a climate change plan</button></Col>
           <Col md="auto"><button type="button" className="btn btn-disabled btn-lg" disabled>
-            <em className="fa fa-plus mr-1"></em> Review Report</button></Col>
+            <em className="fa fa-pencil-square-o mr-1"></em> Review Report</button></Col>
           </Row>
           <hr className="hr-thin" />
           </div>
@@ -296,7 +296,7 @@ class Home extends React.Component {
               </div></div>
             </div>
             <div className="col-9">
-                <iframe src="http://ulwazi.saeon.ac.za:8000/" class="ea-map-frame round-edge" /> 
+                {/* <iframe src="http://ulwazi.saeon.ac.za:8000/" class="ea-map-frame round-edge" />  */}
             </div>
           </Row>
           

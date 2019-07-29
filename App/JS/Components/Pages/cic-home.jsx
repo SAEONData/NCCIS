@@ -43,16 +43,16 @@ class CICghg extends React.Component {
           </div>
           <h5>Climate Information Centre</h5>
           <Row>
-          <Col md="auto"><Button type="button" className="btn btn-success-active btn-lg" onClick={() => { location.hash = "cic-ghg" }}>
-            <em className="fa fa-chevron-right mr-1"></em> Climate Change</Button></Col>
+          <Col md="auto"><Button type="button" className="btn btn-success-active btn-lg" onClick={() => { location.hash = "cic" }}>
+            <em className="fa fa-chevron-right mr-1"></em> What causes climate change?</Button></Col>
           <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "cic-ghg" }}>
-            <em className="fa fa-chevron-right mr-1"></em> GHG Emissions Database</Button></Col>
+            <em className="fa fa-chevron-right mr-1"></em> Tracking and Evaluation System</Button></Col>
           <Col md="auto"><Button type="button" className="btn btn-success btn-success btn-lg" onClick={() => { location.hash = "/cic-trends" }}>
             <em className="fa fa-chevron-right mr-1"></em> Trends</Button></Col>
           <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/cic-projections" }}>
             <em className="fa fa-chevron-right mr-1"></em> Projections</Button></Col>
-          <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/cic-impacts" }}>
-            <em className="fa fa-chevron-right mr-1"></em> Impacts</Button></Col>
+          <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/cic-vulnerability" }}>
+            <em className="fa fa-chevron-right mr-1"></em> Vulnerability</Button></Col>
           </Row>
           <hr className="hr-thin" />
           </div>
@@ -87,7 +87,7 @@ class CICghg extends React.Component {
               </div>
               <div className="col-6 pt-4 mt-3">
               <p className="mt-4"><b>Climate change</b> refers to a change in the average weather experienced in a particular region or location. The change may occur over periods ranging from decades to millennia. It may affect one or more seasons (e.g. summer, winter or the whole year) and involves changes in one or more aspects of the weather e.g. rainfall, temperature or winds. Its causes may be natural (e.g. due to periodic changes in the earth’s orbit, volcanoes and solar variability) or attributable to human (anthropogenic) activities e.g. increasing emissions of greenhouse gases such as CO2, land use change and/or emissions of aerosols. ‘Climate change’ often refers to changes due only to anthropogenic causes.</p>
-              <p><b>Global warming</b> refers only to the overall warming of the Earth, based on average increases in temperature over the entire land and ocean surface. Climate change is more than simply an increase in global temperatures; it encompasses changes in regional climate characteristics, including temperature, humidity, rainfall, wind, and extreme weather events, which have economic and social dimensions.</p>
+              <p><b onClick={() => { location.hash = "/info-glossary/#bm-gw" }} class="text-link">Global warming</b> refers only to the overall warming of the Earth, based on average increases in temperature over the entire land and ocean surface. Climate change is more than simply an increase in global temperatures; it encompasses changes in regional climate characteristics, including temperature, humidity, rainfall, wind, and extreme weather events, which have economic and social dimensions.</p>
               <p><b>Climate variability</b> refers to variations in climate on all spatial and temporal scales beyond that of individual weather events. This variability may be caused by natural internal processes within the climate system. One of the most important (and widely known) examples of natural climate variability is the El Niño-Southern Oscillation (ENSO). Variations may also be caused by external influences which may be due to naturally-occurring phenomena (such as periodic changes in the earth’s orbit around the sun).</p>
               
               

@@ -34,6 +34,24 @@ button:hover{
 h5{
     font-weight:bold;
 }
+.btn-lg .fa{
+    font-size: 20px;
+    position: absolute;
+    left: 16px;
+    top: 18px;
+}
+.btn.btn-lg{
+    padding-left: 42px;
+    padding-right: 22px;
+    position: relative;
+}
+.text-link{
+    text-decoration: underline;
+}
+.text-link:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
 h6{
     font-weight:bolder;
 }

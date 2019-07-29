@@ -128,11 +128,11 @@ class Navbar extends React.Component {
                   </DropdownToggle>
                   <DropdownMenu>
                   <DropdownItem onClick={() => { location.hash = "cic" }}>
-                    Climate Information Centre
+                    What causes climate change?
                     </DropdownItem>
                     <hr style={{ marginTop: "0px"}} />
                     <DropdownItem onClick={() => { location.hash = "cic-ghg" }}>
-                      GHG Emissions Database
+                      Tracking and Evaluation System
                     </DropdownItem>
                     <DropdownItem onClick={() => { location.hash = "cic-trends" }}>
                       Trends
@@ -140,8 +140,11 @@ class Navbar extends React.Component {
                     <DropdownItem onClick={() => { location.hash = "cic-projections" }}>
                       Projections
                     </DropdownItem>
-                    <DropdownItem onClick={() => { location.hash = "cic-impacts" }}>
-                      Impacts
+                    <DropdownItem onClick={() => { location.hash = "cic-vulnerability" }}>
+                      Vulnerability
+                    </DropdownItem>
+                    <DropdownItem onClick={() => { location.hash = "cic-extreme" }}>
+                      Extreme Weather Events and Disasters
                     </DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
@@ -150,7 +153,7 @@ class Navbar extends React.Component {
               <NavItem>
                 <Dropdown>
                   <DropdownToggle nav caret>
-                    <b>Climate Resources</b>
+                    <b>Financing Climate Change</b>
                   </DropdownToggle>
                   <DropdownMenu>
                     <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>

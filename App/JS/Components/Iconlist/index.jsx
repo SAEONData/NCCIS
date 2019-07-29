@@ -18,11 +18,11 @@ class IconList extends React.Component {
         <i className="fa fa-question-circle"></i>
         </a>
         </li>
-        <li>
+        {/* <li>
         <a onClick={() => { location.hash = "/info-documents" }} title="List of climate documents" className="tooltip-ea tooltip-ea-r">
         <i className="fa fa-folder"></i>
         </a>
-        </li>
+        </li> */}
         {/* <li>
         <a onClick={() => { location.hash = "/info-tools" }} title="Access useful climate tools" className="tooltip-ea tooltip-ea-r">
         <i className="fa fa-link"></i>
