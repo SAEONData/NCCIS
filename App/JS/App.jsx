@@ -102,10 +102,25 @@ class App extends React.Component {
     return ignore
   }
 
+  
   saveCurrentURL() {
+
+
 
     if (location.hash !== this.state.currentURL && !this.ignoreURL()) {
       console.log("NAV", location.hash)
+      var valuef = location.hash.substring(location.hash.lastIndexOf('#') + 1);
+      var valueid = valuef.replace('#','')
+      if (!valuef.includes("/")){
+          var theelement = document.getElementById(valueid);
+          theelement.setAttribute( 'className','bg-dark')
+          var theoffset = theelement.offsetTop;
+          var theoffsetplus = parseInt(theoffset - 80);
+          window.scrollTo(0,theoffsetplus);
+      }else{
+        window.scrollTo(0,0);
+      };
+
       this.setState({ currentURL: location.hash })
       _gf.SaveCurrentUrl()
     }

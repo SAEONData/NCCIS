@@ -49,12 +49,11 @@ $('body').on('click', '.ea-tabs .nav-tabs a', function(){
 
 /* Scroll to ID in URL */
 $(document).ready(function () {
-    var value = window.location.href.substring(window.location.href.lastIndexOf('/') + 1);
-    if (value.includes("#")){
-        var theoffset = $(value).offset().top;
-        var theoffsetplus = parseInt(theoffset - 80);
-        $(window).scrollTop(theoffsetplus);
-    } else{
-    }
-
+    // console.log('ready');
+    // var value = window.location.href.substring(window.location.href.lastIndexOf('/') + 1);
+    // if (value.includes("#")){
+    //     var theoffset = $(value).offset().top;
+    //     var theoffsetplus = parseInt(theoffset - 80);
+    //     $(window).scrollTop(theoffsetplus);
+    // };
 });
