@@ -12,6 +12,7 @@ import SectorsIGFX from './InfoGraphics/SectorsIGFX.jsx'
 import IconList from '../../Iconlist/index.jsx';
 import About from './../About.jsx'
 // import Carousel from './Carousel.jsx'
+import { SaeonMap } from '@saeon/ol-react'
 
 // Images
 import home_map_1 from '../../../../Images/Maps/home/1.gif'
@@ -297,6 +298,7 @@ class Home extends React.Component {
             </div>
             <div className="col-9">
                 {/* <iframe src="http://ulwazi.saeon.ac.za:8000/" class="ea-map-frame round-edge" />  */}
+                <SaeonMap />
             </div>
           </Row>
           
