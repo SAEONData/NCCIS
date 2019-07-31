@@ -131,10 +131,13 @@ class Footer extends React.Component {
           <Row>
             <Col md="12">
               <b>
+                <a onClick={() => { location.hash = "/doc-disclaimer" }}>Disclaimer</a> | 
+                <a onClick={() => { location.hash = "/doc-conditions" }}>Conditions of use</a> | 
+                <a onClick={() => { location.hash = "/doc-privacy" }}>Privacy policy</a> | 
                 Created by
                 <span> <a style={{ color: "white" }} href="http://www.saeon.ac.za" target="saeon"><strong>SAEON</strong></a> </span>
                 using
-                <span> <a style={{ color: "white" }} href="https://reactjs.org/" target="react"><strong>React</strong></a>, </span>
+                <span> <a style={{ color: "white" }} href="https://reactjs.org/" target="_blank"><strong>React</strong></a>, </span>
                 <span> <a style={{ color: "white" }} href="https://mdbootstrap.com/react" target="mdb"><strong> MDBootstrap</strong></a>, </span>
                 <span> <a style={{ color: "white" }} href="https://ant.design/" target="antdesign"><strong> Ant Design </strong></a> </span>
                 and SAEON Open Data Platform APIs.

@@ -34,6 +34,9 @@ import INFOglossary from './Components/Pages/info-glossary.jsx';
 import INFOdocuments from './Components/Pages/info-documents.jsx';
 import INFOevents from './Components/Pages/info-events.jsx';
 import INFOtools from './Components/Pages/info-tools.jsx';
+import DOCprivacy from './Components/Pages/doc-privacy.jsx';
+import DOCdisclaimer from './Components/Pages/doc-disclaimer.jsx';
+import DOCconditions from './Components/Pages/doc-conditions.jsx';
 import userManager from './components/authentication/userManager';
 import '../css/custom.css';
 import './custom';
@@ -113,7 +116,7 @@ class App extends React.Component {
       var valueid = valuef.replace('#','')
       if (!valuef.includes("/")){
           var theelement = document.getElementById(valueid);
-          theelement.setAttribute( 'className','bg-dark')
+          theelement.setAttribute( 'class','bg-light')
           var theoffset = theelement.offsetTop;
           var theoffsetplus = parseInt(theoffset - 80);
           window.scrollTo(0,theoffsetplus);
@@ -167,6 +170,9 @@ class App extends React.Component {
                   <Route path="/info-glossary" component={INFOglossary} />
                   <Route path="/info-documents" component={INFOdocuments} />
                   <Route path="/info-events" component={INFOevents} />
+                  <Route path="/doc-privacy" component={DOCprivacy} />
+                  <Route path="/doc-disclaimer" component={DOCdisclaimer} />
+                  <Route path="/doc-conditions" component={DOCconditions} />
                   <Redirect to="/" />
                 </Switch>
               </div>
