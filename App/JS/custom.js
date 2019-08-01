@@ -46,14 +46,3 @@ $('body').on('click', '.ea-tabs .nav-tabs a', function(){
     $('.ea-tabs .tab-pane').hide();
     $('#'+tab_label).slideDown(300);
 });
-
-/* Scroll to ID in URL */
-$(document).ready(function () {
-    // console.log('ready');
-    // var value = window.location.href.substring(window.location.href.lastIndexOf('/') + 1);
-    // if (value.includes("#")){
-    //     var theoffset = $(value).offset().top;
-    //     var theoffsetplus = parseInt(theoffset - 80);
-    //     $(window).scrollTop(theoffsetplus);
-    // };
-});

@@ -132,7 +132,7 @@ class Navbar extends React.Component {
                     </DropdownItem>
                     <hr style={{ marginTop: "0px"}} />
                     <DropdownItem onClick={() => { location.hash = "cic-ghg" }}>
-                      Tracking and Evaluation System
+                    GHG Emissions Database
                     </DropdownItem>
                     <DropdownItem onClick={() => { location.hash = "cic-trends" }}>
                       Trends
@@ -160,7 +160,7 @@ class Navbar extends React.Component {
                     Technology Needs Assessment
                     </DropdownItem>
                     <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
-                    Climate Finance
+                    Financing
                     </DropdownItem>
                     <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
                     Technical Assistance
@@ -170,6 +170,12 @@ class Navbar extends React.Component {
               </NavItem>
 
               {/* Resources */}
+              <NavItem>
+              <NavLink to="/cic-ghg">
+                <b>Tracking &#38; Evaluation Portal</b>
+              </NavLink>
+              </NavItem>
+              
               <NavItem>
                 <Dropdown>
                   <DropdownToggle nav caret>
@@ -199,12 +205,12 @@ class Navbar extends React.Component {
               <NavItem>
                 <EASearch />
               </NavItem>
-              <NavItem right>
+              <NavItem>
                 <NavLink to="/about">
                 <b>About</b>
                 </NavLink>
               </NavItem>
-              <NavItem right>
+              <NavItem>
                 <IconList></IconList>
               </NavItem>
               {/* Username */}

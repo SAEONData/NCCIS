@@ -12,6 +12,7 @@
   "description": "",
   "dependencies": {
     "@ant-design/icons": "^1.2.1",
+    "@saeon/ol-react": "0.0.4",
     "antd": "^3.13.2",
     "basic-authorization-header": "^0.2.7",
     "bootstrap": "^4.1.3",
