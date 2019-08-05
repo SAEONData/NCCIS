@@ -54,7 +54,6 @@ class CICghg extends React.Component {
           <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/cic-vulnerability" }}>
             <em className="fa fa-chevron-right mr-1"></em> Vulnerability</Button></Col>
           </Row>
-          <hr className="hr-thin" />
           </div>
           </section>
 
