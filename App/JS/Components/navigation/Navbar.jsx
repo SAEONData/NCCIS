@@ -156,6 +156,20 @@ class Navbar extends React.Component {
                     <b>Financing Climate Change</b>
                   </DropdownToggle>
                   <DropdownMenu>
+
+                    <DropdownItem onClick={() => { window.open(ndaoSiteBaseURL, "_blank") }}>
+                      National Desired Adaptation Outcomes
+                    </DropdownItem>
+                    <DropdownItem divider />
+                    <DropdownItem onClick={() => { window.open(ccrdSiteBaseURL, "_blank") /*this.setState({ showNCCRD: true })*/ }}>
+                      National Climate Change Response Database
+                    </DropdownItem>
+                    <DropdownItem divider />
+                    <DropdownItem onClick={() => { location.hash = "ComingSoon" /*window.open("", "_blank")*/ }}>
+                      Tracking and Evaluation System
+                    </DropdownItem>
+                    <DropdownItem divider />
+
                     <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
                     Technology Needs Assessment
                     </DropdownItem>
