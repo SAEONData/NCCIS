@@ -45,8 +45,8 @@ class CICghg extends React.Component {
           <Row>
           <Col md="auto"><Button type="button" className="btn btn-success-active btn-lg" onClick={() => { location.hash = "cic" }}>
             <em className="fa fa-chevron-right mr-1"></em> What causes climate change?</Button></Col>
-          <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "cic-ghg" }}>
-            <em className="fa fa-chevron-right mr-1"></em> Tracking and Evaluation System</Button></Col>
+          <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "cic-provincial" }}>
+            <em className="fa fa-chevron-right mr-1"></em> Provincial Climate Description</Button></Col>
           <Col md="auto"><Button type="button" className="btn btn-success btn-success btn-lg" onClick={() => { location.hash = "/cic-trends" }}>
             <em className="fa fa-chevron-right mr-1"></em> Trends</Button></Col>
           <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/cic-projections" }}>

@@ -132,7 +132,7 @@ class Navbar extends React.Component {
                     </DropdownItem>
                     <hr style={{ marginTop: "0px"}} />
                     <DropdownItem onClick={() => { location.hash = "cic-ghg" }}>
-                    GHG Emissions Database
+                      GHG Emissions Database
                     </DropdownItem>
                     <DropdownItem onClick={() => { location.hash = "cic-trends" }}>
                       Trends

@@ -25,7 +25,7 @@ button:hover{
     border-radius: 10px;
     padding: 10px;
 }
-.bg-danger{
+.bg-danger,.bg-primary{
     color:#fff;
 }
 .ea-list-p p{
@@ -73,6 +73,20 @@ img{
 .ea-table td{
     border: 1px solid gainsboro;
     padding:10px;
+}
+.table-vul tr td.td-title{
+    background:#616161;
+    color:#fff;
+}
+.table-vul td{
+    background:#f5f5f5;
+    padding:7px;
+    border:0.5px solid #ccc;
+    vertical-align: middle;
+}
+.table-vul td.td-positive{
+    background:#719062;
+    color:#fff;
 }
 table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_desc_disabled:before, table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:after {
     font-family: 'FontAwesome';
@@ -321,7 +335,7 @@ table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before
     height: 80%;
     margin: auto;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%)!important;
 }
 .ril-inner{
     background: rgba(0,0,0,0.5);

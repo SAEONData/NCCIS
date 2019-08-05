@@ -23,12 +23,14 @@ import SideNav from './components/navigation/SideNav.jsx';
 import ComingSoon from './Components/Pages/ComingSoonAE.jsx'; //Created my own temp component
 import CICtrends from './Components/Pages/cic-trends.jsx';
 import CICtrendsp from './Components/Pages/cic-trends-prov.jsx';
+import CICtrendscc from './Components/Pages/cic-trends-current.jsx';
 import CICextreme from './Components/Pages/cic-extreme.jsx';
 import CICghg from './Components/Pages/cic-ghg.jsx';
 import CIChome from './Components/Pages/cic-home.jsx';
 import CICvulnerability from './Components/Pages/cic-vulnerability.jsx';
 import CICprojections from './Components/Pages/cic-projections.jsx';
 import CICprojectionsp from './Components/Pages/cic-projections-prov.jsx';
+import CICpcd from './Components/Pages/cic-provincial-cd.jsx';
 import INFOabout from './Components/Pages/info-about.jsx';
 import INFOglossary from './Components/Pages/info-glossary.jsx';
 import INFOdocuments from './Components/Pages/info-documents.jsx';
@@ -160,11 +162,13 @@ class App extends React.Component {
                   <Route path="/cic" component={CIChome} />
                   <Route path="/cic-trends" component={CICtrends} />
                   <Route path="/cic-trends-provincial" component={CICtrendsp} />
+                  <Route path="/cic-trends-current" component={CICtrendscc} />
                   <Route path="/cic-extreme" component={CICextreme} />
                   <Route path="/cic-ghg" component={CICghg} />
                   <Route path="/cic-projections" component={CICprojections} />
                   <Route path="/cic-projections-provincial" component={CICprojectionsp} />
                   <Route path="/cic-vulnerability" component={CICvulnerability} />
+                  <Route path="/cic-provincial" component={CICpcd} />
                   <Route path="/info-about" component={INFOabout} />
                   <Route path="/info-tools" component={INFOtools} />
                   <Route path="/info-glossary" component={INFOglossary} />

@@ -50,7 +50,6 @@ class CICprojectionsp extends React.Component {
           <Col md="auto"><Button type="button" className="btn btn-success btn-success btn-lg" onClick={(event) => {event.preventDefault(); window.open("https://greenbook.co.za");}}>
             <em className="fa fa-chevron-right mr-1"></em> Municipal Changes in Climate</Button></Col>
           </Row>
-          <hr className="hr-thin" />
           </div>
           </section>
 

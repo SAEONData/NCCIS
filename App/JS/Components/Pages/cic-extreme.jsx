@@ -76,7 +76,26 @@ class CICextreme extends React.Component {
 
           <section className="ea-content-full pt-4 pb-4 light-bg">
           <div className="container-fluid">
+          <h3 className="mb-4">Provincial Graphs</h3>
             <LightboxPage />
+          </div>
+          </section>
+          <section className="ea-content-full pt-4 pb-4 light-bg">
+          <hr />
+          <div className="container-fluid mt-4">
+            <div className="row">
+              <div className="col-6">
+              <h3 className="mb-4">Disaster Risk Management and Climate Change Adaptation</h3>
+              <p>Creating an enabling environment for both climate change adaptation and disaster risk management is critical to ensure future resilience. Both disaster risk reduction and climate change adaptation aim to mitigate climate-related risks by reducing and modifying environmental and human factors in order to support sustainable economic and social development (<a href="https://www.csir.co.za/sites/default/files/Documents/SADC%20Handbook_Second%20Edition_full%20report.pdf" target="_blank">Davis-Reddy &amp; Vincent 2017</a>).</p>
+              <p>The National Climate Change Response White Paper (NCCRP) highlights disaster management as a key area of development for the country, due to the expected increase in extreme climatic events. This commitment is illustrated by the fact that the national government’s investment in disaster risk reduction and emergency response has risen from US$ 0.02 bn. to US$ 0.7 bn. between 2010 and 2015, as part of the total increase of investment in adaptation which rose from US$ 1.64 bn. to US$ 2.31 bn.</p>
+              </div>
+              <div className="col-6">
+              <div className="light-grey-bg p-3 round-edge">
+                <h3>Sendai Framework for Disaster Risk Reduction 2015-2030</h3>
+                <p>In March 2015, the Third United Nations World Conference on Disaster Risk Reduction (WCDRR) adopted the Sendai Framework for Disaster Risk Reduction 2015-2030, which was later endorsed by the UN General Assembly in its 69th session. The Sendai Framework provides the basis for a risk-informed and resilient future. The Sendai Framework specifically addresses climate change and climate action, providing measures, guiding principles and means of implementation. Sendai outcomes are a significant milestone in international cooperation for building resilience to climate-related disasters. The Sendai Framework establishes the significance of ensuring credible links on the post-2015 agenda including the sustainable development goals, financing for development, climate change and disaster risk reduction and the calls for enhanced coherence across policies, institutions, indicators, reporting and measurement systems for implementation (<a href="https://www.unisdr.org/we/coordinate/sendai-framework" target="_blank">UNISDR, 2015</a>).</p>
+              </div>
+              </div>
+            </div>
           </div>
           </section>
 

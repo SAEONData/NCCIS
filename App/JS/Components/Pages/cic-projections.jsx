@@ -4,6 +4,9 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { Row, Col, Button } from 'mdbreact'
 import scape from '../../../Images/Other/scape.jpg'
+import imgkeymessages2 from '../../../Images/Other/key-messages2.gif'
+import CarouselClimateChange from '../../Components/Pages/Home/Carousel-climate-change.jsx'
+
 
 
 const mapStateToProps = (state, props) => {
@@ -55,30 +58,66 @@ class CICprojections extends React.Component {
 
           <section className="ea-content-full mt-4 pt-4 pb-4 light-bg">
           <div className="container-fluid">
-          <p>In South Africa, significant progress has been made in projecting and understanding climate change for the region, providing an increasingly robust basis for strategy and policy development.</p>
-          <p>The latest key messages from dynamically downscaled temperature and rainfall projections from the CSIR (NRE) are described for South Africa for the short to medium term 2021 to 2050. Detailed information in temperature and rainfall futures can be found here based on statistical downscaling from CSAG and dynamical downscaling by CCAM CSIR.</p>
-          <p>CSAG Climate Information Portal, <a href="http://cip.csag.uct.ac.za/webclient2/app/" target="_blank">cip.csag.uct.ac.za</a></p>
+          <div className="row mb-3">
+            <div className="col-12">
+              <p>Content written by Claire Davis-Reddy and based on Chapter 3 of South Africa’s Third National Communication to the UNFCCC (<a href="https://unfccc.int/sites/default/files/resource/South%20African%20TNC%20Report%20%20to%20the%20UNFCCC_31%20Aug.pdf" target="_blank">link to Report</a>)</p>
+              <p>In South Africa, significant progress has been made in projecting and understanding climate change for the region, providing an increasingly robust basis for strategy and policy development. The content presented here draws on recent subsets of future climate projections for the country:</p>
+              <ul>
+                <li>Dynamically downscaled temperature and rainfall projections from the CSIR (NRE); and</li>
+                <li>Statistically downscaled models from CSAG available from the Climate Information Portal, <a href="cip.csag.uct.ac.za" target="_blank">cip.csag.uct.ac.za</a></li>
+              </ul>
+              <p>Changes in climate are based on the latest set of Representative Concentration Pathways (RCPs); RCP 4.5 and RCP 8.5. RCP 4.5 describes a future with relatively ambitious emission reductions whereas RCP 8.5 describes a future with no reductions in emissions. Emissions in RCP 4.5 peak around 2040, then decline and in RCP 8.5 emissions continue to rise throughout the 21st century.</p>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-6">
+              <h5 className="mb-4">Key messages from Regional Climate Projections</h5>
+              <div className="text-center w-100"><img src={imgkeymessages2} /></div>
+            </div>
+            <div className="col-6 d-flex align-items-center">
+              <div className="p-3 bg-primary mt-4 round-edge">
+                <p><b>South Africa is expected to experience:</b></p>
+                <ul>
+                <li className="mb-2">Increase in mean, maximum and minimum temperatures.</li>
+                <li className="mb-2">Increase in very hot days – above 35 °C and the frequency of heat wave events.</li>
+                <li className="mb-2">Drier conditions in the future, with regional variation. </li>
+                <li className="mb-2">Slight increases in rainfall towards the north-eastern region. </li>
+                <li className="mb-2">A strong drying signal over the southwestern region, which could result in reductions in rainfall of more than 40 mm per year. </li>
+                <li className="mb-2">Increase in the frequency of extreme rainfall events (20 mm of rain falling within 24 hours) over eastern parts during the summer months.</li>
+                <li className="mb-2">Sea level rise and an increase in the frequency and intensity of sea storms, accompanied by increases in wave heights</li>
+                <li>Increase in the number of high fire danger days over north-eastern region and along the Cape south coast and the south-western Cape.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
           <hr />
           <div className="row">
             <div className="col-6">
-            <img className="w-100 mb-4" src={scape} />
-            <p>CSIR's existing set of 50km resolution CORDEX (Coordinated Regional Downscalling Experiment) projections of future climate change.</p>
-            <p>The projections used in the Green Book are for 2 of the mitigation scenarios, namely:</p>
-            <p>1. RCP 8.5 - where low mitigation is implemented<br />
-            2. RCP 4.5 - where high mitigation is implemented</p>
-            <p>For each of these emission pathways, 6 global circulation models (GCMs) that contributed to Assessment Report Five (AR5) of the intergovernmental Panel on Climate Change (IPCC) were downscaled to a 50km resolution over the globe, as part of the CSIR's contribution to CORDEX.</p>
-            <p>
-            Changes in climate are based on RCP 4.5 and RCP 8.5 (see Box 1). RCP 4.5 describes a future with relatively ambitious emission reductions whereas RCP 8.5 describes a future with no reductions in emissions. Emissions in RCP 4.5 peak around 2040, then decline and in RCP 8.5 emissions continue to rise throughout the 21st century.
-            </p>
-            </div>
-            <div className="col-6">
-              <div className="border-light-radius">
+            <div className="border-light-radius">
                 <h5>Box 1: Determining Future Climate</h5>
                 <p><b>Global climate models</b>, or global circulation models (GCMs), comprise the fundamental tools used for assessing the causes of past change and to project long-term future change (2030–2060). These complex computer models represent interactions between the different components of the climate system, such as the land surface, the atmosphere and the oceans. Projected changes in climate are dependent on the future levels of greenhouse gas emissions in the atmosphere which in turn are crucially dependent on society’s behaviour and policy choices. Global climate models (GCMs) simulate climate under a range of emission scenarios each representing a plausible future. The IPCC Special Report on Emissions Scenarios (SRES) described four possible ‘story lines’ (A1, B1, A2 and B2), each assuming different paths of development for the world. In the IPCC Fifth Assessment Report (AR5), Representative Concentration Pathways (RCPs) replaced the SRES emission scenarios and were used as the basis of the climate projections presented in AR5. The RCP’s are named according to their 2100 radiative forcing level. There are four pathways - RCP2.6, RCP4.5, RCP6.0 and RCP8.5. Whilst RCPs have replaced the SRES emission scenarios in current assessments, the outputs of older SRES GCM simulations and associated downscaled models remain valid.</p>
                 <p>GCM's have a very coarse resolution (200-300 km) and often cannot capture the physical processes and features of the landscape which are important determinants of local and regional climates. Downscaling techniques translate the changes in the large-scale atmospheric circulation to finer spatial scales. Two main types of downscaling methodologies may be employed, namely statistical (empirical) and dynamical downscaling.</p>
               </div>
             </div>
+            <div className="col-6">
+              <div className="border-light-radius">
+                <h5>Box 2: Climate change projections in vulnerability assessments</h5>
+                <p>Choosing the single ‘best’ GCM or downscaled projection for a vulnerability assessment is problematic as future scenarios are all linked to the representation of physical and dynamical processes within that specific model. By using one model this may create the impression of a narrowly determined future, which may not fully span the range of potential future change.</p>
+                <p>The most suitable approach to be taken is to use the largest number of climate change projections as possible and that future change is expressed either as a narrative of potential future changes expressed as future scenarios (e.g. wetter and hotter) or as a summary statistic (e.g. percentiles) of the distribution of projected changes, with some measure or recognition of the spread of possible future climates also provided.</p>
+                <p>The degree of certainty in a finding, such as change in rainfall, is based on the consistency of evidence such as data, mechanistic understanding, models, theory and expert judgement and agreement between the different models</p>
+              </div>
+            </div>
           </div>
+          </div>
+          </section>
+
+          <section className="ea-content-full mt-4 pt-4 pb-4 light-bg">
+          <div className="container-fluid">
+          <h5 className="mb-3">Climate Change Maps</h5>
+          <p>Projected change in temperature and rainfall over South Africa obtained from a set of dynamical downscalings conducted by the CSIR - NRE. The change in each variable (see Box 2) is expressed as an anomaly, the difference between the average climate over a period of the last several decades (1971-2000), and the projected climate (short to medium term 2021 to 2050). The change is based on the median (50th percentile) of the ensemble  of six dynamically downscaled GCMs. Changes in climate are based on RCP 4.5 and RCP 8.5. </p>
+          <CarouselClimateChange />
           </div>
           </section>
     </>

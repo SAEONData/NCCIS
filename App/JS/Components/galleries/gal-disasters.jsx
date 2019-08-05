@@ -42,7 +42,6 @@ class LightboxPage extends React.Component {
         <div className="mdb-lightbox no-margin">
           <MDBRow>
             <MDBCol md="3">
-           
               <figure>
                 <img
                   src={images[0]}

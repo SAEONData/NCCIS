@@ -3,7 +3,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Row, Col, Button } from 'mdbreact'
-import TrendsPage from './cic-trends-prov-a.jsx'
+import TrendsCurrent from './cic-trends-current-a.jsx'
 import SouthAfricaMap from '../../../Images/Maps/southafrica.jsx'
 
 
@@ -19,7 +19,7 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-class CICtrendsp extends React.Component {
+class CICtrendscc extends React.Component {
 
   constructor(props) {
     super(props);
@@ -41,20 +41,19 @@ class CICtrendsp extends React.Component {
               {/* <IconList></IconList> */}
             </div>
           </div>
-          <h5>Provincial Trends in Climate</h5>
+          <h5>Provincial Climate Description</h5>
           <Row>
-          <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/cic-trends-current" }}>
+          <Col md="auto"><Button type="button" className="btn btn-success-active btn-lg" onClick={() => { location.hash = "/cic-trends-current" }}>
             <em className="fa fa-chevron-right mr-1"></em> Provincial Climate Description</Button></Col>
           <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/cic-trends" }}>
             <em className="fa fa-chevron-right mr-1"></em> National Trends in Climate</Button></Col>
-          <Col md="auto"><Button type="button" className="btn btn-success-active btn-lg" onClick={() => { location.hash = "/cic-trends-provincial" }}>
+          <Col md="auto"><Button type="button" className="btn btn-success btn-success btn-lg" onClick={() => { location.hash = "/cic-trends-provincial" }}>
             <em className="fa fa-chevron-right mr-1"></em> Provincial Trends in Climate</Button></Col>
           </Row>
           <hr className="hr-thin" />
           </div>
           </section>
 
-          
           <section className="ea-content-full mt-4 pt-4 pb-4 light-bg">
           <div className="container-fluid">
             <div className="row">
@@ -62,7 +61,7 @@ class CICtrendsp extends React.Component {
               <SouthAfricaMap />
               </div>
               <div className="col-8">
-              <TrendsPage />
+              <TrendsCurrent />
               </div>
             </div>
           </div>
@@ -72,4 +71,4 @@ class CICtrendsp extends React.Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(CICtrendsp)
+export default connect(mapStateToProps, mapDispatchToProps)(CICtrendscc)
