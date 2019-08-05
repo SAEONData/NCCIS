@@ -266,20 +266,20 @@ class Navbar extends React.Component {
 
           </Collapse>
 
-          {showDASL && <DASL closeCallback={() => { this.setState({ showDASL: false }) }} />}
-          {showLRT && <LRT closeCallback={() => { this.setState({ showLRT: false }) }} />}
+          {/* {showDASL && <DASL closeCallback={() => { this.setState({ showDASL: false }) }} />}
+          {showLRT && <LRT closeCallback={() => { this.setState({ showLRT: false }) }} />} */}
 
           {
             showNCCRD &&
             <NCCRD
               query={`?navbar=hidden&daoid=hidden&readonly=true&popin=hidden`}
-              closeCallback={() => { this.setState({ showNCCRD: false }) }}
+              // closeCallback={() => { this.setState({ showNCCRD: false }) }}
             />
           }
 
-          {showNWIS && <NWIS closeCallback={() => { this.setState({ showNWIS: false }) }} />}
+          {/* {showNWIS && <NWIS closeCallback={() => { this.setState({ showNWIS: false }) }} />}
           {showSARVA && <SARVA closeCallback={() => { this.setState({ showSARVA: false }) }} />}
-          {showNDMC && <NDMC closeCallback={() => { this.setState({ showNDMC: false }) }} />}
+          {showNDMC && <NDMC closeCallback={() => { this.setState({ showNDMC: false }) }} />} */}
 
         </MDBNavbar >
 
