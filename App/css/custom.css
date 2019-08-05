@@ -303,6 +303,11 @@ table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before
     min-height: 600px;
     overflow: hidden;
 }
+.homemap{
+    position: absolute;
+    left: 15px;
+    z-index: 1;
+}
 /* map iframe END */
 /* overwrites */
 .btn-success {
