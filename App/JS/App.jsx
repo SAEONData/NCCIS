@@ -42,8 +42,6 @@ import DOCconditions from './Components/Pages/doc-conditions.jsx';
 import userManager from './components/authentication/userManager';
 import '../css/custom.css';
 import './custom';
-import ReactGA from 'react-ga';
-ReactGA.initialize('UA-145174772-1');
 
 //Data
 const Oidc = require("oidc-client")
@@ -136,7 +134,7 @@ class App extends React.Component {
 
     let { loading, showSideNav } = this.props
     let { navbar } = this.state
-    ReactGA.pageview(window.location.pathname + window.location.search);
+
     return (
       <div style={{ backgroundColor: "white", overflowX: 'hidden' }}>
         <Router>
