@@ -49,4 +49,5 @@ $('body').on('click', '.ea-tabs .nav-tabs a', function(){
 
 $(document).ready(function() {
     $("#homemap").attr("src","https://ulwazi.saeon.ac.za/");
+    console.log('ran')
 });
