@@ -34,10 +34,9 @@ class Header extends React.Component {
               <h1 style={{ textAlign: "center", letterSpacing: "2px", color: "#2e7d32" }}>
                 <b>NCCIS</b>
 
-                {/* BETA tag */}
-                {/* <sub style={{ fontSize: "18px", backgroundColor: "#78e26c", borderRadius: "5px", padding: "2px" }}>
+                <sub style={{ fontSize: "18px", backgroundColor: "#78e26c", borderRadius: "5px", padding: "2px" }}>
                   <i>BETA</i>
-                </sub> */}
+                </sub>
 
               </h1>
               <p></p>

@@ -74,7 +74,7 @@ img{
     border: 1px solid gainsboro;
     padding:10px;
 }
-.table-vul tr td.td-title{
+.table-vul tr td.td-title,.td-title{
     background:#616161;
     color:#fff;
 }

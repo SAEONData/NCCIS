@@ -14,7 +14,7 @@ class IconList extends React.Component {
         </a>
         </li>
         <li>
-        <a onClick={(event) => {event.preventDefault(); window.open("http://192.168.100.108/moodle/web/");}} title="Help and guidance" className="tooltip-ea tooltip-ea-r">
+        <a onClick={(event) => {event.preventDefault(); window.open("http://elearning.ccis.saeon.ac.za");}} title="Help and guidance" className="tooltip-ea tooltip-ea-r">
         <i className="fa fa-question-circle"></i>
         </a>
         </li>

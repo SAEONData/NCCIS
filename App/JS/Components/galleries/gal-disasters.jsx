@@ -11,10 +11,9 @@ import imgdddl from "../../../Images/Stats/dd-l.gif"
 import imgddm from "../../../Images/Stats/dd-m.gif"
 import imgddnc from "../../../Images/Stats/dd-nc.gif"
 import imgddnw from "../../../Images/Stats/dd-nw.gif"
-
+import imgddwc from "../../../Images/Stats/d-wc.gif"
 
 const images = [
-  imgddec,
   imgddec,
   imgddfs,
   imgddg,
@@ -22,7 +21,8 @@ const images = [
   imgdddl,
   imgddm,
   imgddnc,
-  imgddnw
+  imgddnw,
+  imgddwc
 ];
 
 class LightboxPage extends React.Component {
