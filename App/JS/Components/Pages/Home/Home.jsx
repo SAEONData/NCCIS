@@ -257,7 +257,15 @@ class Home extends React.Component {
 
     return (
       <>
-
+      <section className="ea-content dark-grey-bg-2">
+        <div className="container-fluid">
+        <div className="text-white pt-4 pb-4">
+        <p>Please note that you are accessing the Beta Version of NCCIS website, which is in the process of being tested before its official release on March 2020. The sole purpose of this BETA Version is to conduct testing and obtain feedback.</p>
+        <p>While every reasonable effort is made, SAEON does not give any warranties, whether express or implied, as to the suitability or usability of the website, or any of its content.</p>
+        <p>Should you encounter any bugs, lack of functionality or other problems on the beta website, please <a className="text-white" href="http://servicedesk.saeon.ac.za" target="_blank">submit a ticket</a></p>
+        </div>
+        </div>
+      </section>
        <section className="ea-content">
           <div className="container-fluid mt-4">
           <div className="row d-sm-none d-md-none d-lg-none">

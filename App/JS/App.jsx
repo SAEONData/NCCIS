@@ -39,6 +39,7 @@ import INFOtools from './Components/Pages/info-tools.jsx';
 import DOCprivacy from './Components/Pages/doc-privacy.jsx';
 import DOCdisclaimer from './Components/Pages/doc-disclaimer.jsx';
 import DOCconditions from './Components/Pages/doc-conditions.jsx';
+import eventnc6aug2019 from './Components/Pages/Events/event-nc6aug2019.jsx';
 import userManager from './components/authentication/userManager';
 import '../css/custom.css';
 import './custom';
@@ -176,6 +177,7 @@ class App extends React.Component {
                   <Route path="/doc-privacy" component={DOCprivacy} />
                   <Route path="/doc-disclaimer" component={DOCdisclaimer} />
                   <Route path="/doc-conditions" component={DOCconditions} />
+                  <Route path="/event-nc6aug2019" component={eventnc6aug2019} />
                   <Redirect to="/" />
                 </Switch>
               </div>

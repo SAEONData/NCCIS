@@ -1,5 +1,9 @@
 import React from 'react';
 import { MDBDataTable } from 'mdbreact';
+import doc_b1 from '../content/pdfs/SA_Nat_L-C_Dataset_Book1_highres.pdf'
+import doc_b2 from '../content/pdfs/SA_Nat_L-C_Dataset_Book2_highres.pdf'
+import doc_b3 from '../content/pdfs/SA_Nat_L-C_Dataset_Book3_highres.pdf'
+import doc_b4 from '../content/pdfs/SA_Nat_L-C_Dataset_Book4_highres.pdf'
 
 const TrackingData = () => {
   const data = {
@@ -188,28 +192,28 @@ const TrackingData = () => {
         name: "South African National Land-cover Dataset - Report",
         description: "Comparison of the 1990 and 2013/ 14 South African National Land-cover Datasets shows that there are significant land-cover- and land-use-specific changes evident at both the national and regional scale. These include changes such as a 67% increase in the mining footprint in Mpumalanga and a 220% national-level increase in centre pivot-irrigated field areas over the approximately 24-year period.",
         year: 2015,
-        link: [<button onClick={(event) => {event.preventDefault(); window.open("https://drive.google.com/open?id=1kHlHgj9bunF0aoPsxyP6thhDsRk8VE_e");}}>link</button>],
+        link: [<button onClick={(event) => {event.preventDefault(); window.open(doc_b1);}}>link</button>],
       },
       {
         type: "GHG inventory reports",
         name: "South African National Land-cover Dataset 2013/2014 - Report",
         description: "This report describes the 2013/ 14 South African National Land-cover Dataset produced by GTI as a commercial data product has been generated from digital, multi-seasonal Landsat 8 multi-spectral imagery, acquired between April 2013 and March 2014.",
         year: 2015,
-        link: [<button onClick={(event) => {event.preventDefault(); window.open("https://drive.google.com/open?id=1kt-UvbtNSTSkn971pEV0BE809A9VZDnJ");}}>link</button>],
+        link: [<button onClick={(event) => {event.preventDefault(); window.open(doc_b2);}}>link</button>],
       },
       {
         type: "GHG inventory reports",
         name: "South African National Land-cover Dataset 1990 - Report",
         description: "This report details the production of a 35-class National Land-cover Dataset for South Africa, circa 1990, generated primarily from multi-seasonal Landsat 5 imagery, acquired mainly between 1989 and 1991.",
         year: 2015,
-        link: [<button onClick={(event) => {event.preventDefault(); window.open("https://drive.google.com/open?id=1kDAe2BRlooWLnfQrjnWFfzcEf3DXJ50N");}}>link</button>],
+        link: [<button onClick={(event) => {event.preventDefault(); window.open(doc_b3);}}>link</button>],
       },
       {
         type: "GHG inventory reports",
         name: "South African National Land-cover Dataset 1990 to 2013/14 - Report",
         description: "An assessment of land-cover change has been undertaken using the 1990 and 2013/ 14 South African National Land- cover Datasets. In preparation for the land-cover change assessment, the original 35-class national land-cover datasets were reformated into the DEA-requested, simplified 17-class legend format to be used for land-cover change reporting.",
         year: 2015,
-        link: [<button onClick={(event) => {event.preventDefault(); window.open("https://drive.google.com/open?id=1kRZG6_n9m3usuXWD5wzCwGqXKptFNYTn");}}>link</button>],
+        link: [<button onClick={(event) => {event.preventDefault(); window.open(doc_b4);}}>link</button>],
       },
       {
         type: "GHG inventory reports",

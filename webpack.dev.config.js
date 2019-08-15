@@ -83,7 +83,7 @@ module.exports = {
       ]
     },
     {
-      test: /\.(pptx|zip)$/,
+      test: /\.(pptx|zip|pdf)$/,
       loader: "file-loader",
       options: {
         name: '[name].[ext]'
