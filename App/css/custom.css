@@ -60,6 +60,10 @@ h5{
 .text-link{
     text-decoration: underline;
 }
+.text-link-white,.text-link-white:hover{
+    text-decoration: underline;
+    color:#fff;
+}
 .text-white{
     color:#fff;
 }
