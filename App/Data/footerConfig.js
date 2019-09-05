@@ -1,6 +1,5 @@
 import DEA_Logo from '../images/DEA/environmental_affairs_logo_small.jpg'
 
-
 export const footerContent = {
   sections: [
     {

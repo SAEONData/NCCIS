@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 import { Fa, Row, Col, Button } from 'mdbreact'
 import { Drawer, Collapse } from 'antd'
 import { DEAGreen } from '../../config/colours.js'
-import environmental_affairs_logo from '../../../images/DEA/environmental_affairs_logo.png'
 
 import './SideNav.css'
 
@@ -28,8 +27,10 @@ class SideNav extends React.Component {
   constructor(props) {
     super(props)
 
-
+    this.renderLinks = this.renderLinks.bind(this)
     this.toggleNav = this.toggleNav.bind(this)
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+    this.showContent = this.showContent.bind(this);
 
     this.state = { navOpen: [], width: 0, height: 0, showContent: false, contentLink: "", contentTitle: "" }
   }
@@ -60,10 +61,76 @@ class SideNav extends React.Component {
     this.setState({ navOpen })
   }
 
+  renderLinks(data, level = 0) {
+    let links = []
+
+    data.forEach(x => {
+
+      if (typeof x.children !== 'undefined') {
+        links.push(
+          <Panel
+            key={"cat_" + x.id}
+            header={
+              <div className="nav-cat-head">
+                {x.text}
+              </div>
+            }
+            style={{
+              border: 0
+            }}
+          >
+            {this.renderLinks(x.children, level + 1)}
+          </Panel>
+        )
+      }
+      else {
+        if (typeof x.link !== 'undefined') {
+          links.push(
+            <div key={"lnk_" + x.id} style={{ marginLeft: 20 }}>
+              <a
+                onClick={() => {
+                  this.showContent(x.link, x.text, x.window)
+                }}
+              >
+                <Fa style={{ marginRight: "10px" }} icon="link" />
+                <span style={{ fontSize: "15px" }}>{x.text}</span>
+              </a>
+            </div>
+          )
+        }
+        else {
+          links.push(
+            <div key={"lnk_" + x.id} style={{ marginLeft: 20 }}>
+              <a
+                onClick={() => {
+                  this.showContent(x.link, x.text, x.window)
+                }}
+              >
+                <Fa style={{ marginRight: "10px" }} icon="unlink" />
+                <span style={{ fontSize: "15px" }}>{x.text}</span>
+              </a>
+            </div>
+          )
+        }
+      }
+    })
+
+    return links
+  }
+
   closeModal() {
     this.setState({ showContent: false, contentLink: "" })
   }
 
+  showContent(link, title, window) {
+    if (window === 'blank') {
+      var win = open(link, '_blank');
+      win.focus();
+    }
+    else {
+      this.setState({ showContent: true, contentLink: link, contentTitle: title })
+    }
+  }
 
   render() {
 
@@ -82,80 +149,91 @@ class SideNav extends React.Component {
           width={sideNavWidth}
           bodyStyle={{ paddingLeft: 0, paddingRight: 0, overflowX: 'hidden' }}
         >
-<img
-  onClick={() => window.open("http://www.environment.gov.za/")}
-  src={environmental_affairs_logo}
-  style={{
-    height: 80,
-    marginLeft: 5,
-    cursor: "pointer"
-  }}
-  className="pl-3 pt-3"
-  align="center"
-/>
-<hr className="mt-4 mb-4" />
-<ul class="ea-side-nav pl-3 pr-3">
-    <li>
-
-        <div className="ea-parent">
-            <span>Climate Information Centre</span>
-            <ul className="ea-child">
-                <li><a onClick={()=> { location.hash = "ComingSoon", this.props.toggleSideNav(false) }}>GHG Emissions Database</a></li>
-                <li><a onClick={()=> { location.hash = "ComingSoon", this.props.toggleSideNav(false) }}>Trends</a></li>
-                <li><a onClick={()=> { location.hash = "ComingSoon", this.props.toggleSideNav(false) }}>Projections</a></li>
-                <li><a onClick={()=> { location.hash = "ComingSoon", this.props.toggleSideNav(false) }}>Impacts</a></li>
-            </ul>
-        </div>
-    </li>
-    <li>
-        <div className="ea-parent">
-            <span>Climate Resources</span>
-            <ul className="ea-child">
-                <li><a onClick={()=> { location.hash = "ComingSoon", this.props.toggleSideNav(false) }}>Technology Needs Assessment</a></li>
-                <li><a onClick={()=> { location.hash = "ComingSoon", this.props.toggleSideNav(false) }}>Climate Finance</a></li>
-                <li><a onClick={()=> { location.hash = "ComingSoon", this.props.toggleSideNav(false) }}>Technical Assistance</a></li>
-            </ul>
-        </div>
-    </li>
-    <li>
-    <a onClick={()=> { location.hash = "ComingSoon", this.props.toggleSideNav(false) }}>Governement Response</a>
-    </li>
-    <li>
-        <div className="ea-parent">
-            <span>Submit a climate change response project</span>
-            <ul className="ea-child">
-                <li><a onClick={()=> { location.hash = "ComingSoon", this.props.toggleSideNav(false) }}>NCCRD (Portal link)</a></li>
-            </ul>
-        </div>
-    </li>
-    <li>
-        <div className="ea-parent">
-            <span>Design a climate change plan</span>
-            <ul className="ea-child">
-                <li><a onClick={()=> { location.hash = "ComingSoon", this.props.toggleSideNav(false) }}>Risk and Vulnerability Assessment</a></li>
-                <li><a onClick={()=> { location.hash = "ComingSoon", this.props.toggleSideNav(false) }}>Stakeholder Engagement</a></li>
-                <li><a onClick={()=> { location.hash = "ComingSoon", this.props.toggleSideNav(false) }}>Planning Integration</a></li>
-            </ul>
-        </div>
-    </li>
-    <li>
-        <div className="ea-parent">
-            <span>Evaluate a climate change plan</span>
-            <ul className="ea-child">
-                <li><a onClick={()=> { location.hash = "ComingSoon", this.props.toggleSideNav(false) }}>Adaptation | DAO</a></li>
-                <li><a onClick={()=> { location.hash = "ComingSoon", this.props.toggleSideNav(false) }}>Mitigation</a></li>
-                <li><a onClick={()=> { location.hash = "ComingSoon", this.props.toggleSideNav(false) }}>Indicators</a></li>
-                <li><a onClick={()=> { location.hash = "ComingSoon", this.props.toggleSideNav(false) }}>SDGs</a></li>
-                <li><a onClick={()=> { location.hash = "ComingSoon", this.props.toggleSideNav(false) }}>T&E System</a></li>
-                <li><a onClick={()=> { location.hash = "ComingSoon", this.props.toggleSideNav(false) }}>Other Indicators and Policy</a></li>
-            </ul>
-        </div>
-    </li>
-    <li>
-    <a onClick={()=> { location.hash = "ComingSoon", this.props.toggleSideNav(false) }}>Review Report</a>
-    </li>
-</ul>
-<hr className="mt-4" />
+          <Row>
+            <Col>
+              {/* Header image */}
+              <div className="text-center" style={{ color: "black", marginBottom: "-5px" }}>
+                {data.logoTop &&
+                  <img src={data.logoTop.src} style={{ width: data.logoTop.width, marginTop: "15px" }} />
+                }
+              </div>
+            </Col>
+          </Row>
+          <hr />
+          <Row>
+            <Col>
+              {/* Header text */}
+              <h4 style={{ color: "black", marginBottom: "-5px", textAlign: "center" }}>
+                {data.title}
+              </h4>
+            </Col>
+          </Row>
+          <hr />
+          <Row>
+            <Col>
+              <table>
+                <tbody>
+                  <tr>
+                    <td width="100%">
+                      {/* Links */}
+                      <Collapse accordion bordered={false} defaultActiveKey={['cat_1']}>
+                        {this.renderLinks(data.nav)}
+                      </Collapse>
+                    </td>
+                    <td>
+                      <Button
+                        className="nav-close-handle"
+                        onClick={() => this.props.toggleSideNav(false)}
+                        color=""
+                        style={{ backgroundColor: DEAGreen }}
+                      >
+                        <Fa
+                          size="2x"
+                          icon="caret-left"
+                        />
+                      </Button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </Col>
+          </Row>
+          <hr />
+          <Row>
+            <Col>
+              {/* Footer image */}
+              <div className="text-center">
+                {data.logoBottom &&
+                  <img src={data.logoBottom.src} style={{ width: data.logoBottom.width }} />
+                }
+              </div>
+            </Col>
+          </Row>
+          <Drawer
+            title={
+              <a style={{ fontSize: 24, fontWeight: 500, color: DEAGreen }} onClick={() => this.closeModal()}>
+                <Fa icon="chevron-circle-left" style={{ marginRight: 10 }} />
+                {contentTitle}
+              </a>
+            }
+            placement="left"
+            width={width < 1250 ? "100vw" : "80vw"}
+            closable={true}
+            onClose={() => this.closeModal()}
+            visible={showContent}
+            bodyStyle={{ padding: 1, overflowX: 'hidden' }}
+          >
+            <iframe
+              id="sidenav-content"
+              style={{
+                padding: 0,
+                width: "100%",
+                height: "90vh",
+                border: "none",
+              }}
+              src={contentLink}
+            />
+          </Drawer>
         </Drawer>
       </>
     )
