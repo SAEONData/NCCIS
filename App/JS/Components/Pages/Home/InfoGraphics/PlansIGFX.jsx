@@ -38,32 +38,21 @@ class PlansIGFX extends React.Component {
     let value = this.processData(data, year)
 
     return (
-      <div style={{ 
-        border: "1px solid gainsboro", 
-        borderRadius: "10px", 
-        padding: "10px", 
-        textAlign: "center", 
-        wordWrap: "break-word",
-        backgroundColor: "white"
-      }}>
-
-        <img
-          src={plans}
-          style={{
-            height: "55px",
-            marginBottom: "15px"
-          }}
-        />
-
-        <h6 style={{ marginBottom: "15px", fontWeight: "bolder", minHeight: "90px" }}>
-          Total number of DAO reports submitted
-        </h6>
-
-        <h5 style={{ fontWeight: "bold" }}>
-          {value}
-        </h5>
-
-      </div>
+      <div className="border-light-radius light-bg h-100 text-center d-flex align-items-center">
+      <div className="pl-2 pr-2 pt-3 pb-3">
+      <img
+        src={plans}
+        className="pb-3"
+        style={{height:'55px'}}
+      />
+      <h6 className="pt-3 pb-3">
+        Total number of DAO reports submitted
+      </h6>
+      <h5>
+        {value}
+      </h5>
+    </div>
+    </div>
     )
   }
 }
