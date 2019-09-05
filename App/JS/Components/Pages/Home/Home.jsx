@@ -9,8 +9,18 @@ import PlansIGFX from './InfoGraphics/PlansIGFX.jsx'
 import GovernmentsIGFX from './InfoGraphics/GovernmentsIGFX.jsx'
 import GHGReductionIGFX from './InfoGraphics/GHGReductionIGFX.jsx'
 import SectorsIGFX from './InfoGraphics/SectorsIGFX.jsx'
-import About from './../About.jsx'
-import Carousel from './Carousel.jsx'
+import IconList from '../../Iconlist/index.jsx';
+
+// import Carousel from './Carousel.jsx'
+
+
+// Images
+import home_map_1 from '../../../../Images/Maps/home/1.gif'
+import home_map_2 from '../../../../Images/Maps/home/2.gif'
+import home_map_3 from '../../../../Images/Maps/home/3.gif'
+import home_map_4 from '../../../../Images/Maps/home/4.gif'
+import home_map_5 from '../../../../Images/Maps/home/5.gif'
+
 
 const mapStateToProps = (state, props) => {
   return {}
@@ -247,18 +257,65 @@ class Home extends React.Component {
 
     return (
       <>
-
-        <div style={{ margin: "-15px -15px 0 -15px", position: 'relative', zIndex: 2 }}>
-          <Carousel />
+      <section className="ea-content dark-grey-bg-2">
+        <div className="container-fluid">
+        <div className="text-white pt-4 pb-3">
+        <p>Please note that you are accessing the Beta Version of NCCIS website, which is in the process of being tested before its official release on March 2020. The sole purpose of this BETA Version is to conduct testing and obtain feedback.</p>
+        <p>Should you encounter any bugs, lack of functionality or other problems on the beta website, please <u className="supportToggle">submit a ticket here</u></p>
         </div>
+        </div>
+      </section>
+       <section className="ea-content">
+          <div className="container-fluid mt-4">
+          <div className="row d-sm-none d-md-none d-lg-none">
+            <div className="col-6"><h5>Actions</h5></div>
+            <div className="col-6">
+              <IconList></IconList>
+            </div>
+          </div>
+          <Row>
+          <Col md="auto"><button type="button" className="btn btn-success btn-lg" onClick={() => { location = "https://ccis.environment.gov.za/nccrd/#/" }}>
+            <em className="fa fa-pencil-square-o mr-1"></em> Submit a climate change response project</button></Col>
+          <Col md="auto"><button type="button" className="btn btn-disabled btn-lg" disabled >
+            <em className="fa fa-pencil-square-o mr-1"></em> Design a climate change plan</button></Col>
+          <Col md="auto"><button type="button" className="btn btn-success btn-lg" onClick={() => { location = "https://ccis.environment.gov.za/ndao/#/" }}>
+            <em className="fa fa-pencil-square-o mr-1"></em> Evaluate a climate change plan</button></Col>
+          <Col md="auto"><button type="button" className="btn btn-disabled btn-lg" disabled>
+            <em className="fa fa-pencil-square-o mr-1"></em> Review Report</button></Col>
+          </Row>
+          </div>
+          </section>
+          
+          {/* <Carousel /> */}
+       
 
-        <div style={{ padding: "0px 15px 15px 15px", borderRadius: "10px" }}>
-          <div style={{
-            marginTop: "15px",
-            marginBottom: "15px",
-            paddingTop: "15px",
-            borderTop: "1px solid gainsboro",
-          }}>
+        
+
+        <section className="ea-content">
+          <div className="container-fluid mt-4">
+          <Row className="home-map">
+            <div className="col-3 pb-1 text-center">
+              <div className="round-edge green-bg pl-3 pr-3 pt-4 ml-n2 h-100 d-table">
+                <div className="d-table-row"><h4 className="pt-4 mb-4">Climate Change Information System</h4></div>
+                <div className="m-auto">
+                <p>The CCIS is part of the national effort to track South Africa's overall transition to a low carbon and climate resilient economy by offering a series of decision support tools to inform policy and decision-making.</p>
+                <p>The system monitors and evaluates climate change drivers, events, links to national objectives, targets and strategies in respect of climate change mitigation and adaptation monitoring and assessment of actions taken by stakeholders.</p>
+              </div></div>
+            </div>
+            <div className="col-9">
+                <iframe src="" id="homemap" class="ea-map-frame round-edge" ></iframe>
+            </div>
+          </Row>
+          
+          </div>
+        </section>
+
+        
+
+       
+          <section className="mt-4 mb-4 ea-content">
+            <div className="container-fluid">
+              <h5 className="pb-3">Facts and Figures</h5>
             <Row>
               <Col>
                 <FundingIGFX data={goalDataUnfiltered} year={filterYear} />
@@ -276,24 +333,45 @@ class Home extends React.Component {
                 <SectorsIGFX data={goalDataUnfiltered} year={filterYear} />
               </Col>
             </Row>
-          </div>
+            </div>
+          </section>
 
-          <div style={{
-            marginTop: "15px",
-            marginBottom: "15px",
-            paddingTop: "15px",
-            paddingBottom: "15px",
-            borderTop: "1px solid gainsboro",
-            borderBottom: "1px solid gainsboro"
-          }}>
+          <section className="ea-home-maps ea-content light-bg pt-5 pb-5">
+            <div className="container-fluid">
+            <h5 className="pb-3">Maps and Data</h5>
             <Row>
               <Col>
-                <About />
+                <a className="border-light-radius d-block text-dark">
+                <img src={home_map_1} />
+                <h5>Air Quality</h5></a>
               </Col>
+              <Col>
+                <a className="border-light-radius d-block text-dark">
+                <img src={home_map_2} />
+                <h5>Impacts</h5></a>
+              </Col>
+              <Col>
+                <a className="border-light-radius d-block text-dark">
+                <img src={home_map_4} />
+                <h5>Disastrous Events</h5></a>
+              </Col>
+              <Col>
+                <a className="border-light-radius d-block text-dark">
+                <img src={home_map_3} />
+                <h5>Climate Change Projections</h5></a>
+              </Col>
+              <Col>
+                <a className="border-light-radius d-block text-dark">
+                <img src={home_map_5} />
+                <h5>Historical Climate Trends</h5></a>
+              </Col>
+              
+              
             </Row>
-          </div>
+            </div>
+          </section>
 
-        </div>
+
       </>
     )
   }
