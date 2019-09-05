@@ -1,6 +1,6 @@
 import React from 'react'
-import { Col, Row, Container } from 'mdbreact';
-import { DEAGreen, DEAGreenDark } from '../../config/colours.js'
+import { Col, Row } from 'mdbreact';
+
 
 //Images
 import environmental_affairs_logo from '../../../images/DEA/environmental_affairs_logo.png'
@@ -10,10 +10,13 @@ class Header extends React.Component {
 
   constructor(props) {
     super(props);
+
   }
+ 
   render() {
 
     return (
+      <>
       <div style={{ backgroundColor: "white" }}>
         <Row className="align-items-center" style={{ /*marginBottom: "15px",*/ height: 100 }}>
           <Col md="2" className="d-none d-md-block">
@@ -57,9 +60,32 @@ class Header extends React.Component {
             />
           </Col>
         </Row>
+        <div>
+
+                  <div className="modal fade" id="supportform" aria-hidden="true">
+                    <div className="modal-dialog" role="document">
+                      <div className="modal-content">
+                        <div className="modal-header">
+                          <h5 className="modal-title" id="exampleModalLabel">Support Form</h5>
+                          <button type="button" className="close supportToggle" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div className="modal-body">
+                          <iframe className="supportFrame" src="https://ccis.environment.gov.za/support.html" />
+                        </div>
+                        <div className="modal-footer">
+                          <button type="button" className="btn btn-success supportToggle" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        </div>
       </div>
+      </>
     )
   }
+
 }
 
 export default Header

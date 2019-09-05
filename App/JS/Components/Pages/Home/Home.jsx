@@ -261,7 +261,7 @@ class Home extends React.Component {
         <div className="container-fluid">
         <div className="text-white pt-4 pb-3">
         <p>Please note that you are accessing the Beta Version of NCCIS website, which is in the process of being tested before its official release on March 2020. The sole purpose of this BETA Version is to conduct testing and obtain feedback.</p>
-        <p>Should you encounter any bugs, lack of functionality or other problems on the beta website, please <a className="text-white" href="http://servicedesk.saeon.ac.za" target="_blank" className="text-link-white">submit a ticket here</a></p>
+        <p>Should you encounter any bugs, lack of functionality or other problems on the beta website, please <u className="supportToggle">submit a ticket here</u></p>
         </div>
         </div>
       </section>
