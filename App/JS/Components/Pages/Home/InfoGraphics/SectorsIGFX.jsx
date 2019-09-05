@@ -71,20 +71,32 @@ class SectorsIGFX extends React.Component {
     let value = this.processData(data, year)
 
     return (
-      <div className="border-light-radius light-bg h-100 text-center d-flex align-items-center">
-        <div className="pl-2 pr-2 pt-3 pb-3 m-auto">
+      <div style={{ 
+        border: "1px solid gainsboro", 
+        borderRadius: "10px", 
+        padding: "10px", 
+        textAlign: "center", 
+        wordWrap: "break-word",
+        backgroundColor: "white"
+      }}>
+
         <img
           src={sectors}
-          className="pb-3"
-          style={{height:'55px'}}
+          style={{
+            height: "55px",
+            marginBottom: "15px"
+          }}
         />
-        <h6 className="pt-3 pb-3">
+
+        <h6 style={{ marginBottom: "15px", fontWeight: "bolder", minHeight: "90px" }}>
           Total number of sectors that have contributed data
         </h6>
-        <h5>
+
+        <h5 style={{ fontWeight: "bold" }}>
+          {/* 4 of 10 */}
           {value}
         </h5>
-      </div>
+
       </div>
     )
   }
