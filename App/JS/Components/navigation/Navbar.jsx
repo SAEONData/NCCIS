@@ -4,15 +4,18 @@ import { Button, Collapse, Dropdown, DropdownItem, DropdownMenu, DropdownToggle,
 import React from 'react';
 import { connect } from 'react-redux';
 import { DEAGreen } from "../../config/colours.js";
-import { ssoBaseURL } from '../../../js/config/serviceURLs.js';
+import { ssoBaseURL, ccrdSiteBaseURL, ndaoSiteBaseURL } from '../../../js/config/serviceURLs.js';
 import DASL from '../pages/Tools/DASL.jsx';
 import NDMC from '../pages/Tools/NDMC.jsx';
 import LRT from '../pages/Tools/LRT.jsx';
 import NCCRD from '../pages/Tools/NCCRD.jsx';
 import NWIS from '../pages/Tools/NWIS.jsx';
 import SARVA from '../pages/Tools/SARVA.jsx';
-import { data as NavData } from '../../../data/sideNavData'
-// import ComingSoon from '../pages/home/ComingSoon.jsx'
+import { data as NavData } from '../../../data/sideNavData';
+import IconList from '../Iconlist/index.jsx'
+import EASearch from '../search/search.jsx';
+
+
 
 const _gf = require('../../globalFunctions')
 
@@ -105,194 +108,112 @@ class Navbar extends React.Component {
                   <Fa icon="bars" />
                 </Button>
               }
-
-              <NavItem >
-                <NavLink to='/'><b>Home</b></NavLink>
-              </NavItem>
-
-              <NavItem >
-                <NavLink to='/ComingSoon'><b>GHG Emissions</b></NavLink>
-              </NavItem>
-
-              {/* Climate Change */}
               <NavItem>
+                <Button size="sm" onClick={() => { location.hash = "/" }}
+                  style={{ 
+                    width: "45px", marginLeft: "0px", marginRight: "0px", paddingLeft: "18px", float: "left",
+                    color: "#000",
+                    boxShadow: "none",
+                    fontSize: "20px",
+                    padding: "0"
+                    }}>
+                  <Fa icon="home" />
+                </Button>
+              </NavItem>
+              <NavItem>
+                
                 <Dropdown>
-                  <DropdownToggle nav caret style={{ color: "black" }}>
-                    <b>Climate Change</b>
+                  <DropdownToggle nav caret>
+                    <b>Climate Information Centre</b>
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem header style={{ marginLeft: "-16px", fontWeight: "400", fontSize: "16px", color: "black" }}>
-                      Climate Trends
+                  <DropdownItem onClick={() => { location.hash = "cic" }}>
+                    What causes climate change?
                     </DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
-                      Historical Observations
+                    <hr style={{ marginTop: "0px"}} />
+                    <DropdownItem onClick={() => { location.hash = "cic-ghg" }}>
+                      GHG Emissions Database
                     </DropdownItem>
-                    <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
+                    <DropdownItem onClick={() => { location.hash = "cic-trends" }}>
+                      Trends
+                    </DropdownItem>
+                    <DropdownItem onClick={() => { location.hash = "cic-projections" }}>
                       Projections
                     </DropdownItem>
+                    <DropdownItem onClick={() => { location.hash = "cic-vulnerability" }}>
+                      Vulnerability
+                    </DropdownItem>
+                    <DropdownItem onClick={() => { location.hash = "cic-extreme" }}>
+                      Extreme Weather Events and Disasters
+                    </DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
               </NavItem>
 
-              {/* Disaster Man*/}
               <NavItem>
                 <Dropdown>
-                  <DropdownToggle nav caret style={{ color: "black" }}>
-                    <b>Disaster Management</b>
+                  <DropdownToggle nav caret>
+                    <b>Financing Climate Change</b>
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem onClick={() => { window.open("https://gis-portal.ndmc.gov.za/portal/home/index.html ", "_blank") }}>
-                      Disaster Trends
+
+                    <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
+                    Technology Needs Assessment
+                    </DropdownItem>
+                    <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
+                    Financing
+                    </DropdownItem>
+                    <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
+                    Technical Assistance
                     </DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
               </NavItem>
 
-              {/* Resp Climate Change*/}
+              {/* Resources */}
+              <NavItem>
+              <NavLink to="/cic-ghg">
+                <b>Tracking &#38; Evaluation Portal</b>
+              </NavLink>
+              </NavItem>
+              
               <NavItem>
                 <Dropdown>
-                  <DropdownToggle nav caret style={{ color: "black" }}>
-                    <b>Responding to Climate Change</b>
+                  <DropdownToggle nav caret>
+                    <b>Resources</b>
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem onClick={() => { window.open("http://app01.saeon.ac.za/ndaotestsite/#/ ", "_blank") }}>
-                      National Desired Adaptation Outcomes
+                    <DropdownItem onClick={() => { location.hash = "/info-glossary" }}>
+                    Glossary
                     </DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem onClick={() => { window.open("http://app01.saeon.ac.za/nccrdtestsite/#/ ", "_blank") /*this.setState({ showNCCRD: true })*/ }}>
-                      National Climate Change Response Database
-                    </DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem onClick={() => { window.open("http://app01.saeon.ac.za/ndaotestsite/#/ ", "_blank") }}>
-                      Tracking and Evaluation System
-                    </DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
-                      Reports and Publications
-                      <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
-                        Strategic Documents
-                      </DropdownItem>
-                      <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
-                        Research
-                      </DropdownItem>
-                      <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
-                        Legislation
-                      </DropdownItem>
-                      <DropdownItem>
-                        Reports
-                        <DropdownItem onClick={() => { window.open("https://unfccc.int/sites/default/files/resource/South%20African%20TNC%20Report%20%20to%20the%20UNFCCC_31%20Aug.pdf", "_blank") }}>
-                          Third National Communication to UNFCCC
-                        </DropdownItem>
-                        <DropdownItem onClick={() => { window.open("https://www.environment.gov.za/sites/default/files/docs/SAdraft3rdbiennialupdatereport_unnfccc2018.pdf", "_blank") }}>
-                          Third National Communication to UNFCCC
-                        </DropdownItem>
-                      </DropdownItem>
-                    </DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
-                      Technology Needs Assessment
-                      </DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem onClick={() => { window.open("http://www.letsrespondtoolkit.org/", "_blank") }}>
-                      Let's Respond Toolkit
-                      </DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
-                      Climate Finance
-                      </DropdownItem>
-                  </DropdownMenu>
-                </Dropdown>
-              </NavItem>
-              <NavItem >
-                <NavLink to='/ComingSoon'><b>Events and News</b></NavLink>
-              </NavItem>
-              <NavItem >
-                <a style={{ color: '#212529', marginLeft: '10px', lineHeight: '40px', fontSize: '16px' }} href="http://sarva2.dirisa.org/"><b>Risk and Vulnerability</b></a>
-              </NavItem>
-
-              {/* 
-              <DropdownItem onClick={() => { window.open("https://unfccc.int/sites/default/files/resource/South%20African%20TNC%20Report%20%20to%20the%20UNFCCC_31%20Aug.pdf", "_blank") }}>
-                      Third National Communication to UNFCCC
-                    </DropdownItem> */}
-
-              {/* Adaptation */}
-              {/* <NavItem>
-                <Dropdown>
-                  <DropdownToggle nav caret style={{ color: "black" }}><b>Adaptation M&amp;E</b></DropdownToggle>
-                  <DropdownMenu>
-                    <DropdownItem href="#/ame">
-                      <b>
-                        Climate Change Adaptation&nbsp;
-                        <br className="d-block d-md-none" />
-                        Monitoring and Evaluation
-                      </b>
-                    </DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem header style={{ marginLeft: "-16px", fontWeight: "400", fontSize: "16px", color: "black" }}>
-                      Impacts:
-                    </DropdownItem>
-                    <DropdownItem href="#" disabled style={{ marginLeft: "7px" }}>
-                      <b style={{ color: "grey" }}>Climatic</b>
-                    </DropdownItem>
-                    <DropdownItem href="#" disabled style={{ marginLeft: "7px" }}>
-                      <b style={{ color: "grey" }}>Non Climatic</b>
-                    </DropdownItem>
-                    <DropdownItem href="#" disabled style={{ marginLeft: "7px" }}>
-                      <b style={{ color: "grey" }}>Combined Climatic &amp; Non-Climatic</b>
-                    </DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem href="#" disabled>
-                      <b style={{ color: "grey" }}>Impact Early Warning</b>
-                    </DropdownItem>
-                    <DropdownItem href="#" disabled>
-                      <b style={{ color: "grey" }}>
-                        Assessing The Effectiveness Of&nbsp;
-                        <br className="d-block d-md-none" />
-                        Adaptation Responses
-                      </b>
+                    <DropdownItem onClick={() => { location.hash = "/info-documents" }}>
+                    Documents
                     </DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
-              </NavItem> */}
+              </NavItem>
 
               {/* Tools */}
-              {/* <NavItem>
-                <Dropdown>
-                  <DropdownToggle nav caret style={{ color: "black" }}><b>Tools</b></DropdownToggle>
-                  <DropdownMenu>
-                    <DropdownItem onClick={() => { window.open("https://south-africa-platform.vizzuality.com/ ", "_blank") }}>
-                      Biennial Update Report (BUR)
-                    </DropdownItem>
-                    <DropdownItem onClick={() => { window.open("https://www.dwa.gov.za/Hydrology/Weekly/Province.aspx", "_blank") }}>
-                      Dam And Stream Levels
-                    </DropdownItem>
-                    <DropdownItem onClick={() => { window.open("http://www.letsrespondtoolkit.org/", "_blank") }}>
-                      Lets Respond Toolkit
-                    </DropdownItem>
-                    <DropdownItem onClick={() => { this.setState({ showNCCRD: true }) }}>
-                      National Climate Change Response Database
-                    </DropdownItem>
-                    <DropdownItem onClick={() => { this.setState({ showNDMC: true }) }}>
-                      National Hazardous Events Database
-                    </DropdownItem>
-                    <DropdownItem onClick={() => { window.open("http://niwis.dws.gov.za/niwis2/", "_blank") }}>
-                      National Water Information System
-                    </DropdownItem>
-                    <DropdownItem onClick={() => { this.setState({ showSARVA: true }) }}>
-                      Risk And Vulnerability Hotspots
-                    </DropdownItem>
-                  </DropdownMenu>
-                </Dropdown>
-              </NavItem> */}
+              <NavItem>
+                <NavLink to="/info-tools">
+                <b>Tools</b>
+                </NavLink>
+              </NavItem>
 
             </NavbarNav>
-
-            <hr className="d-block d-md-none" />
-
             {/* RIGHT */}
             <NavbarNav right>
-
+              <NavItem>
+                <EASearch />
+              </NavItem>
+              <NavItem>
+                <NavLink to="/about">
+                <b>About</b>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <IconList></IconList>
+              </NavItem>
               {/* Username */}
               {(user && !user.expired) &&
                 <NavItem style={{ marginRight: "15px" }}>
@@ -332,20 +253,20 @@ class Navbar extends React.Component {
 
           </Collapse>
 
-          {showDASL && <DASL closeCallback={() => { this.setState({ showDASL: false }) }} />}
-          {showLRT && <LRT closeCallback={() => { this.setState({ showLRT: false }) }} />}
+          {/* {showDASL && <DASL closeCallback={() => { this.setState({ showDASL: false }) }} />}
+          {showLRT && <LRT closeCallback={() => { this.setState({ showLRT: false }) }} />} */}
 
           {
             showNCCRD &&
             <NCCRD
               query={`?navbar=hidden&daoid=hidden&readonly=true&popin=hidden`}
-              closeCallback={() => { this.setState({ showNCCRD: false }) }}
+              // closeCallback={() => { this.setState({ showNCCRD: false }) }}
             />
           }
 
-          {showNWIS && <NWIS closeCallback={() => { this.setState({ showNWIS: false }) }} />}
+          {/* {showNWIS && <NWIS closeCallback={() => { this.setState({ showNWIS: false }) }} />}
           {showSARVA && <SARVA closeCallback={() => { this.setState({ showSARVA: false }) }} />}
-          {showNDMC && <NDMC closeCallback={() => { this.setState({ showNDMC: false }) }} />}
+          {showNDMC && <NDMC closeCallback={() => { this.setState({ showNDMC: false }) }} />} */}
 
         </MDBNavbar >
 
