@@ -48,7 +48,7 @@ $('body').on('click', '.ea-tabs .nav-tabs a', function(){
 });
 
 $(document).ready(function() {
-    $("#homemap").attr("src","https://ulwazi.saeon.ac.za/");
+    $("#homemap").attr("src","https://map-ccis.saeon.ac.za/");
     $("body").on("click", ".supportToggle", function(){
         console.log('taryn')
         $("#supportform").toggleClass('show');
