@@ -1,5 +1,7 @@
 import React from 'react';
 import { MDBDataTable } from 'mdbreact';
+import NCCRD_Training_Manual_V1 from '../content/pdfs/NCCRD_Training_Manual_V1.pdf';
+import NDAO_Training_Manual_V1 from '../content/pdfs/NDAO_Training_Manual_V1.pdf';
 
 const ToolsData = () => {
   const data = {
@@ -30,6 +32,18 @@ const ToolsData = () => {
       }
     ],
     rows: [
+      {
+        type: "Training material",
+        title: "NCCRD Training Manual V1",
+        description: "This user manual was designed to walk users through the National Climate Change. Response Database and was intended as a resource to inform anyone currently working on climate change adaptation or mitigation on how to add these projects to the NCCRD.",
+        link: [<a className="dataLink" href={NCCRD_Training_Manual_V1} target="_blank">link</a>]
+      },
+      {
+        type: "Training material",
+        title: "NCCRD Training Manual V1",
+        description: "This user manual was designed to walk users through the National Desired Adaptation Outcome Questionnaire and is intended as a resource to inform anyone interested in evaluating their climate change adaptation approach of DEAs current monitoring and evaluation approach and to submit an evaluation questionnaire to DEA.",
+        link: [<a className="dataLink" href={NDAO_Training_Manual_V1} target="_blank">link</a>]
+      },
       {
         type: "Adaptation",
         title: "GreenBook",

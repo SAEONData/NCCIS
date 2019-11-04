@@ -61,11 +61,15 @@ class CICtrends extends React.Component {
               <p>Associated increases in the annual number of hot days have also occurred, but there have been decreases in the annual number of cold nights over most of the country. </p>
               <p>There is strong evidence of statistically significant increases in rainfall occurring over the southern interior regions, extending from the western interior of the Eastern Cape and eastern interior of the Western Cape northwards into the central interior region of the Northern Cape, over the period 1921-2015. </p>
               <p>South Africa's 3rd National Communication to the UNFCCC, provides an updated analysis of trends in temperature, rainfall and extreme events.</p>
+              <p>Extreme indices developed by the World Meteorological Organization (WMO) Expert Team on Climate Change Detection and Indices (ETCCDI) were utilised. The analysis builds on the studies of Kruger & Sekele (2012) and Mackellar et al. (2014).</p>
             </div>
             <div className="col-6">
-              <p>Extreme indices developed by the World Meteorological Organization (WMO) Expert Team on Climate Change Detection and Indices (ETCCDI) were utilised. The analysis builds on the studies of Kruger & Sekele (2012) and Mackellar et al. (2014).</p>
               <p>A total of 27 weather stations was used for temperature trends analysis spanning the period 1931-2015. For rainfall, a total of 60 weather stations were used for the rainfall trend analysis spanning the period 1921-2015. The base period, from which the annual index values of all indices are determined (except the annual maxima and minima) was selected as 1981 – 2010, which can be considered to be the present general norm for similar trend studies.</p>
               <p>The trends were tested for significance at the 95% confidence level. In each map the arrows indicate the direction of change (increasing or decreasing), and the size of the arrows the magnitude of change.  Shaded symbols indicate significant trends at the 5% level. </p>
+              <div className="credit-bg">
+              <p>Chapter 3 (Engelbrecht et al. 2018) of <a href="https://unfccc.int/sites/default/files/resource/South%20African%20TNC%20Report%20%20to%20the%20UNFCCC_31%20Aug.pdf" target="_blank">South Africa's 3rd National Communication to the UNFCCC</a>, provides an updated analysis of trends in temperature, rainfall and extreme events.</p>
+              Extreme indices developed by the World Meteorological Organization (WMO) Expert Team on Climate Change Detection and Indices (ETCCDI) were utilised. The analysis builds on the studies of <a href="https://rmets.onlinelibrary.wiley.com/doi/10.1002/joc.3455" target="_blank">Kruger & Sekele (2012)</a> and <a href="https://www.sajs.co.za/article/view/3952" target="_blank">Mackellar et al. (2014)</a>.
+              </div>
             </div>
           </div>
  <Carousel />

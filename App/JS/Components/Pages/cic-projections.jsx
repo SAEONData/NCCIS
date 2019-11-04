@@ -60,11 +60,10 @@ class CICprojections extends React.Component {
           <div className="container-fluid">
           <div className="row mb-3">
             <div className="col-12">
-              <p>Content written by Claire Davis-Reddy and based on Chapter 3 of South Africa’s Third National Communication to the UNFCCC (<a href="https://unfccc.int/sites/default/files/resource/South%20African%20TNC%20Report%20%20to%20the%20UNFCCC_31%20Aug.pdf" target="_blank">link to Report</a>)</p>
-              <p>In South Africa, significant progress has been made in projecting and understanding climate change for the region, providing an increasingly robust basis for strategy and policy development. The content presented here draws on recent subsets of future climate projections for the country:</p>
+              <p>In South Africa, significant progress has been made in projecting and understanding climate change for the region, providing an increasingly robust basis for strategy and policy development. The content presented here based on the information in Chapter 3 (Engelbrecht et al. 2018) of <a href="https://unfccc.int/sites/default/files/resource/South%20African%20TNC%20Report%20%20to%20the%20UNFCCC_31%20Aug.pdf" target="_blank">South Africa's Third National Communication to the UNFCCC</a> and draws on recent subsets of future climate projections for the country:</p>
               <ul>
                 <li>Dynamically downscaled temperature and rainfall projections from the CSIR (NRE); and</li>
-                <li>Statistically downscaled models from CSAG available from the Climate Information Portal, <a href="cip.csag.uct.ac.za" target="_blank">cip.csag.uct.ac.za</a></li>
+                <li>Statistically downscaled models from CSAG available from the <a href="cip.csag.uct.ac.za" target="_blank">Climate Information Portal</a></li>
               </ul>
               <p>Changes in climate are based on the latest set of Representative Concentration Pathways (RCPs); RCP 4.5 and RCP 8.5. RCP 4.5 describes a future with relatively ambitious emission reductions whereas RCP 8.5 describes a future with no reductions in emissions. Emissions in RCP 4.5 peak around 2040, then decline and in RCP 8.5 emissions continue to rise throughout the 21st century.</p>
             </div>
