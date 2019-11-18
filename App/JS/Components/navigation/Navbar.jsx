@@ -199,6 +199,12 @@ class Navbar extends React.Component {
                 <b>Tools</b>
                 </NavLink>
               </NavItem>
+              {/* Carbon Sinks */}
+              <NavItem>
+                <NavLink to="/carbon-sinks">
+                <b>SA Carbon Sinks Atlas</b>
+                </NavLink>
+              </NavItem>
 
             </NavbarNav>
             {/* RIGHT */}

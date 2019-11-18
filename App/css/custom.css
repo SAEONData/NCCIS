@@ -378,3 +378,21 @@ table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before
     margin: 1.75rem auto;
 }
 }
+/* Support for nav on small desktops */
+@media screen and (max-width: 1590px) and (min-width: 769px){
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 15px;
+        font-size: 14px;
+        padding-top: 11px;
+    }
+    .ea-links li {
+        margin-top: 9px;
+    }
+    .ea-links a {
+        font-size: 14px;
+    }
+    .nav-item input {
+        margin-top: 0px;
+        max-width: 150px;
+    }
+}
