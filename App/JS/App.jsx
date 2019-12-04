@@ -22,7 +22,7 @@ import Header from './components/navigation/Header.jsx';
 // import AME from './components/pages/Adaptation/MonitoringEvaluation/AME.jsx';
 import SideNav from './components/navigation/SideNav.jsx';
 import ComingSoon from './Components/Pages/ComingSoonAE.jsx'; //Created my own temp component
-import CARBONsinks from './Components/Pages/carbon-sinks.jsx';
+// import CARBONsinks from './Components/Pages/carbon-sinks.jsx';
 import CICtrends from './Components/Pages/cic-trends.jsx';
 import CICtrendsp from './Components/Pages/cic-trends-prov.jsx';
 import CICtrendscc from './Components/Pages/cic-trends-current.jsx';
@@ -185,7 +185,7 @@ class App extends React.Component {
                   <Route path="/doc-disclaimer" component={DOCdisclaimer} />
                   <Route path="/doc-conditions" component={DOCconditions} />
                   <Route path="/event-nc6aug2019" component={eventnc6aug2019} />
-                  <Route path="/carbon-sinks" component={CARBONsinks} />
+                  {/* <Route path="/carbon-sinks" component={CARBONsinks} /> */}
                   <Redirect to="/" />
                 </Switch>
               </div>

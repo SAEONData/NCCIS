@@ -135,13 +135,13 @@ class Navbar extends React.Component {
                       GHG Emissions Database
                     </DropdownItem>
                     <DropdownItem onClick={() => { location.hash = "cic-trends" }}>
-                      Trends
+                      Trends in Climate
                     </DropdownItem>
                     <DropdownItem onClick={() => { location.hash = "cic-projections" }}>
-                      Projections
+                      Climate Change Projections
                     </DropdownItem>
                     <DropdownItem onClick={() => { location.hash = "cic-vulnerability" }}>
-                      Vulnerability
+                      Vulnerability to Climate Change
                     </DropdownItem>
                     <DropdownItem onClick={() => { location.hash = "cic-extreme" }}>
                       Extreme Weather Events and Disasters

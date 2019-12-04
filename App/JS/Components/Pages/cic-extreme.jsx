@@ -70,14 +70,17 @@ class CICextreme extends React.Component {
 
           <section className="ea-content-full pt-4 pb-4 bg-light">
           <div className="container-fluid">
-            <CarouselExtreme />
+          <p>South Africa is susceptible to a number of extreme weather events with the most common being floods, droughts, fires and large storms. Other disaster risks include lighting strikes, heat waves, hail damage, wind storms and sea level rise as well as possible increases in health related disasters.</p>
+<p>Meteorological droughts (below average precipitation) are the most frequent disasters with 237 events being declared between 2006 and 2019. The second and third most frequent disasters are flash floods and riverine floods and the fourth agricultural drought events (low soil moisture).</p>
+<p>Drought impacts stem from a combination of factors. Increasing rainfall variability is one aspect, but how this affects communities depends upon how well people, the economy and the environment can adapt.</p>
+<p>Various factors may undermine people’s ability to withstand reduced water availability (a meteorological drought) and to prevent it from developing into agricultural and hydrological drought with social, economic and environmental impacts.</p>
           </div>
           </section>
 
           <section className="ea-content-full pt-4 pb-4 light-bg">
           <div className="container-fluid">
           <h3 className="mb-4">Provincial Graphs</h3>
-            <LightboxPage />
+            <iframe width="100%"  border="none"  style={{ minHeight: "600px", overflowX: 'hidden' }} src="https://gisportal.saeon.ac.za/portal/apps/View/index.html?appid=7ce4ab0c22eb4a4cb2cc474a98d621da&extent=1.0276,-36.5821,43.2151,-19.4585" />
           </div>
           </section>
           <section className="ea-content-full pt-4 pb-4 light-bg">
