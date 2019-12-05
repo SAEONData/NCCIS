@@ -79,8 +79,8 @@ class CICextreme extends React.Component {
 
           <section className="ea-content-full pt-4 pb-4 light-bg">
           <div className="container-fluid">
-          <h3 className="mb-4">Provincial Graphs</h3>
-            <iframe width="100%"  border="none"  style={{ minHeight: "600px", overflowX: 'hidden' }} src="https://gisportal.saeon.ac.za/portal/apps/View/index.html?appid=7ce4ab0c22eb4a4cb2cc474a98d621da&extent=1.0276,-36.5821,43.2151,-19.4585" />
+          {/* <h3 className="mb-4">Provincial Graphs</h3> */}
+            <iframe width="100%"  border="none"  style={{ minHeight: "700px", overflowX: 'hidden' }} src="https://gis-portal.ndmc.gov.za/portal/apps/webappviewer/index.html?id=700928590ea84665b234b038eb96c210" />
           </div>
           </section>
           <section className="ea-content-full pt-4 pb-4 light-bg">
