@@ -48,7 +48,7 @@ $('body').on('click', '.ea-tabs .nav-tabs a', function(){
 });
 
 $(document).ready(function() {
-    $("#homemap").attr("src","https://map-ccis.saeon.ac.za/");
+    $("#homemap").attr("src","https://gisportal.saeon.ac.za/portal/apps/webappviewer/index.html?id=2d572dcf9c5f47c484540f8c934e03f4");
     $("body").on("click", ".supportToggle", function(){
         console.log('taryn')
         $("#supportform").toggleClass('show');
