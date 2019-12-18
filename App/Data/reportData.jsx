@@ -625,6 +625,14 @@ const DatatablePage = () => {
           description: 'This report documents South Africa\'s submission of its national greenhouse gas inventory for the year 2010. The reporting of these emissions is in line with the IPCC 2006 Guidelines.',
           year: 2014,
           link: [<button onClick={(event) => {event.preventDefault(); window.open("https://www.environment.gov.za/sites/default/files/reports/gng_nationalinventoryreport2000_2012.pdf");}}>link</button>]
+        },
+        {
+          type: 'Climate Change',
+          program: '',
+          name: 'Climate change and adolescents in South Africa: The role of youth activism and the health sector in safeguarding adolescents\' health and education',
+          description: 'Today\'s youth will inherit a world made hazardous by greenhouse gases. As a general rule, those chiefly responsible for emitting these gases will be spared the full brunt of their effects. Age has become a clear fault line of this phenomenon: while today’s adults will experience some impacts of these emissions, adolescents and future generations will face their full force in time.',
+          year: 2014,
+          link: [<button onClick={(event) => {event.preventDefault(); window.open("https://doi.org/10.7196/SAMJ.2019.v109i9.14327");}}>link</button>]
         }
        ]
   };

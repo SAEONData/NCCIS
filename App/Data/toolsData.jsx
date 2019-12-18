@@ -157,6 +157,12 @@ const ToolsData = () => {
         title: "Environment & Health Research Unit",
         description: "The SAMRC's Environment & Health Research Unit (E&HRU) conducts population-based research on environmental risks to health - with particular emphasis on those living in poverty. The Unit - which is made up of experts in environmental epidemiology, public health, chemistry, geography, botany, and environmental science/management - protects and promotes the health of South African communities by investigating serious health risks such as climate change and rising heat, lead poisoning, air pollution, environmental exposures from living near mining land, and other health hazards specific to urban environments.",
         link: [<button onClick={(event) => {event.preventDefault(); window.open("http://www.mrc.ac.za/intramural-research-units/EnvironmentHealth");}}>link</button>]
+      },
+      {
+        type: "Mitigation",
+        title: "Bioenergy Atlas for South Africa",
+        description: "The BioEnergy Atlas for South Africa is a public resource to support the development of BioEnergy in South Africa and covers assessments of biomass potentials in the country and the feasibility of its application. ",
+        link: [<button onClick={(event) => {event.preventDefault(); window.open("http://bea.dirisa.org");}}>link</button>]
       }
      ]
   };
