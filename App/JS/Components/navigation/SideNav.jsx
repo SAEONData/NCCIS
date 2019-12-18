@@ -94,7 +94,7 @@ class SideNav extends React.Component {
   align="center"
 />
 <hr className="mt-4 mb-4" />
-<ul class="ea-side-nav pl-3 pr-3">
+<ul className="ea-side-nav pl-3 pr-3">
     <li>
 
         <div className="ea-parent">

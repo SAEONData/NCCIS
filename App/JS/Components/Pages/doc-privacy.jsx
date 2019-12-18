@@ -184,7 +184,7 @@ class DOCprivacy extends React.Component {
                 </tr>
               </table>
               <p>Privacy Support<br />If you have an enquiry or concern about our privacy policy, please contact:</p>
-              <table class="table-plain mt-3">
+              <table className="table-plain mt-3">
                 <tr>
                 <td colSpan="2">Contact 1</td>
                 </tr>

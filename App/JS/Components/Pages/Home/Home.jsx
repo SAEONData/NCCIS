@@ -303,7 +303,7 @@ class Home extends React.Component {
               </div></div>
             </div>
             <div className="col-9">
-                <iframe src="" id="homemap" class="ea-map-frame round-edge" ></iframe>
+                <iframe src="" id="homemap" className="ea-map-frame round-edge" ></iframe>
             </div>
           </Row>
           

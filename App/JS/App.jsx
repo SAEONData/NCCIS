@@ -11,6 +11,8 @@ import ReactGA from "react-ga"; //Google Analytics
 import React from 'react';
 import { connect } from 'react-redux';
 import { HashRouter as Router, Redirect, Switch, Route } from 'react-router-dom';
+import About from './Components/Pages/about.jsx';
+import Contact from './components/pages/contact-ccis.jsx';
 import Home from './components/pages/Home/Home.jsx';
 import Login from './components/authentication/Login.jsx';
 import Logout from './components/authentication/Logout.jsx';
@@ -164,6 +166,8 @@ class App extends React.Component {
                   <Route path="/login" component={Login} exact />
                   <Route path="/logout" component={Logout} exact />
                   <Route path="/callback" component={CallbackPage} />
+                  <Route path="/About" component={About} />
+                  <Route path="/contact-ccis" component={Contact} />
                   {/* <Route path="/ame" component={AME} /> */}
                   <Route path="/ComingSoon" component={ComingSoon} />
                   <Route path="/cic" component={CIChome} />

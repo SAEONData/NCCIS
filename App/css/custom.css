@@ -396,3 +396,10 @@ table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before
         max-width: 150px;
     }
 }
+/* Contact page */
+.pro-pic{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    margin:20px auto;
+}
