@@ -261,7 +261,7 @@ class Home extends React.Component {
         <div className="container-fluid">
         <div className="text-white pt-4 pb-3">
         <p>Please note that you are accessing the Beta Version of NCCIS website, which is in the process of being tested before its official release on March 2020. The sole purpose of this BETA Version is to conduct testing and obtain feedback.</p>
-        <p>Should you encounter any bugs, lack of functionality or other problems on the beta website, please <u className="supportToggle">submit a ticket here</u></p>
+        <p>Should you encounter any bugs, lack of functionality or other problems on the beta website, please <a target="_blank" className="text-white" href="https://saeon.atlassian.net/servicedesk/customer/portal/7"><u>submit a ticket here</u></a></p>
         </div>
         </div>
       </section>
@@ -275,13 +275,11 @@ class Home extends React.Component {
           </div>
           <Row>
           <Col md="auto"><button type="button" className="btn btn-success btn-lg" onClick={() => { location = "https://ccis.environment.gov.za/nccrd/#/" }}>
-            <em className="fa fa-pencil-square-o mr-1"></em> Submit a climate change response project</button></Col>
-          <Col md="auto"><button type="button" className="btn btn-disabled btn-lg" disabled >
-            <em className="fa fa-pencil-square-o mr-1"></em> Design a climate change plan</button></Col>
+            <em className="fa fa-pencil-square-o mr-1"></em> Submit a project</button></Col>
+          <Col md="auto"><a className="btn btn-success btn-lg" href="http://www.letsrespondtoolkit.org/" target="_blank">
+            <em className="fa fa-pencil-square-o mr-1"></em> Design an adaptation plan</a></Col>
           <Col md="auto"><button type="button" className="btn btn-success btn-lg" onClick={() => { location = "https://ccis.environment.gov.za/ndao/#/" }}>
-            <em className="fa fa-pencil-square-o mr-1"></em> Evaluate a climate change plan</button></Col>
-          <Col md="auto"><button type="button" className="btn btn-disabled btn-lg" disabled>
-            <em className="fa fa-pencil-square-o mr-1"></em> Review Report</button></Col>
+            <em className="fa fa-pencil-square-o mr-1"></em> Submit a plan</button></Col>
           </Row>
           </div>
           </section>
@@ -336,7 +334,7 @@ class Home extends React.Component {
             </div>
           </section>
 
-          <section className="ea-home-maps ea-content light-bg pt-5 pb-5">
+          {/* <section className="ea-home-maps ea-content light-bg pt-5 pb-5">
             <div className="container-fluid">
             <h5 className="pb-3">Maps and Data</h5>
             <Row>
@@ -369,7 +367,7 @@ class Home extends React.Component {
               
             </Row>
             </div>
-          </section>
+          </section> */}
 
 
       </>

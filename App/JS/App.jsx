@@ -12,6 +12,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { HashRouter as Router, Redirect, Switch, Route } from 'react-router-dom';
 import About from './Components/Pages/about.jsx';
+import Finance from './Components/Pages/finance.jsx';
 import Contact from './components/pages/contact-ccis.jsx';
 import Home from './components/pages/Home/Home.jsx';
 import Login from './components/authentication/Login.jsx';
@@ -167,6 +168,7 @@ class App extends React.Component {
                   <Route path="/logout" component={Logout} exact />
                   <Route path="/callback" component={CallbackPage} />
                   <Route path="/About" component={About} />
+                  <Route path="/finance" component={Finance} />
                   <Route path="/contact-ccis" component={Contact} />
                   {/* <Route path="/ame" component={AME} /> */}
                   <Route path="/ComingSoon" component={ComingSoon} />

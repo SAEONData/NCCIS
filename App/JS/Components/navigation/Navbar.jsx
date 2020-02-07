@@ -135,7 +135,7 @@ class Navbar extends React.Component {
                       GHG Emissions Database
                     </DropdownItem>
                     <DropdownItem onClick={() => { location.hash = "cic-trends" }}>
-                      Trends in Climate
+                      Observed Climate Trends
                     </DropdownItem>
                     <DropdownItem onClick={() => { location.hash = "cic-projections" }}>
                       Climate Change Projections
@@ -153,14 +153,14 @@ class Navbar extends React.Component {
               <NavItem>
                 <Dropdown>
                   <DropdownToggle nav caret>
-                    <b>Financing Climate Change</b>
+                    <b>Finance Climate Change</b>
                   </DropdownToggle>
                   <DropdownMenu>
 
                     <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
                     Technology Needs Assessment
                     </DropdownItem>
-                    <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
+                    <DropdownItem onClick={() => { location.hash = "finance" }}>
                     Financing
                     </DropdownItem>
                     <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
@@ -201,9 +201,9 @@ class Navbar extends React.Component {
               </NavItem>
               {/* Carbon Sinks */}
               <NavItem>
-                <NavLink to="/carbon-sinks">
+                <a className="nav-link Ripple-parent" onClick={(event) => {event.preventDefault(); window.open("https://ccis.environment.gov.za/carbon-sinks");}}>
                 <b>SA Carbon Sinks Atlas</b>
-                </NavLink>
+                </a>
               </NavItem>
 
             </NavbarNav>
