@@ -134,7 +134,7 @@ const DatatablePage = () => {
           type: 'Mitigation',
           program: '',
           name: 'Current carbon stock estimation capability for South African commercial forest plantations',
-          description: 'The South African forest plantation industry requires country-\'specific carbon accounting/ estimation methods that are compatible with a wide range of existing local and/or regional forest plantation inventory and management systems. For this reason the Institute for Commercial Forestry Research (ICFR) was commissioned by the Department of Environmental Affairs (DEA) to conduct a scoping study to assess data availability for the development of local carbon estimation equations for all commercial plantation sites and species within the three major genera grown (i.e. pine, eucalypt and wattle), as well as the availability and access to grower activity data.',
+          description: 'The South African forest plantation industry requires country-\'specific carbon accounting/ estimation methods that are compatible with a wide range of existing local and/or regional forest plantation inventory and management systems. For this reason the Institute for Commercial Forestry Research (ICFR) was commissioned by the Department of Environment, Forestry and Fisheries (DEFF) to conduct a scoping study to assess data availability for the development of local carbon estimation equations for all commercial plantation sites and species within the three major genera grown (i.e. pine, eucalypt and wattle), as well as the availability and access to grower activity data.',
           year: 2014,
           link: [<button onClick={(event) => {event.preventDefault(); window.open("https://www.environment.gov.za/sites/default/files/reports/carbonstocks_report2015_southafrica.pdf");}}>link</button>]
         },
@@ -222,7 +222,7 @@ const DatatablePage = () => {
           type: 'Climate Change',
           program: '',
           name: 'The National Climate Change Response Monitoring and Evaluation System Framework',
-          description: 'The NCCRP notes that the measurement and monitoring of climate change responses are critical in ensuring their effective implementation, and that South Africa, through the coordination of the Department of Environmental Affairs (DEA), will design and publish the country\'s Climate Change Response Monitoring and Evaluation (M&E) System. Details of this M&E system are outlined in specific sections of the NCCRP.',
+          description: 'The NCCRP notes that the measurement and monitoring of climate change responses are critical in ensuring their effective implementation, and that South Africa, through the coordination of the Department of Environment, Forestry and Fisheries (DEFF), will design and publish the country\'s Climate Change Response Monitoring and Evaluation (M&E) System. Details of this M&E system are outlined in specific sections of the NCCRP.',
           year: 2015,
           link: [<button onClick={(event) => {event.preventDefault(); window.open("https://www.environment.gov.za/sites/default/files/reports/nationalclimatechangeresponse_MESF.pdf");}}>link</button>]
         },

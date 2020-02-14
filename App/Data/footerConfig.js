@@ -6,7 +6,7 @@ export const footerContent = {
     {
       text: "Technology",
       links: [
-        { text: "DEA NCCIS uses open source, government funded facilities provided by SAEON. The DST and NRF funds the SAEON Open Data Platform (ODP) and associated portals. Developed by SAEON on behalf of DST, DEA, DRDLR, and other stakeholders." },
+        { text: "DEFF NCCIS uses open source, government funded facilities provided by SAEON. The DST and NRF funds the SAEON Open Data Platform (ODP) and associated portals. Developed by SAEON on behalf of DSI, DEFF and DLDLR, and other stakeholders." },
       ]
     },
     {

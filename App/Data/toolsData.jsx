@@ -41,7 +41,7 @@ const ToolsData = () => {
       {
         type: "Training material",
         title: "NDAO Training Manual V1",
-        description: "This user manual was designed to walk users through the National Desired Adaptation Outcome Questionnaire and is intended as a resource to inform anyone interested in evaluating their climate change adaptation approach of DEAs current monitoring and evaluation approach and to submit an evaluation questionnaire to DEA.",
+        description: "This user manual was designed to walk users through the National Desired Adaptation Outcome Questionnaire and is intended as a resource to inform anyone interested in evaluating their climate change adaptation approach of DEFFs current monitoring and evaluation approach and to submit an evaluation questionnaire to DEFF.",
         link: [<a className="dataLink" href={NDAO_Training_Manual_V1} target="_blank">link</a>]
       },
       {
@@ -100,7 +100,7 @@ const ToolsData = () => {
       },
       {
         type: "Adaptation",
-        title: "DEA Coastal Viewer",
+        title: "DEFF Coastal Viewer",
         description: "The Coastal Viewer aims to make spatial data relating to the Coastal Zone available to the public. The data is sourced from the relevant custodians to inform decision making processes focussing on the sustainable use of coastal resources and promoting coastal management objectives as described in the National Coastal Management Programme of South Africa.",
         link: [<button onClick={(event) => {event.preventDefault(); window.open("https://mapservice.environment.gov.za/Coastal%20Viewer/");}}>link</button>]
       },

@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { connect } from 'react-redux'
-import { Row, Col, Button } from 'mdbreact'
+import { Row, Col, Button, MDBContainer, MDBCollapse, MDBCard, MDBCardBody, MDBCollapseHeader, MDBIcon } from 'mdbreact'
 import environmental_affairs_logo from '../../../images/DEA/environmental_affairs_logo.png'
 import sa_flag from '../../../images/Other/sa_flag.jpg'
 
@@ -77,6 +77,7 @@ class INFOevents extends React.Component {
               </div> */}
             </div>
             <div className="col-8">
+              
             <table className="ea-table dataTable">
             <tr><td className="td-title">	Province	</td><td className="td-title">	Date	</td><td className="td-title">	Title	</td><td className="td-title">	Publisher	</td><td className="td-title">	Documents	</td></tr>
             <tr><td>Northern Cape</td><td>2019-08-06</td><td>Presentation on the Climate Tracking and Evaluation Portal</td><td>Department of Environmental Affairs</td><td><a target="_blank" className="dataLink" href="https://drive.google.com/open?id=1CeKhMes7ylAb0NyD-ByoQrp20fKaIH5k">Link</a></td></tr>

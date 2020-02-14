@@ -124,7 +124,7 @@ class Navbar extends React.Component {
                 
                 <Dropdown>
                   <DropdownToggle nav caret>
-                    <b>Climate Information Centre</b>
+                    <b>Climate Information</b>
                   </DropdownToggle>
                   <DropdownMenu>
                   <DropdownItem onClick={() => { location.hash = "cic" }}>
@@ -146,11 +146,34 @@ class Navbar extends React.Component {
                     <DropdownItem onClick={() => { location.hash = "cic-extreme" }}>
                       Extreme Weather Events and Disasters
                     </DropdownItem>
+                    <DropdownItem onClick={() => { location.hash = "finance" }}>
+                      Financing Climate Change
+                    </DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
               </NavItem>
 
+
               <NavItem>
+                <Dropdown>
+                  <DropdownToggle nav caret>
+                    <b>Climate Services</b>
+                  </DropdownToggle>
+                  <DropdownMenu>
+                    <DropdownItem onClick={() => { location.hash = "/climate-services" }}>
+                    Climate Services
+                    </DropdownItem>
+                    <DropdownItem onClick={() => { location.hash = "/maps-graphs" }}>
+                    Maps and Graphs
+                    </DropdownItem>
+                    <DropdownItem onClick={() => { location.hash = "/data-download" }}>
+                    Download Data
+                    </DropdownItem>
+                  </DropdownMenu>
+                </Dropdown>
+              </NavItem>
+
+              {/* <NavItem>
                 <Dropdown>
                   <DropdownToggle nav caret>
                     <b>Finance Climate Change</b>
@@ -168,7 +191,7 @@ class Navbar extends React.Component {
                     </DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
-              </NavItem>
+              </NavItem> */}
 
               {/* Resources */}
               <NavItem>
@@ -180,9 +203,12 @@ class Navbar extends React.Component {
               <NavItem>
                 <Dropdown>
                   <DropdownToggle nav caret>
-                    <b>Resources</b>
+                    <b>Resources and Tools</b>
                   </DropdownToggle>
                   <DropdownMenu>
+                    <DropdownItem onClick={() => { location.hash = "/info-tools" }}>
+                    Tools
+                    </DropdownItem>
                     <DropdownItem onClick={() => { location.hash = "/info-glossary" }}>
                     Glossary
                     </DropdownItem>
@@ -194,15 +220,15 @@ class Navbar extends React.Component {
               </NavItem>
 
               {/* Tools */}
-              <NavItem>
-                <NavLink to="/info-tools">
-                <b>Tools</b>
+              {/* <NavItem>
+                <NavLink to="/data-download">
+                <b>Data</b>
                 </NavLink>
-              </NavItem>
+              </NavItem> */}
               {/* Carbon Sinks */}
               <NavItem>
                 <a className="nav-link Ripple-parent" onClick={(event) => {event.preventDefault(); window.open("https://ccis.environment.gov.za/carbon-sinks");}}>
-                <b>SA Carbon Sinks Atlas</b>
+                <b>Carbon Sinks Atlas</b>
                 </a>
               </NavItem>
 
@@ -212,11 +238,11 @@ class Navbar extends React.Component {
               <NavItem>
                 <EASearch />
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink to="/about">
                 <b>About</b>
                 </NavLink>
-              </NavItem>
+              </NavItem> */}
               <NavItem>
                 <IconList></IconList>
               </NavItem>

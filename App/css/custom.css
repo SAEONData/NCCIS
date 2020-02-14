@@ -190,6 +190,9 @@ table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before
     .ea-content-full{
         padding: 0 35px;
     }
+    .contact-p{
+        min-height:120px;
+    }
 }
 /* Body END*/
 /* header */

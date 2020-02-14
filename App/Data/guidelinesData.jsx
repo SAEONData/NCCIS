@@ -39,7 +39,7 @@ const GuidelinesData = () => {
         {
           type: "Aaptation",
           name: "National Environmental Management Act: Implementation guidelines",
-          description: "The Department of Environmental Affairs (DEA) determined that a guideline on the Environmental Impact Assessmet (EIA) process would be of value in respect of particular types of developments. These are referred to as \"sectors' and the DEA identified 5 sectors that required attention, namely agri-industry projects, energy projects, large-scale developments, social infrastructure and housing projects and linear developments.",
+          description: "The Department of Environment, Forestry and Fisheries (DEFF) determined that a guideline on the Environmental Impact Assessmet (EIA) process would be of value in respect of particular types of developments. These are referred to as \"sectors' and the DEFF identified 5 sectors that required attention, namely agri-industry projects, energy projects, large-scale developments, social infrastructure and housing projects and linear developments.",
           year: 2010,
           link: [<button onClick={(event) => {event.preventDefault(); window.open("https://www.gov.za/documents/national-environmental-management-act-implementation-guidelines-draft-0");}}>link</button>]
         },
@@ -60,14 +60,14 @@ const GuidelinesData = () => {
         {
           type: "Adaptation",
           name: "National Environmental Management: Protected Areas Act: Cultural Heritage Survey guidelines and assessment tools for protected areas in South Africa",
-          description: "The Department of Environmental Affairs (DEA) following the introduction of the Management Effectiveness Tracking Tool (METT-SA) to track protected area management effectiveness, has identified cultural heritage survey, inventory, planning, and condition assessment in relation to planned objectives as a gap in the management of cultural heritage resources in Protected Areas in South Africa.",
+          description: "The Department of Environment, Forestry and Fisheries (DEFF) following the introduction of the Management Effectiveness Tracking Tool (METT-SA) to track protected area management effectiveness, has identified cultural heritage survey, inventory, planning, and condition assessment in relation to planned objectives as a gap in the management of cultural heritage resources in Protected Areas in South Africa.",
           year: 2017,
           link: [<button onClick={(event) => {event.preventDefault(); window.open("https://www.gov.za/documents/national-environmental-management-protected-areas-act-cultural-heritage-survey-0");}}>link</button>]
         },
         {
           type: "Adaptation",
           name: "Guidelines for Ecosystem-based Adaptation (EBA) in South Africa",
-          description: "Ecosystem-based Adaptation (EbA) is the use of biodiversity and ecosystem services as part of an overall adaptation strategy to help people to adapt to the adverse effects of climate change (CBD, 2009; DEA & SANBI, 2016). Ecosystem-based Adaptation (EbA) represents a coherent approach for adaptation to climate change that makes use of the role that well-functioning ecosystems play in achieving positive societal and development outcomes.",
+          description: "Ecosystem-based Adaptation (EbA) is the use of biodiversity and ecosystem services as part of an overall adaptation strategy to help people to adapt to the adverse effects of climate change (CBD, 2009; DEFF & SANBI, 2016). Ecosystem-based Adaptation (EbA) represents a coherent approach for adaptation to climate change that makes use of the role that well-functioning ecosystems play in achieving positive societal and development outcomes.",
           year: 2017,
           link: [<button onClick={(event) => {event.preventDefault(); window.open("https://www.sanbi.org/wp-content/uploads/2018/09/SA-Ecosystem-based-Adaptation-EbA-Guidelines.pdf");}}>link</button>]
         },
