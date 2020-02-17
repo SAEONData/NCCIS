@@ -3,6 +3,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Row, Col, Button, Card, CardBody } from 'mdbreact'
+import ServicesData from '../../../Data/servicesData.jsx'
 
 const mapStateToProps = (state, props) => {
   return {}
@@ -42,28 +43,34 @@ class ClimateServices extends React.Component {
             <em className="fa fa-chevron-right mr-1"></em> Download Data</Button></Col>
           </Row>
           </div>
-          </section>
+        </section>
 
           <section className="ea-content-full mt-4 pt-4 pb-4 light-bg">
-          <div className="container">
-          <Card>
-            <CardBody>
-              <div
-                style={{ backgroundColor: 'white', border: '1px solid gainsboro', borderRadius: 10, padding: '15px 15px 5px' }}
-              >
-                <h5 style={{ margin: 0 }}>
-                  <b>Coming Soon</b>
-                </h5>
+            <div className="container">
+            
+            {/* <div id="record-filters" className="btn-group" data-toggle="buttons">
+              <label >Filter records:</label>
+              <label id="gridDisplayPublicLabel" className="btn btn-primary">
+                <input type="radio" name="GridDisplay" id="gridDisplayPublic" value="Public" /> Public
+              </label>
+              <label id="gridDisplayCommercialLabel" className="btn btn-primary">
+                <input type="radio" name="GridDisplay" id="gridDisplayCommercial" value="Commercial" /> Commercial
+              </label>
+              <label id="gridDisplayAllLabel" className="btn btn-primary active">
+                <input type="radio" name="GridDisplay" id="gridDisplayAll"  value="all" /> All
+              </label>
+            </div>
 
-                <hr style={{ marginTop: 10 }} />
-
-                <p style={{ overflowY: 'auto', paddingRight: 15 }}>
-                  This page will be online in our next release. Come back to check for feature additions
-                </p>
+            <form className='filter-form'>
+              <h3>Filters</h3>
+              <div>
+                <label>Filter :</label>
+                <input type='text' value='' className='filter' />
               </div>
-            </CardBody>
-          </Card>
-          </div>
+            </form> */}
+
+              <ServicesData />
+            </div>
           </section>
     </>
     
