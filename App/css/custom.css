@@ -114,7 +114,55 @@ table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before
     -o-transition: all 0.7s ease-out;
     transition: all 0.7s ease-out;
 }
-
+/* Filter Table*/
+.filterTable{
+    position: relative;
+    top: 0;
+}
+.filterTable #servicesTable_length select{
+    margin-left: 10px;
+    border: 1px solid #dee2e6;
+    padding: 10px;
+}
+.filterTable #servicesTable_filter input{
+    border: 1px solid #dee2e6;
+    padding: 0 6px;
+}
+.filterTable #servicesTable_length label,
+.filterTable #servicesTable_filter label{
+    line-height: 39px;
+}
+.filterTable #record-filters label{
+    margin-bottom: 0;
+    line-height: 45px;
+    margin-right: 10px;
+}
+.filterTable #record-filters .btn-primary{
+    background-color: #f9f9f9!important;
+    color: #000;
+    margin: 0;
+    line-height: inherit;
+}
+.filterTable #record-filters .btn-primary:hover,
+.filterTable #record-filters .btn-primary.active{
+    background-color: #719062!important;
+    color:#fff;
+}
+@media (min-width: 768px){
+    .filterTable #record-filters{
+        position: absolute;
+        z-index: 1;
+    }
+    .filterTable #servicesTable_length{
+        float:right;
+        min-width: 150px;
+        margin-left: 20px;
+    }
+    .filterTable #servicesTable_length select{
+        display: block!important;
+        float: right;
+    }
+}
 /* tabs */
 .tab-child{
     display: none;
