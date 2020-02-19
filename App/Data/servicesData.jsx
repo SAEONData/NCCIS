@@ -41,7 +41,13 @@ const ServicesData = () => {
         width: 150
       },
       {
-        label: 'Link',
+        label: 'Relevant NFCS pillar',
+        field: 'pillar',
+        sort: 'asc',
+        width: 150
+      },
+      {
+        label: 'View solution',
         field: 'link',
         sort: 'asc',
         width: 150
@@ -138,14 +144,14 @@ const ServicesData = () => {
     <div className="filterTable">
       <div id="record-filters" class="btn-group" data-toggle="buttons" >
         <label>Filter records:</label>
-        <label id="gridDisplayPublicDeadLabel" class="btn btn-primary">
-          <input type="radio" name="GridDisplay" id="gridDisplayDead" autocomplete="off" value="Public" /> Public
+        <label id="gridDisplayPublicDeadLabel" className="btn btn-primary">
+          <input type="radio" name="GridDisplay" id="gridDisplayDead" value="Public" /> Public
         </label>
-        <label id="gridDisplayCommercialLabel" class="btn btn-primary">
-          <input type="radio" name="GridDisplay" id="gridDisplayAlive" autocomplete="off" value="Commercial" /> Commercial
+        <label id="gridDisplayCommercialLabel" className="btn btn-primary">
+          <input type="radio" name="GridDisplay" id="gridDisplayAlive" value="Commercial" /> Commercial
         </label>
-        <label id="gridDisplayAllLabel" class="btn btn-primary active">
-          <input type="radio" name="GridDisplay" id="gridDisplayAll" autocomplete="off" value="all" /> All
+        <label id="gridDisplayAllLabel" className="btn btn-primary active">
+          <input type="radio" name="GridDisplay" id="gridDisplayAll" value="all" defaultChecked /> All
         </label>
       </div>
     <MDBDataTable
@@ -153,7 +159,7 @@ const ServicesData = () => {
       bordered
       hover
       data={data}
-      exportToCSV
+      // exportToCSV
       searching={false}
       paging={false}
       info={false}
@@ -164,4 +170,6 @@ const ServicesData = () => {
   );
 }
 
-export default ServicesData;
+
+
+export default (ServicesData);

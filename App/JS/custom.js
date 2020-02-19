@@ -50,20 +50,60 @@ $('body').on('click', '.ea-tabs .nav-tabs a', function(){
 $(document).ready(function() {
     $("#homemap").attr("src","https://gisportal.saeon.ac.za/portal/apps/webappviewer/index.html?id=2d572dcf9c5f47c484540f8c934e03f4");
     $("body").on("click", ".supportToggle", function(){
-        console.log('taryn')
         $("#supportform").toggleClass('show');
         $("#supportform").fadeToggle(300);
     });
+    tableBuild();
+});
+$(window).on('hashchange', function(){
+
+    setTimeout(function(){
+        tableBuild();
+        console.log('4');
+      }, 2000);
+
+    
+
 });
 
 /* Data Table Filter */
-$(document).ready(function() {
+function tableBuild() {
 
-    var grid = $('#servicesTable').DataTable({
-        "paging": true,
-        "ordering": true,
-        "info": true,
-      });
+    if ( $.fn.dataTable.isDataTable( '#servicesTable' ) ) {
+        grid = $('#servicesTable').DataTable();
+    }
+    else {
+        grid = $('#servicesTable').DataTable( {
+            "paging": true,
+            "ordering": true,
+            "info": true
+        } );
+        console.log('is NOT a bdTable');
+        grid.draw();
+        $.fn.dataTable.ext.search.push(
+            function(settings, data, dataIndex) {
+              var dead = $('#gridDisplayDead')[0].checked;
+              var alive = $('#gridDisplayAlive')[0].checked;
+              var all = $('#gridDisplayAll')[0].checked;
+              var condition = String(data[5]); 
+              if (all) {
+                 toggleActive($('#gridDisplayAllLabel'));
+                 return true;
+              } else if (dead) {
+                 toggleActive($('#gridDisplayPublicDeadLabel'));
+                 return ("Public" == condition);
+              } else if (alive) {
+                 toggleActive($('#gridDisplayCommercialLabel'));   
+                 return ("Commercial" == condition);
+              }
+              return false;
+            }
+          );
+          
+        
+    }
+
+
     
       // Reload on record filter radio button clicks 
       $(document).on("click", "#record-filters", function() {
@@ -79,24 +119,6 @@ $(document).ready(function() {
          activate.addClass('active');
       }
     
-      $.fn.dataTable.ext.search.push(
-        function(settings, data, dataIndex) {
-          var dead = $('#gridDisplayDead')[0].checked;
-          var alive = $('#gridDisplayAlive')[0].checked;
-          var all = $('#gridDisplayAll')[0].checked;
-          var condition = String(data[5]); 
-          if (all) {
-             toggleActive($('#gridDisplayAllLabel'));
-             return true;
-          } else if (dead) {
-             toggleActive($('#gridDisplayPublicDeadLabel'));
-             return ("Public" == condition);
-          } else if (alive) {
-             toggleActive($('#gridDisplayCommercialLabel'));      
-             return ("Commercial" == condition);
-          }
-          return false;
-        }
-      );
+      
   
-  });
+  };

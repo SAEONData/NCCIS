@@ -199,6 +199,11 @@ table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before
     background-color: #719062;
     color: #fff;
 }
+.md-tabs .nav-link{
+    background-color: #7e9c70;
+    border-radius: 0.25rem;
+    margin-left: 10px;
+}
 .tab-content>.tab-pane.show {
     display: block;
 }
