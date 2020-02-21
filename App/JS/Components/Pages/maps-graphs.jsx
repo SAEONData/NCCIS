@@ -2,7 +2,8 @@
 
 import React from 'react'
 import { connect } from 'react-redux'
-import { Row, Col, Button, Card, CardBody } from 'mdbreact'
+import { Row, Col, Button, Card, CardBody,MDBLightbox  } from 'mdbreact'
+import LightboxPage from '../galleries/gal-disasters-mapsgraphs.jsx'
 
 const mapStateToProps = (state, props) => {
   return {}
@@ -22,9 +23,6 @@ class MapsGraphs extends React.Component {
     super(props);
   }
 
-  componentDidMount() {
-    
-  }
 
   render() {
     this.props.updateNav(location.hash)
@@ -45,24 +43,9 @@ class MapsGraphs extends React.Component {
           </section>
 
           <section className="ea-content-full mt-4 pt-4 pb-4 light-bg">
-          <div className="container">
-          <Card>
-            <CardBody>
-              <div
-                style={{ backgroundColor: 'white', border: '1px solid gainsboro', borderRadius: 10, padding: '15px 15px 5px' }}
-              >
-                <h5 style={{ margin: 0 }}>
-                  <b>Coming Soon</b>
-                </h5>
-
-                <hr style={{ marginTop: 10 }} />
-
-                <p style={{ overflowY: 'auto', paddingRight: 15 }}>
-                  This page will be online in our next release. Come back to check for feature additions
-                </p>
-              </div>
-            </CardBody>
-          </Card>
+          <div className="container-fluid">
+            <h2>Rainfall and Temperature:</h2>
+          <LightboxPage />
           </div>
           </section>
     </>

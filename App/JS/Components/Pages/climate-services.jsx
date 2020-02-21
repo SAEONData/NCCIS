@@ -54,9 +54,6 @@ class ClimateServices extends React.Component {
                 <a className="nav-link active" tab-link="tab-saws" >SAWS Products and Services</a>
               </li>
               <li className="nav-item waves-effect waves-light">
-                <a className="nav-link" tab-link="tab-public" >Climate and Weather Data for the Public Good</a>
-              </li>
-              <li className="nav-item waves-effect waves-light">
                 <a className="nav-link" tab-link="tab-about" >About the National Framework for Climate Services</a>
               </li>
             </ul>
@@ -64,10 +61,6 @@ class ClimateServices extends React.Component {
               <div className="tab-pane show" id="tab-saws" >
               <h2 className="mt-3 mb-3">SAWS Products and Services</h2>
               <ServicesData />
-              </div>
-              <div className="tab-pane" id="tab-public">
-              <h2 className="mt-3 mb-3">Climate and Weather Data for the Public Good</h2>
-              table goes here xxx
               </div>
               <div className="tab-pane" id="tab-about" >
               <div className="row">

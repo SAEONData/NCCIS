@@ -9,6 +9,20 @@
         }
     });
 
+/* Image Download */
+
+// $('body').on('click', '.image-dl', function(event){
+//     // var imgsrc = $(this).find('img').attr('src');
+//     var dlButton = event.target;
+//     var dlParent = $(dlButton).closest('*[class~="image-dl"]');
+//     var dlSrc = $(dlParent).find('img').attr('src');
+//     $(dlParent).addClass('isParent');
+//     $(dlButton).addClass('clickedme');
+//     console.log('It is' + dlSrc );
+
+//     this.xhr = $.ajax({		type: "POST",		url: "https://www.w3schools.com/images/myw3schoolsimage.jpg",	}).done(function (data) { 	});
+// });
+
 /* Sidenav Dropdowns */
 
 $('body').on('click', '.ea-parent span', function(){
