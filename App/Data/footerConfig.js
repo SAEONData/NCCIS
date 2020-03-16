@@ -1,4 +1,4 @@
-import DEA_Logo from '../images/DEA/environmental_affairs_logo_small.jpg'
+//import DEA_Logo from '../images/DEA/environmental_affairs_logo_small.jpg'
 
 
 export const footerContent = {
@@ -29,7 +29,7 @@ export const footerContent = {
     {
       text: "Funding",
       links: [
-        { src: DEA_Logo, width: "100%"/*, link: "http://www.example.com"*/ }
+        //{ src: DEA_Logo, width: "100%"/*, link: "http://www.example.com"*/ }
       ]
     }
   ]

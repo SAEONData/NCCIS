@@ -3,8 +3,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Row, Col, Button, Card, CardBody,MDBLightbox  } from 'mdbreact'
-import LightboxPage from '../galleries/gal-disasters-mapsgraphs.jsx'
-
+import RainfallMaps from '../galleries/gal-rainfall-maps.jsx'
+import RainfallGraphs from '../galleries/gal-rainfall-graphs.jsx'
 const mapStateToProps = (state, props) => {
   return {}
 }
@@ -44,8 +44,11 @@ class MapsGraphs extends React.Component {
 
           <section className="ea-content-full mt-4 pt-4 pb-4 light-bg">
           <div className="container-fluid">
-            <h2>Rainfall and Temperature:</h2>
-          <LightboxPage />
+            <h2 className="mt-5 mb-3">Rainfall and Temperature:</h2>
+            <RainfallMaps />
+
+            <h2 className="mt-5 mb-3">Provincial Annual Rainfall:</h2>
+            <RainfallGraphs />
           </div>
           </section>
     </>

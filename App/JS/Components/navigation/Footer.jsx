@@ -1,6 +1,7 @@
 import React from 'react'
 import { Col, Row, Modal, ModalBody, ModalHeader } from 'mdbreact';
 import { DEAGreen, DEAGreenDark } from '../../config/colours.js'
+import eaLogo from '../../../Images/DEA/environmental_affairs_logo_small.jpg'
 
 import { footerContent } from '../../../data/footerConfig'
 import loader from '../../../images/Other/loader.gif'
@@ -143,7 +144,7 @@ class Footer extends React.Component {
         <div><a className="text-dark" href="https://ulwazi.saeon.ac.za/contact/" target="link"><b>Contact Us</b></a></div>
     </div>
     <div className="col-md-3">
-        <h4><b>Funding</b></h4><img src="https://ccis.environment.gov.za/df4a473d960cba109f32b0bfc40ad717.jpg" /></div>
+        <h4><b>Funding</b></h4><img src={eaLogo}/></div>
 </div>
 
             {/* {this.renderSections(footerContent)} */}

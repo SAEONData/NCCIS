@@ -1,5 +1,6 @@
 let _apiBaseURL = ''
 let _siteBaseURL = ''
+let _sitePlainBaseURL =''
 let _ccrdBaseURL = ''
 let _ccrdSiteBaseURL = ''
 let _ndmcBaseURL = ''
@@ -13,6 +14,7 @@ let _ndaoSiteBaseURL = ''
 if (CONSTANTS.DEV) {
   _apiBaseURL = 'http://app01.saeon.ac.za/ndaotestapi/odata/' //'https://localhost:44301/odata/'
   _siteBaseURL = `${window.location.protocol}//${window.location.hostname}:${window.location.port}/`
+  _sitePlainBaseURL = `http://localhost:8091/`
   _ccrdBaseURL = 'http://app01.saeon.ac.za/nccrdtestapi/odata/' //'http://localhost:62553/odata/'
   _ccrdSiteBaseURL = 'http://app01.saeon.ac.za/nccrdtestsite/#/' //'http://localhost:8085/#/'
   _ndmcBaseURL = 'http://app01.saeon.ac.za/ndmctestapi/odata/' //'https://localhost:44334/odata/'
@@ -28,6 +30,7 @@ else if (CONSTANTS.TEST) {
   _siteBaseURL = 'http://app01.saeon.ac.za/ccistestsite/'
   _ccrdBaseURL = 'http://app01.saeon.ac.za/nccrdtestapi/odata/'
   _ccrdSiteBaseURL = 'http://app01.saeon.ac.za/nccrdtestsite/#/'
+  _sitePlainBaseURL = `${window.location.protocol}//`
   _ndmcBaseURL = 'http://app01.saeon.ac.za/ndmctestapi/odata/'
   _ndmcSiteBaseURL = 'http://app01.saeon.ac.za/ndmctestsite/#/'
   _ndaoSiteBaseURL = 'http://app01.saeon.ac.za/ndaotestsite/#/'
@@ -39,6 +42,7 @@ else if (CONSTANTS.TEST) {
 else if (CONSTANTS.PROD) {
   _apiBaseURL = 'https://ccis.environment.gov.za/ndao/api/odata/';
   _siteBaseURL = 'https://ccis.environment.gov.za';
+  _sitePlainBaseURL = 'https://ccis.environment.gov.za';
   _ccrdBaseURL = 'https://ccis.environment.gov.za/nccrd/api/odata/';
   _ccrdSiteBaseURL = 'https://ccis.environment.gov.za/nccrd/';
   _ndmcBaseURL = 'http://app01.saeon.ac.za/ndmcapi/odata/'
@@ -64,6 +68,7 @@ else if (CONSTANTS.PROD) {
 
 export const apiBaseURL = _apiBaseURL
 export const siteBaseURL = _siteBaseURL
+export const sitePlainBaseURL = _sitePlainBaseURL
 export const ccrdBaseURL = _ccrdBaseURL
 export const ccrdSiteBaseURL = _ccrdSiteBaseURL
 export const ndmcBaseURL = _ndmcBaseURL

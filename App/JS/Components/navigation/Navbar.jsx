@@ -14,8 +14,9 @@ import SARVA from '../pages/Tools/SARVA.jsx';
 import { data as NavData } from '../../../data/sideNavData';
 import IconList from '../Iconlist/index.jsx'
 import EASearch from '../search/search.jsx';
+import {siteBaseURL} from '../../../js/config/serviceURLs.js'
 
-
+console.log(siteBaseURL);
 
 const _gf = require('../../globalFunctions')
 
@@ -227,7 +228,7 @@ class Navbar extends React.Component {
               </NavItem> */}
               {/* Carbon Sinks */}
               <NavItem>
-                <a className="nav-link Ripple-parent" onClick={(event) => {event.preventDefault(); window.open("https://ccis.environment.gov.za/carbon-sinks");}}>
+                <a className="nav-link Ripple-parent" target="_blank" href={siteBaseURL,'/carbon-sinks'}>
                 <b>Carbon Sinks Atlas</b>
                 </a>
               </NavItem>
