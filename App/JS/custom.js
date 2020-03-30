@@ -136,3 +136,13 @@ function tableBuild() {
       
   
   };
+
+  /* Search modal */
+  $('body').on('submit', '#sasdisearch', function(e){
+    e.preventDefault();
+    
+    var searchterm = $('.sasdisearch').val();
+    var searchurl = 'http://www.sasdi.net/search.aspx?noframe=true&anytext='
+    //console.log(searchurl + searchterm);
+    window.open(searchurl + searchterm,'_blank');
+})

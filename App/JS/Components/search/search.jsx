@@ -76,13 +76,14 @@ class EASearch extends React.Component {
   }
   
   searchTermsList() {
-        var input, filter, ul, li, a, i, txtValue, searchnoresults;
+        var input, filter, ul, li, a, i, txtValue, searchnoresults, resultse;
         input = document.getElementById('searchInput');
         filter = input.value.toUpperCase();
         ul = document.getElementById("search-list");
         li = ul.getElementsByTagName('li');
         searchnoresults = document.getElementById("search-noresults");
         ul.style.display = "block";
+        resultse = " ";
 
         // Loop through all list items, and hide those who don't match the search query
         
@@ -92,10 +93,16 @@ class EASearch extends React.Component {
             if (txtValue.toUpperCase().indexOf(filter) > -1) {
             li[i].style.display = "block";
             searchnoresults.style.display = "none";
+            resultse = "somethinge";
             } else {
             li[i].style.display = "none";
-            searchnoresults.style.display = "block";
+            searchnoresults.style.display = "none";
+            console.log("there's nothing");
             }
+            if (resultse != "somethinge"){
+              searchnoresults.style.display = "block";
+            }
+
         }
     }
 
@@ -106,7 +113,7 @@ class EASearch extends React.Component {
         onKeyUp={() => this.checkkeys()} 
         ></input>
         <ul id="search-list" onMouseLeave={() => this.hidelist()}>
-        <li id="search-noresults"><a href="https://ccis.environment.gov.za/ndao/#/">No results</a></li>
+        <li id="search-noresults" style={{display:'none'}}><a href="https://ccis.environment.gov.za/ndao/#/">No results</a></li>
         <li><a href="https://ccis.environment.gov.za/ndao/#/">Climate Change</a></li>
 <li><a href="https://ccis.environment.gov.za/ndao/#/">Climate Change Plan</a></li>
 <li><a href="https://ccis.environment.gov.za/ndao/#/">Climate Change Project</a></li>

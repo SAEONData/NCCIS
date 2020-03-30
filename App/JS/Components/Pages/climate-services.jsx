@@ -51,7 +51,7 @@ class ClimateServices extends React.Component {
             <div className="container-fluid ea-tabs">
             <ul className="nav nav-tabs md-tabs" id="myTabMD" role="tablist">
               <li className="nav-item waves-effect waves-light">
-                <a className="nav-link active" tab-link="tab-saws" >SAWS Products and Services</a>
+                <a className="nav-link active" tab-link="tab-saws" >Products and Services</a>
               </li>
               <li className="nav-item waves-effect waves-light">
                 <a className="nav-link" tab-link="tab-about" >About the National Framework for Climate Services</a>
@@ -59,7 +59,7 @@ class ClimateServices extends React.Component {
             </ul>
             <div className="tab-content card pt-5" id="mymdbTabContentMD">
               <div className="tab-pane show" id="tab-saws" >
-              <h2 className="mt-3 mb-3">SAWS Products and Services</h2>
+              <h2 className="mt-3 mb-3">Products and Services</h2>
               <ServicesData />
               </div>
               <div className="tab-pane" id="tab-about" >
