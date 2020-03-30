@@ -10,6 +10,7 @@ import GuidelinesData from '../../../Data/guidelinesData.jsx'
 import SpatialData from '../../../Data/spatialData.jsx'
 import ToolsData from '../../../Data/toolsData.jsx'
 import InternationalData from '../../../Data/internationalData.jsx'
+import ProvincialData from '../../../Data/provincialData.jsx'
 
 const mapStateToProps = (state, props) => {
   return {}
@@ -81,6 +82,12 @@ class INFOabout extends React.Component {
               <li className="nav-item waves-effect waves-light">
                 <a className="nav-link" tab-link="tab-international" >International</a>
               </li>
+              <li className="nav-item waves-effect waves-light">
+                <a className="nav-link" tab-link="tab-provincial" >Provincial</a>
+              </li>
+              <li className="nav-item waves-effect waves-light">
+                <a className="nav-link" href="http://www.letsrespondtoolkit.org/climate-change-resources/downloads" target="_blank" >LTAS</a>
+              </li>
             </ul>
             <div className="tab-content card pt-5" id="mymdbTabContentMD">
               <div className="tab-pane show" id="tab-reports" >
@@ -103,6 +110,9 @@ class INFOabout extends React.Component {
               </div>
               <div className="tab-pane" id="tab-international">
                 <InternationalData />
+              </div>
+              <div className="tab-pane" id="tab-provincial">
+                <ProvincialData />
               </div>
             </div>
           </div>
