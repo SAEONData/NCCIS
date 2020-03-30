@@ -36,10 +36,6 @@ class Header extends React.Component {
             <div>
               <h1 style={{ textAlign: "center", letterSpacing: "2px", color: "#2e7d32" }}>
                 <b>NCCIS</b>
-                  {/* BETA tag */}
-                  <sub style={{ fontSize: "18px", backgroundColor: "#78e26c", borderRadius: "5px", padding: "2px" }}>
-                  <i>BETA</i>
-                </sub>
               </h1>
 
               <p></p>
@@ -60,14 +56,6 @@ class Header extends React.Component {
             />
           </Col>
         </Row>
-        <section className="ea-content light-grey-bg">
-       <div className="container-fluid">
-     
-       <b>Please note that you are accessing the Beta Version of the NCCIS website. A stable release will be made available as soon as the issues regarding the coronavirus have been addressed. The sole purpose of this BETA Version is to conduct testing and obtain feedback.
-       Should you encounter any bugs, lack of functionality or other problems on the beta website, please <a href="https://ccis.environment.gov.za/support.html">submit a ticket.</a></b>
-      
-       </div>
-     </section>
         <div>
 
                   <div className="modal fade" id="supportform" aria-hidden="true">
