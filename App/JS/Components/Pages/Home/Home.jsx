@@ -265,7 +265,7 @@ class Home extends React.Component {
               <IconList></IconList>
             </div>
           </div>
-          <Row>
+          <Row> 
           <Col md="auto"><button type="button" className="btn btn-success btn-lg" onClick={() => { location = "https://ccis.environment.gov.za/nccrd/#/" }}>
             <em className="fa fa-pencil-square-o mr-1"></em> Submit a project</button></Col>
           <Col md="auto"><a className="btn btn-success btn-lg" href="http://www.letsrespondtoolkit.org/" target="_blank">
