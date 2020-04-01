@@ -63,6 +63,7 @@ h5{
     padding-left: 42px;
     padding-right: 22px;
     position: relative;
+    border-radius:5px;
 }
 .text-link{
     text-decoration: underline;
@@ -235,7 +236,7 @@ table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before
 
 @media (min-width: 768px){
     #ea-body {
-        padding-top: 200px;
+        padding-top: 150px;
     }
     .ea-content{
         padding: 0px 20px;

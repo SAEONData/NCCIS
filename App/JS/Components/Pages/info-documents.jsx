@@ -86,7 +86,7 @@ class INFOabout extends React.Component {
                 <a className="nav-link" tab-link="tab-provincial" >Provincial</a>
               </li>
               <li className="nav-item waves-effect waves-light">
-                <a className="nav-link" href="http://www.letsrespondtoolkit.org/climate-change-resources/downloads" target="_blank" >LTAS</a>
+                <a className="nav-link" href="http://www.letsrespondtoolkit.org/climate-change-resources/long-term-adaptation-scenarios" target="_blank" >LTAS</a>
               </li>
             </ul>
             <div className="tab-content card pt-5" id="mymdbTabContentMD">
