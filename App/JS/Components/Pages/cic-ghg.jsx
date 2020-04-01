@@ -65,7 +65,7 @@ class CICghg extends React.Component {
              
 
               <div className="col-12 text-center">
-              <iframe className="m-auto" width="100%" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMDEyMWEzZjYtMWNmNi00YjRiLWFhMmUtZWZhNjllMmRiYWZmIiwidCI6IjgyZmNmOTdlLWJmMGItNDVlMy1iNzIwLTRhNzIzYmJmZWY4MiIsImMiOjl9" frameborder="0" allowfullscreen="true"></iframe>
+              <iframe className="m-auto" width="100%" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMGFiMzYwYWMtZDI1MS00NmQwLTlmYTctYmQxMWFlMmM5MmZmIiwidCI6IjgyZmNmOTdlLWJmMGItNDVlMy1iNzIwLTRhNzIzYmJmZWY4MiIsImMiOjl9" frameborder="0" allowfullscreen="true"></iframe>
               
               
               
