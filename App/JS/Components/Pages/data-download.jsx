@@ -98,7 +98,7 @@ class DataDownload extends React.Component {
                 <div className="dataDownTableInner">
                 <h5>Climate Projections from CSIR</h5>
                 <img src={DataCSIR} />
-                <a href="#" target="_blank" className="btn btn-success">Coming Soon</a>
+                <a href="http://www.sasdi.net/search.aspx?guid=16625c5d-9112-91bc-e632-8f7408d15f3d&control=hide&noframe=true&tab=Analysis" target="_blank" className="btn btn-success">Go to Data <em className="fa fa-database ml-2"></em></a>
                 </div>
               </div>
               <div className="col-md-4">
