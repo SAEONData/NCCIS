@@ -34,6 +34,8 @@ class MapsGraphs extends React.Component {
           <Row>
           <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/climate-services" }}>
             <em className="fa fa-chevron-right mr-1"></em> Climate Services</Button></Col>
+          <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/climate-atlas" }}>
+            <em className="fa fa-chevron-right mr-1"></em> Climate Atlas</Button></Col>
           <Col md="auto"><Button type="button" className="btn btn-success-active btn-lg" onClick={() => { location.hash = "/maps-graphs" }}>
             <em className="fa fa-chevron-right mr-1"></em> Maps and Graphs</Button></Col>
           <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/data-download" }}>

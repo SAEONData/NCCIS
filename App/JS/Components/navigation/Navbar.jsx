@@ -160,9 +160,12 @@ class Navbar extends React.Component {
                   <DropdownToggle nav caret>
                     <b>Climate Services</b>
                   </DropdownToggle>
-                  {/* <DropdownMenu>
+                  <DropdownMenu>
                     <DropdownItem onClick={() => { location.hash = "/ComingSoon" }}>
                     Climate Services
+                    </DropdownItem>
+                    <DropdownItem onClick={() => { location.hash = "/ComingSoon" }}>
+                    Climate Atlas
                     </DropdownItem>
                     <DropdownItem onClick={() => { location.hash = "/ComingSoon" }}>
                     Maps and Graphs
@@ -170,8 +173,8 @@ class Navbar extends React.Component {
                     <DropdownItem onClick={() => { location.hash = "/ComingSoon" }}>
                     Download Data
                     </DropdownItem>
-                  </DropdownMenu> */}
-                  <DropdownMenu>
+                  </DropdownMenu>
+                  {/* <DropdownMenu>
                   <DropdownItem onClick={() => { location.hash = "/climate-services" }}>
                     Climate Services
                     </DropdownItem>
@@ -184,7 +187,7 @@ class Navbar extends React.Component {
                     <DropdownItem onClick={() => { location.hash = "/data-download" }}>
                     Download Data
                     </DropdownItem>
-                  </DropdownMenu>
+                  </DropdownMenu> */}
                 </Dropdown>
               </NavItem>
 
