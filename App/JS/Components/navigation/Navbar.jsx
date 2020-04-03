@@ -160,9 +160,23 @@ class Navbar extends React.Component {
                   <DropdownToggle nav caret>
                     <b>Climate Services</b>
                   </DropdownToggle>
-                  <DropdownMenu>
-                    <DropdownItem onClick={() => { location.hash = "/climate-services" }}>
+                  {/* <DropdownMenu>
+                    <DropdownItem onClick={() => { location.hash = "/ComingSoon" }}>
                     Climate Services
+                    </DropdownItem>
+                    <DropdownItem onClick={() => { location.hash = "/ComingSoon" }}>
+                    Maps and Graphs
+                    </DropdownItem>
+                    <DropdownItem onClick={() => { location.hash = "/ComingSoon" }}>
+                    Download Data
+                    </DropdownItem>
+                  </DropdownMenu> */}
+                  <DropdownMenu>
+                  <DropdownItem onClick={() => { location.hash = "/climate-services" }}>
+                    Climate Services
+                    </DropdownItem>
+                    <DropdownItem onClick={() => { location.hash = "/climate-atlas" }}>
+                    Climate Atlas
                     </DropdownItem>
                     <DropdownItem onClick={() => { location.hash = "/maps-graphs" }}>
                     Maps and Graphs

@@ -4,6 +4,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { Row, Col, Button, Card, CardBody } from 'mdbreact'
 import ServicesData from '../../../Data/servicesData.jsx'
+import ReportYearData from '../../../Data/2019Data.jsx'
 
 const mapStateToProps = (state, props) => {
   return {}
@@ -54,6 +55,9 @@ class ClimateServices extends React.Component {
                 <a className="nav-link active" tab-link="tab-saws" >Products and Services</a>
               </li>
               <li className="nav-item waves-effect waves-light">
+                <a className="nav-link" tab-link="tab-2019" >2019 Climate Reports</a>
+              </li>
+              <li className="nav-item waves-effect waves-light">
                 <a className="nav-link" tab-link="tab-about" >About the National Framework for Climate Services</a>
               </li>
             </ul>
@@ -83,6 +87,11 @@ class ClimateServices extends React.Component {
                   </div>
                 </div>
               </div>
+              <h2 className="mt-3 mb-3">2019 Climate Reports</h2>
+              <ReportYearData />
+              </div>
+              <div className="tab-pane show" id="tab-2019" >
+              
             </div>
           </div>
 

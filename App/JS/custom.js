@@ -8,7 +8,19 @@
             $('#ea-header').removeClass('scrollnav');
         }
     });
-
+/* Atlas Explorer page */
+function explorer(){
+    
+if ($(".ea-content-full").hasClass("explore-data")) {
+    setTimeout(function(){
+        $('#ea-header').addClass('explorer-scrollnav');
+        $('#app').addClass('full-explorer');
+        }, 4000);
+    }else{
+    $('#ea-header').removeClass('explorer-scrollnav');
+    $('#app').removeClass('full-explorer');
+    };
+};
 /* Image Download */
 
 // $('body').on('click', '.image-dl', function(event){
@@ -68,17 +80,20 @@ $(document).ready(function() {
         $("#supportform").fadeToggle(300);
     });
     tableBuild();
+    explorer();
 });
 $(window).on('hashchange', function(){
 
     setTimeout(function(){
         tableBuild();
+        explorer();
         console.log('4');
       }, 2000);
 
     
 
 });
+
 
 /* Data Table Filter */
 function tableBuild() {
