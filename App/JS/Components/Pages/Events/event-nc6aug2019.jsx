@@ -42,7 +42,7 @@ class eventnc6aug2019 extends React.Component {
     this.props.updateNav(location.hash)
     return (
       <>
-       <section class="ea-content-full">
+       <section className="ea-content-full">
           <div className="container-fluid mt-4">
           <div className="row d-sm-none d-md-none d-lg-none">
             <div className="col-6"><h5>Actions</h5></div>

@@ -71,7 +71,7 @@ const TrackingData = () => {
       {
         type: "M&E guidelines",
         name: "First Biennial Report to Cabinet on State of Climate Change Science and Technology in South Africa",
-        description: "Outcome 10 of the MTSF calls for a report on the state of climate change science and technology in South Africa to be provided to Cabinet by the DST and the Department of Environmental Affairs (DEA) every two years. This is the first such report.",
+        description: "Outcome 10 of the MTSF calls for a report on the state of climate change science and technology in South Africa to be provided to Cabinet by the DST and the Department of Environment, Forestry and Fisheries (DEFF) every two years. This is the first such report.",
         year: 2017,
         link: [<button onClick={(event) => {event.preventDefault(); window.open("https://www.dst.gov.za/index.php/resource-center/strategies-and-reports/2233-state-of-climate-change-science-and-technology");}}>link</button>],
       },
@@ -211,7 +211,7 @@ const TrackingData = () => {
       {
         type: "GHG inventory reports",
         name: "South African National Land-cover Dataset 1990 to 2013/14 - Report",
-        description: "An assessment of land-cover change has been undertaken using the 1990 and 2013/ 14 South African National Land- cover Datasets. In preparation for the land-cover change assessment, the original 35-class national land-cover datasets were reformated into the DEA-requested, simplified 17-class legend format to be used for land-cover change reporting.",
+        description: "An assessment of land-cover change has been undertaken using the 1990 and 2013/ 14 South African National Land- cover Datasets. In preparation for the land-cover change assessment, the original 35-class national land-cover datasets were reformated into the DEFF-requested, simplified 17-class legend format to be used for land-cover change reporting.",
         year: 2015,
         link: [<button onClick={(event) => {event.preventDefault(); window.open(doc_b4);}}>link</button>],
       },

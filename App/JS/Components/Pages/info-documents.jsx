@@ -10,6 +10,7 @@ import GuidelinesData from '../../../Data/guidelinesData.jsx'
 import SpatialData from '../../../Data/spatialData.jsx'
 import ToolsData from '../../../Data/toolsData.jsx'
 import InternationalData from '../../../Data/internationalData.jsx'
+import ProvincialData from '../../../Data/provincialData.jsx'
 
 const mapStateToProps = (state, props) => {
   return {}
@@ -59,50 +60,59 @@ class INFOabout extends React.Component {
 
          <section className="ea-content-full mt-4 pt-4 pb-4 light-bg">
            <div className="container-fluid ea-tabs">
-            <ul class="nav nav-tabs md-tabs" id="myTabMD" role="tablist">
-              <li class="nav-item waves-effect waves-light">
-                <a class="nav-link active" tab-link="tab-reports" >Reports</a>
+            <ul className="nav nav-tabs md-tabs" id="myTabMD" role="tablist">
+              <li className="nav-item waves-effect waves-light">
+                <a className="nav-link active" tab-link="tab-reports" >Reports</a>
               </li>
-              <li class="nav-item waves-effect waves-light">
-                <a class="nav-link" tab-link="tab-tracking" >Tracking and Evaluation</a>
+              <li className="nav-item waves-effect waves-light">
+                <a className="nav-link" tab-link="tab-tracking" >Tracking and Evaluation</a>
               </li>
-              <li class="nav-item waves-effect waves-light">
-                <a class="nav-link" tab-link="tab-policy" >Policy and Legislation</a>
+              <li className="nav-item waves-effect waves-light">
+                <a className="nav-link" tab-link="tab-policy" >Policy and Legislation</a>
               </li>
-              <li class="nav-item waves-effect waves-light">
-                <a class="nav-link" tab-link="tab-guidelines" >Guidelines</a>
+              <li className="nav-item waves-effect waves-light">
+                <a className="nav-link" tab-link="tab-guidelines" >Guidelines</a>
               </li>
-              <li class="nav-item waves-effect waves-light">
-                <a class="nav-link" tab-link="tab-spatial" >Spatial Planning</a>
+              <li className="nav-item waves-effect waves-light">
+                <a className="nav-link" tab-link="tab-spatial" >Spatial Planning</a>
               </li>
-              <li class="nav-item waves-effect waves-light">
-                <a class="nav-link" tab-link="tab-tools" >Tools</a>
+              <li className="nav-item waves-effect waves-light">
+                <a className="nav-link" tab-link="tab-tools" >Tools</a>
               </li>
-              <li class="nav-item waves-effect waves-light">
-                <a class="nav-link" tab-link="tab-international" >International</a>
+              <li className="nav-item waves-effect waves-light">
+                <a className="nav-link" tab-link="tab-international" >International</a>
+              </li>
+              <li className="nav-item waves-effect waves-light">
+                <a className="nav-link" tab-link="tab-provincial" >Provincial</a>
+              </li>
+              <li className="nav-item waves-effect waves-light">
+                <a className="nav-link" href="http://www.letsrespondtoolkit.org/climate-change-resources/long-term-adaptation-scenarios" target="_blank" >LTAS</a>
               </li>
             </ul>
-            <div class="tab-content card pt-5" id="mymdbTabContentMD">
-              <div class="tab-pane show" id="tab-reports" >
+            <div className="tab-content card pt-5" id="mymdbTabContentMD">
+              <div className="tab-pane show" id="tab-reports" >
                 <DatatablePage />
               </div>
-              <div class="tab-pane" id="tab-tracking">
+              <div className="tab-pane" id="tab-tracking">
                 <TrackingData />
               </div>
-              <div class="tab-pane" id="tab-policy" >
+              <div className="tab-pane" id="tab-policy" >
                 <PolicyLData />
               </div>
-              <div class="tab-pane" id="tab-guidelines">
+              <div className="tab-pane" id="tab-guidelines">
                 <GuidelinesData />
               </div>
-              <div class="tab-pane" id="tab-spatial" >
+              <div className="tab-pane" id="tab-spatial" >
                 <SpatialData />
               </div>
-              <div class="tab-pane" id="tab-tools">
+              <div className="tab-pane" id="tab-tools">
                 <ToolsData />
               </div>
-              <div class="tab-pane" id="tab-international">
+              <div className="tab-pane" id="tab-international">
                 <InternationalData />
+              </div>
+              <div className="tab-pane" id="tab-provincial">
+                <ProvincialData />
               </div>
             </div>
           </div>

@@ -70,14 +70,17 @@ class CICextreme extends React.Component {
 
           <section className="ea-content-full pt-4 pb-4 bg-light">
           <div className="container-fluid">
-            <CarouselExtreme />
+          <p>South Africa is susceptible to a number of extreme weather events with the most common being floods, droughts, fires and large storms. Other disaster risks include lighting strikes, heat waves, hail damage, wind storms and sea level rise as well as possible increases in health related disasters.</p>
+<p>Meteorological droughts (below average precipitation) are the most frequent disasters with 237 events being declared between 2006 and 2019. The second and third most frequent disasters are flash floods and riverine floods and the fourth agricultural drought events (low soil moisture).</p>
+<p>Drought impacts stem from a combination of factors. Increasing rainfall variability is one aspect, but how this affects communities depends upon how well people, the economy and the environment can adapt.</p>
+<p>Various factors may undermine people’s ability to withstand reduced water availability (a meteorological drought) and to prevent it from developing into agricultural and hydrological drought with social, economic and environmental impacts.</p>
           </div>
           </section>
 
           <section className="ea-content-full pt-4 pb-4 light-bg">
           <div className="container-fluid">
-          <h3 className="mb-4">Provincial Graphs</h3>
-            <LightboxPage />
+          {/* <h3 className="mb-4">Provincial Graphs</h3> */}
+            <iframe width="100%"  border="none"  style={{ minHeight: "700px", overflowX: 'hidden' }} src="https://gis-portal.ndmc.gov.za/portal/apps/webappviewer/index.html?id=700928590ea84665b234b038eb96c210" />
           </div>
           </section>
           <section className="ea-content-full pt-4 pb-4 light-bg">
@@ -86,13 +89,13 @@ class CICextreme extends React.Component {
             <div className="row">
               <div className="col-6">
               <h3 className="mb-4">Disaster Risk Management and Climate Change Adaptation</h3>
-              <p>Creating an enabling environment for both climate change adaptation and disaster risk management is critical to ensure future resilience. Both disaster risk reduction and climate change adaptation aim to mitigate climate-related risks by reducing and modifying environmental and human factors in order to support sustainable economic and social development (<a href="https://www.csir.co.za/sites/default/files/Documents/SADC%20Handbook_Second%20Edition_full%20report.pdf" target="_blank">Davis-Reddy &amp; Vincent 2017</a>).</p>
-              <p>The National Climate Change Response White Paper (NCCRP) highlights disaster management as a key area of development for the country, due to the expected increase in extreme climatic events. This commitment is illustrated by the fact that the national government’s investment in disaster risk reduction and emergency response has risen from US$ 0.02 bn. to US$ 0.7 bn. between 2010 and 2015, as part of the total increase of investment in adaptation which rose from US$ 1.64 bn. to US$ 2.31 bn.</p>
+              <p>The Climate Risk and Vulnerability Handbook for Southern Africa (2nd Edition), emphasises that creating an enabling environment for both climate change adaptation and disaster risk management is critical to ensure future resilience. Both disaster risk reduction and climate change adaptation aim to mitigate climate-related risks by reducing and modifying environmental and human factors in order to support sustainable economic and social development.</p>
+              <p><a href="https://www.environment.gov.za/sites/default/files/legislations/national_climatechange_response_whitepaper.pdf" target="_blank">The National Climate Change Response White Paper (NCCRP)</a> highlights disaster management as a key area of development for the country, due to the expected increase in extreme climatic events. This commitment is illustrated by the fact that the national government’s investment in disaster risk reduction and emergency response has risen from US$ 0.02 bn. to US$ 0.7 bn. between 2010 and 2015, as part of the total increase of investment in adaptation which rose from US$ 1.64 bn. to US$ 2.31 bn.</p>
               </div>
               <div className="col-6">
               <div className="light-grey-bg p-3 round-edge">
-                <h3>Sendai Framework for Disaster Risk Reduction 2015-2030</h3>
-                <p>In March 2015, the Third United Nations World Conference on Disaster Risk Reduction (WCDRR) adopted the Sendai Framework for Disaster Risk Reduction 2015-2030, which was later endorsed by the UN General Assembly in its 69th session. The Sendai Framework provides the basis for a risk-informed and resilient future. The Sendai Framework specifically addresses climate change and climate action, providing measures, guiding principles and means of implementation. Sendai outcomes are a significant milestone in international cooperation for building resilience to climate-related disasters. The Sendai Framework establishes the significance of ensuring credible links on the post-2015 agenda including the sustainable development goals, financing for development, climate change and disaster risk reduction and the calls for enhanced coherence across policies, institutions, indicators, reporting and measurement systems for implementation (<a href="https://www.unisdr.org/we/coordinate/sendai-framework" target="_blank">UNISDR, 2015</a>).</p>
+                <h3><a href="https://www.preventionweb.net/files/43291_sendaiframeworkfordrren.pdf" target="_blank">Sendai Framework for Disaster Risk Reduction 2015-2030</a></h3>
+                <p>In March 2015, the Third United Nations World Conference on Disaster Risk Reduction (WCDRR) adopted the Sendai Framework for Disaster Risk Reduction 2015-2030, which was later endorsed by the UN General Assembly in its 69th session. The Sendai Framework provides the basis for a risk-informed and resilient future. The Sendai Framework specifically addresses climate change and climate action, providing measures, guiding principles and means of implementation. Sendai outcomes are a significant milestone in international cooperation for building resilience to climate-related disasters. The Sendai Framework establishes the significance of ensuring credible links on the post-2015 agenda including the sustainable development goals, financing for development, climate change and disaster risk reduction and the calls for enhanced coherence across policies, institutions, indicators, reporting and measurement systems for implementation.</p>
               </div>
               </div>
             </div>

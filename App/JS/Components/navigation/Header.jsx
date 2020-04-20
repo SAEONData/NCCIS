@@ -36,12 +36,8 @@ class Header extends React.Component {
             <div>
               <h1 style={{ textAlign: "center", letterSpacing: "2px", color: "#2e7d32" }}>
                 <b>NCCIS</b>
-
-                <sub style={{ fontSize: "18px", backgroundColor: "#78e26c", borderRadius: "5px", padding: "2px" }}>
-                  <i>BETA</i>
-                </sub>
-
               </h1>
+
               <p></p>
               <h5 style={{ textAlign: "center", letterSpacing: "2px", marginTop: "-8px", color: "grey" }}>
                 <b>National Climate Change Information System</b>
@@ -82,6 +78,7 @@ class Header extends React.Component {
                   </div>
         </div>
       </div>
+   
       </>
     )
   }

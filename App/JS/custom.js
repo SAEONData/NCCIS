@@ -8,6 +8,32 @@
             $('#ea-header').removeClass('scrollnav');
         }
     });
+/* Atlas Explorer page */
+function explorer(){
+    
+if ($(".ea-content-full").hasClass("explore-data")) {
+    setTimeout(function(){
+        $('#ea-header').addClass('explorer-scrollnav');
+        $('#app').addClass('full-explorer');
+        }, 4000);
+    }else{
+    $('#ea-header').removeClass('explorer-scrollnav');
+    $('#app').removeClass('full-explorer');
+    };
+};
+/* Image Download */
+
+// $('body').on('click', '.image-dl', function(event){
+//     // var imgsrc = $(this).find('img').attr('src');
+//     var dlButton = event.target;
+//     var dlParent = $(dlButton).closest('*[class~="image-dl"]');
+//     var dlSrc = $(dlParent).find('img').attr('src');
+//     $(dlParent).addClass('isParent');
+//     $(dlButton).addClass('clickedme');
+//     console.log('It is' + dlSrc );
+
+//     this.xhr = $.ajax({		type: "POST",		url: "https://www.w3schools.com/images/myw3schoolsimage.jpg",	}).done(function (data) { 	});
+// });
 
 /* Sidenav Dropdowns */
 
@@ -48,11 +74,90 @@ $('body').on('click', '.ea-tabs .nav-tabs a', function(){
 });
 
 $(document).ready(function() {
-    $("#homemap").attr("src","https://ulwazi.saeon.ac.za/");
+    $("#homemap").attr("src","https://gisportal.saeon.ac.za/portal/apps/webappviewer/index.html?id=2d572dcf9c5f47c484540f8c934e03f4");
     $("body").on("click", ".supportToggle", function(){
-        console.log('taryn')
         $("#supportform").toggleClass('show');
         $("#supportform").fadeToggle(300);
-    })
+    });
+    tableBuild();
+    explorer();
+});
+$(window).on('hashchange', function(){
+
+    setTimeout(function(){
+        tableBuild();
+        explorer();
+        console.log('4');
+      }, 2000);
+
+    
 
 });
+
+
+/* Data Table Filter */
+function tableBuild() {
+
+    if ( $.fn.dataTable.isDataTable( '#servicesTable' ) ) {
+        grid = $('#servicesTable').DataTable();
+    }
+    else {
+        grid = $('#servicesTable').DataTable( {
+            "paging": true,
+            "ordering": true,
+            "info": true
+        } );
+        console.log('is NOT a bdTable');
+        grid.draw();
+        $.fn.dataTable.ext.search.push(
+            function(settings, data, dataIndex) {
+              var dead = $('#gridDisplayDead')[0].checked;
+              var alive = $('#gridDisplayAlive')[0].checked;
+              var all = $('#gridDisplayAll')[0].checked;
+              var condition = String(data[5]); 
+              if (all) {
+                 toggleActive($('#gridDisplayAllLabel'));
+                 return true;
+              } else if (dead) {
+                 toggleActive($('#gridDisplayPublicDeadLabel'));
+                 return ("Public" == condition);
+              } else if (alive) {
+                 toggleActive($('#gridDisplayCommercialLabel'));   
+                 return ("Commercial" == condition);
+              }
+              return false;
+            }
+          );
+          
+        
+    }
+
+
+    
+      // Reload on record filter radio button clicks 
+      $(document).on("click", "#record-filters", function() {
+        grid.draw();
+      });
+      
+      var toggleActive = function(activate)
+      {
+         // de-activate any existing selection
+         $('#record-filters').find('.btn-primary').each(function(index, element) {
+           $(element).removeClass('active');
+         });
+         activate.addClass('active');
+      }
+    
+      
+  
+  };
+
+  /* Search modal */
+  $('body').on('submit', '#sasdisearch', function(e){
+    e.preventDefault();
+    
+    var searchterm = $('.sasdisearch').val();
+    var searchurl = 'http://www.sasdi.net/search.aspx?noframe=true&anytext='
+    //console.log(searchurl + searchterm);
+    window.open(searchurl + searchterm,'_blank');
+})

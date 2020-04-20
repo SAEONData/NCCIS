@@ -255,7 +255,7 @@ const PolicyLData = () => {
       {
         type: "Adaptation",
         name: "Strategic Framework and Overarching Implementation Plan for Ecosystem-Based Adaptation (EbA) in South Africa 2016 - 2021",
-        description: "Developed under the leadership of the Department of Environmental Affairs (DEA) and the South African National Biodiversity Institute (SANBI) and in consultation with biodiversity and climate change stakeholders, the Strategic Framework and Overarching Implementation Plan for EbA (hereafter referred to as the EbA Strategy) aims to take forward EbA as a central component of South Africa?s programme of work on biodiversity and climate change.",
+        description: "Developed under the leadership of the Department of Environment, Forestry and Fisheries (DEFF) and the South African National Biodiversity Institute (SANBI) and in consultation with biodiversity and climate change stakeholders, the Strategic Framework and Overarching Implementation Plan for EbA (hereafter referred to as the EbA Strategy) aims to take forward EbA as a central component of South Africa?s programme of work on biodiversity and climate change.",
         year: 2016,
         link: [<button onClick={(event) => {event.preventDefault(); window.open("https://www.sanbi.org/wp-content/uploads/2018/09/Strategic-Framework-and-Overarching-Implementation-Plan-for-EbA-in-SA.pdf");}}>link</button>]
       },

@@ -134,7 +134,7 @@ const DatatablePage = () => {
           type: 'Mitigation',
           program: '',
           name: 'Current carbon stock estimation capability for South African commercial forest plantations',
-          description: 'The South African forest plantation industry requires country-\'specific carbon accounting/ estimation methods that are compatible with a wide range of existing local and/or regional forest plantation inventory and management systems. For this reason the Institute for Commercial Forestry Research (ICFR) was commissioned by the Department of Environmental Affairs (DEA) to conduct a scoping study to assess data availability for the development of local carbon estimation equations for all commercial plantation sites and species within the three major genera grown (i.e. pine, eucalypt and wattle), as well as the availability and access to grower activity data.',
+          description: 'The South African forest plantation industry requires country-\'specific carbon accounting/ estimation methods that are compatible with a wide range of existing local and/or regional forest plantation inventory and management systems. For this reason the Institute for Commercial Forestry Research (ICFR) was commissioned by the Department of Environment, Forestry and Fisheries (DEFF) to conduct a scoping study to assess data availability for the development of local carbon estimation equations for all commercial plantation sites and species within the three major genera grown (i.e. pine, eucalypt and wattle), as well as the availability and access to grower activity data.',
           year: 2014,
           link: [<button onClick={(event) => {event.preventDefault(); window.open("https://www.environment.gov.za/sites/default/files/reports/carbonstocks_report2015_southafrica.pdf");}}>link</button>]
         },
@@ -222,7 +222,7 @@ const DatatablePage = () => {
           type: 'Climate Change',
           program: '',
           name: 'The National Climate Change Response Monitoring and Evaluation System Framework',
-          description: 'The NCCRP notes that the measurement and monitoring of climate change responses are critical in ensuring their effective implementation, and that South Africa, through the coordination of the Department of Environmental Affairs (DEA), will design and publish the country\'s Climate Change Response Monitoring and Evaluation (M&E) System. Details of this M&E system are outlined in specific sections of the NCCRP.',
+          description: 'The NCCRP notes that the measurement and monitoring of climate change responses are critical in ensuring their effective implementation, and that South Africa, through the coordination of the Department of Environment, Forestry and Fisheries (DEFF), will design and publish the country\'s Climate Change Response Monitoring and Evaluation (M&E) System. Details of this M&E system are outlined in specific sections of the NCCRP.',
           year: 2015,
           link: [<button onClick={(event) => {event.preventDefault(); window.open("https://www.environment.gov.za/sites/default/files/reports/nationalclimatechangeresponse_MESF.pdf");}}>link</button>]
         },
@@ -625,6 +625,14 @@ const DatatablePage = () => {
           description: 'This report documents South Africa\'s submission of its national greenhouse gas inventory for the year 2010. The reporting of these emissions is in line with the IPCC 2006 Guidelines.',
           year: 2014,
           link: [<button onClick={(event) => {event.preventDefault(); window.open("https://www.environment.gov.za/sites/default/files/reports/gng_nationalinventoryreport2000_2012.pdf");}}>link</button>]
+        },
+        {
+          type: 'Climate Change',
+          program: '',
+          name: 'Climate change and adolescents in South Africa: The role of youth activism and the health sector in safeguarding adolescents\' health and education',
+          description: 'Today\'s youth will inherit a world made hazardous by greenhouse gases. As a general rule, those chiefly responsible for emitting these gases will be spared the full brunt of their effects. Age has become a clear fault line of this phenomenon: while today’s adults will experience some impacts of these emissions, adolescents and future generations will face their full force in time.',
+          year: 2014,
+          link: [<button onClick={(event) => {event.preventDefault(); window.open("https://doi.org/10.7196/SAMJ.2019.v109i9.14327");}}>link</button>]
         }
        ]
   };

@@ -1,4 +1,4 @@
-import DEA_Logo from '../images/DEA/environmental_affairs_logo_small.jpg'
+//import DEA_Logo from '../images/DEA/environmental_affairs_logo_small.jpg'
 
 
 export const footerContent = {
@@ -6,7 +6,7 @@ export const footerContent = {
     {
       text: "Technology",
       links: [
-        { text: "DEA NCCIS uses open source, government funded facilities provided by SAEON. The DST and NRF funds the SAEON Open Data Platform (ODP) and associated portals. Developed by SAEON on behalf of DST, DEA, DRDLR, and other stakeholders." },
+        { text: "DEFF NCCIS uses open source, government funded facilities provided by SAEON. The DST and NRF funds the SAEON Open Data Platform (ODP) and associated portals. Developed by SAEON on behalf of DSI, DEFF and DLDLR, and other stakeholders." },
       ]
     },
     {
@@ -29,7 +29,7 @@ export const footerContent = {
     {
       text: "Funding",
       links: [
-        { src: DEA_Logo, width: "100%"/*, link: "http://www.example.com"*/ }
+        //{ src: DEA_Logo, width: "100%"/*, link: "http://www.example.com"*/ }
       ]
     }
   ]

@@ -5,11 +5,19 @@ import 'antd/lib/style/index.css'
 import 'font-awesome/css/font-awesome.min.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'mdbreact/dist/css/mdb.css'
+import ReactGA from "react-ga"; //Google Analytics
 
 //Components
 import React from 'react';
 import { connect } from 'react-redux';
 import { HashRouter as Router, Redirect, Switch, Route } from 'react-router-dom';
+import DataDownload from './Components/Pages/data-download.jsx';
+import ClimateServices from './Components/Pages/climate-services.jsx';
+import ClimateAtlas from './Components/Pages/climate-atlas.jsx';
+import About from './Components/Pages/about.jsx';
+import MapsGraphs from './Components/Pages/maps-graphs.jsx';
+import Finance from './Components/Pages/finance.jsx';
+import Contact from './components/pages/contact-ccis.jsx';
 import Home from './components/pages/Home/Home.jsx';
 import Login from './components/authentication/Login.jsx';
 import Logout from './components/authentication/Logout.jsx';
@@ -21,6 +29,7 @@ import Header from './components/navigation/Header.jsx';
 // import AME from './components/pages/Adaptation/MonitoringEvaluation/AME.jsx';
 import SideNav from './components/navigation/SideNav.jsx';
 import ComingSoon from './Components/Pages/ComingSoonAE.jsx'; //Created my own temp component
+// import CARBONsinks from './Components/Pages/carbon-sinks.jsx';
 import CICtrends from './Components/Pages/cic-trends.jsx';
 import CICtrendsp from './Components/Pages/cic-trends-prov.jsx';
 import CICtrendscc from './Components/Pages/cic-trends-current.jsx';
@@ -77,9 +86,9 @@ class App extends React.Component {
   }
 
   async componentDidMount() {
+    
     this.saveCurrentURL()
     window.onhashchange = this.saveCurrentURL
-
     try {
       await userManager.signinSilent()
     }
@@ -113,7 +122,12 @@ class App extends React.Component {
 
 
     if (location.hash !== this.state.currentURL && !this.ignoreURL()) {
-      console.log("NAV", location.hash)
+      console.log("NAV", location.hash);
+      ReactGA.initialize('UA-145174772-1');
+      ReactGA.pageview(location.hash);
+      // console.log('test', window.location.pathname + window.location.search)
+
+
       var valuef = location.hash.substring(location.hash.lastIndexOf('#') + 1);
       var valueid = valuef.replace('#','')
       if (!valuef.includes("/")){
@@ -157,6 +171,12 @@ class App extends React.Component {
                   <Route path="/login" component={Login} exact />
                   <Route path="/logout" component={Logout} exact />
                   <Route path="/callback" component={CallbackPage} />
+                  <Route path="/About" component={About} />
+                  <Route path="/climate-services" component={ClimateServices} />
+                  <Route path="/data-download" component={DataDownload} />
+                  <Route path="/maps-graphs" component={MapsGraphs} />
+                  <Route path="/finance" component={Finance} />
+                  <Route path="/contact-ccis" component={Contact} />
                   {/* <Route path="/ame" component={AME} /> */}
                   <Route path="/ComingSoon" component={ComingSoon} />
                   <Route path="/cic" component={CIChome} />
@@ -178,6 +198,8 @@ class App extends React.Component {
                   <Route path="/doc-disclaimer" component={DOCdisclaimer} />
                   <Route path="/doc-conditions" component={DOCconditions} />
                   <Route path="/event-nc6aug2019" component={eventnc6aug2019} />
+                  <Route path="/climate-atlas" component={ClimateAtlas} />
+                  {/* <Route path="/carbon-sinks" component={CARBONsinks} /> */}
                   <Redirect to="/" />
                 </Switch>
               </div>

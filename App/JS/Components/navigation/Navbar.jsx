@@ -14,8 +14,9 @@ import SARVA from '../pages/Tools/SARVA.jsx';
 import { data as NavData } from '../../../data/sideNavData';
 import IconList from '../Iconlist/index.jsx'
 import EASearch from '../search/search.jsx';
+import {siteBaseURL} from '../../../js/config/serviceURLs.js'
 
-
+console.log(siteBaseURL);
 
 const _gf = require('../../globalFunctions')
 
@@ -124,7 +125,7 @@ class Navbar extends React.Component {
                 
                 <Dropdown>
                   <DropdownToggle nav caret>
-                    <b>Climate Information Centre</b>
+                    <b>Climate Information</b>
                   </DropdownToggle>
                   <DropdownMenu>
                   <DropdownItem onClick={() => { location.hash = "cic" }}>
@@ -135,32 +136,72 @@ class Navbar extends React.Component {
                       GHG Emissions Database
                     </DropdownItem>
                     <DropdownItem onClick={() => { location.hash = "cic-trends" }}>
-                      Trends
+                      Observed Climate Trends
                     </DropdownItem>
                     <DropdownItem onClick={() => { location.hash = "cic-projections" }}>
-                      Projections
+                      Climate Change Projections
                     </DropdownItem>
                     <DropdownItem onClick={() => { location.hash = "cic-vulnerability" }}>
-                      Vulnerability
+                      Vulnerability to Climate Change
                     </DropdownItem>
                     <DropdownItem onClick={() => { location.hash = "cic-extreme" }}>
                       Extreme Weather Events and Disasters
+                    </DropdownItem>
+                    <DropdownItem onClick={() => { location.hash = "finance" }}>
+                      Financing Climate Change
                     </DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
               </NavItem>
 
+
               <NavItem>
                 <Dropdown>
                   <DropdownToggle nav caret>
-                    <b>Financing Climate Change</b>
+                    <b>Climate Services</b>
+                  </DropdownToggle>
+                  <DropdownMenu>
+                    <DropdownItem onClick={() => { location.hash = "/ComingSoon" }}>
+                    Climate Services
+                    </DropdownItem>
+                    <DropdownItem onClick={() => { location.hash = "/ComingSoon" }}>
+                    Climate Atlas
+                    </DropdownItem>
+                    <DropdownItem onClick={() => { location.hash = "/ComingSoon" }}>
+                    Maps and Graphs
+                    </DropdownItem>
+                    <DropdownItem onClick={() => { location.hash = "/ComingSoon" }}>
+                    Download Data
+                    </DropdownItem>
+                  </DropdownMenu>
+                  {/* <DropdownMenu>
+                  <DropdownItem onClick={() => { location.hash = "/climate-services" }}>
+                    Climate Services
+                    </DropdownItem>
+                    <DropdownItem onClick={() => { location.hash = "/climate-atlas" }}>
+                    Climate Atlas
+                    </DropdownItem>
+                    <DropdownItem onClick={() => { location.hash = "/maps-graphs" }}>
+                    Maps and Graphs
+                    </DropdownItem>
+                    <DropdownItem onClick={() => { location.hash = "/data-download" }}>
+                    Download Data
+                    </DropdownItem>
+                  </DropdownMenu> */}
+                </Dropdown>
+              </NavItem>
+
+              {/* <NavItem>
+                <Dropdown>
+                  <DropdownToggle nav caret>
+                    <b>Finance Climate Change</b>
                   </DropdownToggle>
                   <DropdownMenu>
 
                     <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
                     Technology Needs Assessment
                     </DropdownItem>
-                    <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
+                    <DropdownItem onClick={() => { location.hash = "finance" }}>
                     Financing
                     </DropdownItem>
                     <DropdownItem onClick={() => { location.hash = "ComingSoon" }}>
@@ -168,7 +209,7 @@ class Navbar extends React.Component {
                     </DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
-              </NavItem>
+              </NavItem> */}
 
               {/* Resources */}
               <NavItem>
@@ -180,9 +221,12 @@ class Navbar extends React.Component {
               <NavItem>
                 <Dropdown>
                   <DropdownToggle nav caret>
-                    <b>Resources</b>
+                    <b>Resources and Tools</b>
                   </DropdownToggle>
                   <DropdownMenu>
+                    <DropdownItem onClick={() => { location.hash = "/info-tools" }}>
+                    Tools
+                    </DropdownItem>
                     <DropdownItem onClick={() => { location.hash = "/info-glossary" }}>
                     Glossary
                     </DropdownItem>
@@ -194,10 +238,16 @@ class Navbar extends React.Component {
               </NavItem>
 
               {/* Tools */}
-              <NavItem>
-                <NavLink to="/info-tools">
-                <b>Tools</b>
+              {/* <NavItem>
+                <NavLink to="/data-download">
+                <b>Data</b>
                 </NavLink>
+              </NavItem> */}
+              {/* Carbon Sinks */}
+              <NavItem>
+                <a className="nav-link Ripple-parent" target="_blank" href={siteBaseURL,'/carbon-sinks'}>
+                <b>Carbon Sinks Atlas</b>
+                </a>
               </NavItem>
 
             </NavbarNav>
@@ -206,11 +256,11 @@ class Navbar extends React.Component {
               <NavItem>
                 <EASearch />
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink to="/about">
                 <b>About</b>
                 </NavLink>
-              </NavItem>
+              </NavItem> */}
               <NavItem>
                 <IconList></IconList>
               </NavItem>
