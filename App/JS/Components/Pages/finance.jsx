@@ -41,7 +41,7 @@ class Finance extends React.Component {
             </div>
           </div>
           <h5>Financing Climate Change</h5>
-          <p>In order for South Africa to implement effective climate action, support is required to fund programmes. The inancial suport, categorised by type and current status, required by South Africa to implenet action is presente below.</p>
+          <p>In order for South Africa to implement effective climate action, support is required to fund programmes. The financial support, categorised by type and current status, required by South Africa to implement action is presented below.</p>
           </div>
           </section>
 
