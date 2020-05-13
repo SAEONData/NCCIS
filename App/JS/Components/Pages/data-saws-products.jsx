@@ -3,7 +3,9 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Row, Col, Button} from 'mdbreact'
-import DataDownloadContent from './data-download-content.jsx'
+import ServicesData from '../../../Data/servicesData.jsx'
+
+
 
 const mapStateToProps = (state, props) => {
   return {}
@@ -17,7 +19,7 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-class DataDownload extends React.Component {
+class DataSawsProducts extends React.Component {
 
   constructor(props) {
     super(props);
@@ -33,7 +35,7 @@ class DataDownload extends React.Component {
       <>
        <section className="ea-content-full">
           <div className="container-fluid mt-4">
-          <h5>Download Data</h5>
+          <h5>SAWS Products and Services</h5>
           <Row>
           <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/climate-services" }}>
             <em className="fa fa-chevron-right mr-1"></em> Climate Services</Button></Col>
@@ -41,19 +43,19 @@ class DataDownload extends React.Component {
             <em className="fa fa-chevron-right mr-1"></em> Climate Atlas</Button></Col>
           <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/maps-graphs" }}>
             <em className="fa fa-chevron-right mr-1"></em> Maps and Graphs</Button></Col>
-          <Col md="auto"><Button type="button" className="btn btn-success-active btn-lg" onClick={() => { location.hash = "/data-download" }}>
+          <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/data-download" }}>
             <em className="fa fa-chevron-right mr-1"></em> Download Data</Button></Col>
           </Row>
           </div>
           </section>
           <section className="ea-content-full mt-4 pt-4 pb-4 light-bg">
-            <div className="container">
-              <DataDownloadContent />
-            </div>
+          <div className="container-fluid">
+          <ServicesData />
+          </div>
           </section>
     </>
     )
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(DataDownload)
+export default connect(mapStateToProps, mapDispatchToProps)(DataSawsProducts)

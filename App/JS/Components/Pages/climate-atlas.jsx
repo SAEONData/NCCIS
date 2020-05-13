@@ -2,8 +2,7 @@
 
 import React from 'react'
 import { connect } from 'react-redux'
-import { Row, Col, Button, Card, CardBody } from 'mdbreact'
-import ServicesData from '../../../Data/servicesData.jsx'
+// import '../../atlasfull'
 
 const mapStateToProps = (state, props) => {
   return {}

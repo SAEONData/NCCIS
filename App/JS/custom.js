@@ -1,7 +1,9 @@
 /* Header Scroll */
 
     $(window).scroll(function(){
-        if($(this).scrollTop() > 150) {
+        if($(this).scrollTop() > 20) {
+            $('body').find('.iframe-wrap').removeClass('ea-map-framehm');
+        }if($(this).scrollTop() > 150) {
             $('#ea-header').addClass('scrollnav');
         }
         else{
@@ -10,30 +12,24 @@
     });
 /* Atlas Explorer page */
 function explorer(){
-    
-if ($(".ea-content-full").hasClass("explore-data")) {
+    console.log('run explorer');
+    var bodytag = $('body').find('.ea-content-full');
+    //var bodytag = $('body').find('.ea-content');
+    if ($(bodytag).hasClass("explore-data")) {
     setTimeout(function(){
         $('#ea-header').addClass('explorer-scrollnav');
         $('#app').addClass('full-explorer');
         }, 4000);
+        console.log('explorer OPEN');
     }else{
     $('#ea-header').removeClass('explorer-scrollnav');
     $('#app').removeClass('full-explorer');
+    console.log('run explorer');
     };
+    // if($(bodytag).hasClass("explore-data")){
+    //     $(window).scrollTop(0);
+    // }
 };
-/* Image Download */
-
-// $('body').on('click', '.image-dl', function(event){
-//     // var imgsrc = $(this).find('img').attr('src');
-//     var dlButton = event.target;
-//     var dlParent = $(dlButton).closest('*[class~="image-dl"]');
-//     var dlSrc = $(dlParent).find('img').attr('src');
-//     $(dlParent).addClass('isParent');
-//     $(dlButton).addClass('clickedme');
-//     console.log('It is' + dlSrc );
-
-//     this.xhr = $.ajax({		type: "POST",		url: "https://www.w3schools.com/images/myw3schoolsimage.jpg",	}).done(function (data) { 	});
-// });
 
 /* Sidenav Dropdowns */
 
@@ -72,9 +68,18 @@ $('body').on('click', '.ea-tabs .nav-tabs a', function(){
     $('.ea-tabs .tab-pane').hide();
     $('#'+tab_label).slideDown(300);
 });
-
+/* pillar hover */
+$('body').on('mouseover click', '.nfcs-pillars .card', function(){
+    
+    var activelabel = $(this).attr('card-block');
+    console.log(activelabel);
+    $('.nfcs-pillars .card').removeClass('active');
+    $(this).addClass('active');
+    $('.nfcs-pillars-content .card-body').hide();
+    $('#'+activelabel).fadeIn(300);
+});
 $(document).ready(function() {
-    $("#homemap").attr("src","https://gisportal.saeon.ac.za/portal/apps/webappviewer/index.html?id=2d572dcf9c5f47c484540f8c934e03f4");
+    //$("#homemap").attr("src","https://gisportal.saeon.ac.za/portal/apps/webappviewer/index.html?id=2d572dcf9c5f47c484540f8c934e03f4");
     $("body").on("click", ".supportToggle", function(){
         $("#supportform").toggleClass('show');
         $("#supportform").fadeToggle(300);
@@ -87,7 +92,6 @@ $(window).on('hashchange', function(){
     setTimeout(function(){
         tableBuild();
         explorer();
-        console.log('4');
       }, 2000);
 
     
@@ -97,7 +101,8 @@ $(window).on('hashchange', function(){
 
 /* Data Table Filter */
 function tableBuild() {
-
+    // var $ = require( 'jquery' );
+    // require( 'datatables.net' )( window, $ );
     if ( $.fn.dataTable.isDataTable( '#servicesTable' ) ) {
         grid = $('#servicesTable').DataTable();
     }
@@ -107,7 +112,6 @@ function tableBuild() {
             "ordering": true,
             "info": true
         } );
-        console.log('is NOT a bdTable');
         grid.draw();
         $.fn.dataTable.ext.search.push(
             function(settings, data, dataIndex) {

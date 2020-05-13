@@ -44,7 +44,7 @@ class SideNav extends React.Component {
   }
 
   updateWindowDimensions() {
-    this.setState({ width: window.innerWidth, height: window.innerHeight });
+    //this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
 
   toggleNav(key) {

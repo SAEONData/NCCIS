@@ -250,6 +250,12 @@ class Navbar extends React.Component {
                 </a>
               </NavItem>
 
+              <NavItem>
+              <NavLink to="/about">
+                <b>About</b>
+              </NavLink>
+              </NavItem>
+
             </NavbarNav>
             {/* RIGHT */}
             <NavbarNav right>

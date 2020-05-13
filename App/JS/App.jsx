@@ -12,9 +12,11 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { HashRouter as Router, Redirect, Switch, Route } from 'react-router-dom';
 import DataDownload from './Components/Pages/data-download.jsx';
+import DataSawsProducts from './Components/Pages/data-saws-products.jsx';
 import ClimateServices from './Components/Pages/climate-services.jsx';
 import ClimateAtlas from './Components/Pages/climate-atlas.jsx';
 import About from './Components/Pages/about.jsx';
+import AboutNFCS from './Components/Pages/about-NFCS.jsx';
 import MapsGraphs from './Components/Pages/maps-graphs.jsx';
 import Finance from './Components/Pages/finance.jsx';
 import Contact from './components/pages/contact-ccis.jsx';
@@ -51,8 +53,12 @@ import DOCconditions from './Components/Pages/doc-conditions.jsx';
 import eventnc6aug2019 from './Components/Pages/Events/event-nc6aug2019.jsx';
 import userManager from './components/authentication/userManager';
 import '../css/custom.css';
+// import './jquerymin';
+// import './jquerydataTablesmin';
 import './custom';
 
+const $ = require('jquery');
+$.DataTable = require('datatables.net');
 //Data
 const Oidc = require("oidc-client")
 import { data as NavData } from '../data/sideNavData'
@@ -172,8 +178,10 @@ class App extends React.Component {
                   <Route path="/logout" component={Logout} exact />
                   <Route path="/callback" component={CallbackPage} />
                   <Route path="/About" component={About} />
+                  <Route path="/about-NFCS" component={AboutNFCS} />
                   <Route path="/climate-services" component={ClimateServices} />
                   <Route path="/data-download" component={DataDownload} />
+                  <Route path="/data-saws-products" component={DataSawsProducts} />
                   <Route path="/maps-graphs" component={MapsGraphs} />
                   <Route path="/finance" component={Finance} />
                   <Route path="/contact-ccis" component={Contact} />

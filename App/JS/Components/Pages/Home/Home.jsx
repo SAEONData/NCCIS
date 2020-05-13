@@ -257,7 +257,7 @@ class Home extends React.Component {
 
     return (
       <>
-       <section className="ea-content">
+       <section className="ea-content homeview">
           <div className="container-fluid mt-4">
           <div className="row d-sm-none d-md-none d-lg-none">
             <div className="col-6"><h5>Actions</h5></div>
@@ -283,20 +283,10 @@ class Home extends React.Component {
 
         <section className="ea-content">
           <div className="container-fluid mt-4">
-          <Row className="home-map">
-            <div className="col-3 pb-1 text-center">
-              <div className="round-edge green-bg pl-3 pr-3 pt-4 ml-n2 h-100 d-table">
-                <div className="d-table-row"><h4 className="pt-4 mb-4">Climate Change Information System</h4></div>
-                <div className="m-auto">
-                <p>The CCIS is part of the national effort to track South Africa's overall transition to a low carbon and climate resilient economy by offering a series of decision support tools to inform policy and decision-making.</p>
-                <p>The system monitors and evaluates climate change drivers, events, links to national objectives, targets and strategies in respect of climate change mitigation and adaptation monitoring and assessment of actions taken by stakeholders.</p>
-              </div></div>
+            <div className="iframe-wrap ea-map-framehm">
+            <iframe src="https://gisportal.saeon.ac.za/portal/apps/webappviewer/index.html?id=2d572dcf9c5f47c484540f8c934e03f4" id="homemap" className="ea-map-frame round-edge"  frame="none" border="none" style={{ width: "100%" , height: "800px" , border:"none"}}></iframe>
             </div>
-            <div className="col-9">
-                <iframe src="" id="homemap" className="ea-map-frame round-edge" ></iframe>
-            </div>
-          </Row>
-          
+            
           </div>
         </section>
 
