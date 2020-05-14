@@ -45,6 +45,8 @@ class ClimateServices extends React.Component {
             <em className="fa fa-chevron-right mr-1"></em> Maps and Graphs</Button></Col>
           <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/data-download" }}>
             <em className="fa fa-chevron-right mr-1"></em> Download Data</Button></Col>
+            <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/about-NFCS" }}>
+            <em className="fa fa-chevron-right mr-1"></em> About the NFCS</Button></Col>
           </Row>
           </div>
         </section>
@@ -64,7 +66,7 @@ class ClimateServices extends React.Component {
             <div className="tab-content card pt-5" id="mymdbTabContentMD">
               <div className="tab-pane show" id="tab-saws" >
               <div className="card h-100"><div className="card-body"><h2>Our Vision</h2>
-                    <p>NFCS strives to enable society to better manage the risks and opportunities arising from climate variability and change, especially for those who are most vulnerable to climate related hazards. 
+                    <p>National Framework for Climate Services (NFCS) strives to enable society to better manage the risks and opportunities arising from climate variability and change, especially for those who are most vulnerable to climate related hazards. 
                     <a href="/#/about-NFCS"> Read more about the National Framework for Climate Services</a></p>
                     </div></div>
                     <DataDownloadContent />

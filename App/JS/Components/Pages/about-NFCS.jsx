@@ -40,14 +40,14 @@ class AboutNFCS extends React.Component {
           </div>
           <h5>About the National Framework for Climate Services</h5>
           <Row>
-          <Col md="auto"><Button type="button" className="btn btn-success-active btn-lg" onClick={() => { location.hash = "cic-ghg" }}>
-            <em className="fa fa-chevron-right mr-1"></em> GHG Emissions Database</Button></Col>
-          <Col md="auto"><Button type="button" className="btn btn-success btn-success btn-lg" onClick={() => { location.hash = "/cic-trends" }}>
-            <em className="fa fa-chevron-right mr-1"></em> Trends</Button></Col>
-          <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/cic-projections" }}>
-            <em className="fa fa-chevron-right mr-1"></em> Projections</Button></Col>
-          <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/cic-impacts" }}>
-            <em className="fa fa-chevron-right mr-1"></em> Impacts</Button></Col>
+          <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/climate-services" }}>
+            <em className="fa fa-chevron-right mr-1"></em> Climate Services</Button></Col>
+          <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/climate-atlas" }}>
+            <em className="fa fa-chevron-right mr-1"></em> Climate Atlas</Button></Col>
+          <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/maps-graphs" }}>
+            <em className="fa fa-chevron-right mr-1"></em> Maps and Graphs</Button></Col>
+          <Col md="auto"><Button type="button" className="btn btn-success btn-lg" onClick={() => { location.hash = "/data-download" }}>
+            <em className="fa fa-chevron-right mr-1"></em> Download Data</Button></Col>
           </Row>
           </div>
           </section>
