@@ -86,6 +86,7 @@ $(document).ready(function() {
     });
     tableBuild();
     explorer();
+    tabLink();
 });
 $(window).on('hashchange', function(){
 
@@ -98,7 +99,17 @@ $(window).on('hashchange', function(){
 
 });
 
-
+/* Custom links for tabs */
+// $(document).on("click", "#record-filters", function() {
+//     grid.draw();
+//   });
+function tabLink(){
+    $('body').on('click','.tab-link', function(){
+        var tabValue = $(this).attr('tab-link');
+        $('a[tab-link="'+tabValue+'"]').trigger('click');
+        console.log(tabValue);
+    });
+}
 /* Data Table Filter */
 function tableBuild() {
     // var $ = require( 'jquery' );

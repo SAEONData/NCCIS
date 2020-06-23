@@ -154,6 +154,7 @@ class Navbar extends React.Component {
                 </Dropdown>
               </NavItem>
 
+              
 
               <NavItem>
                 <Dropdown>
@@ -161,6 +162,9 @@ class Navbar extends React.Component {
                     <b>Climate Services</b>
                   </DropdownToggle>
                   <DropdownMenu>
+                    <DropdownItem onClick={() => { location.hash = "/ComingSoon" }}>
+                    About the NFCS
+                    </DropdownItem>
                     <DropdownItem onClick={() => { location.hash = "/ComingSoon" }}>
                     Climate Services
                     </DropdownItem>

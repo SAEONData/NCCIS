@@ -320,6 +320,39 @@ table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before
 .nfcs-pillars .card:hover{
     cursor: pointer;
 }
+/* Climate Services Blocks */
+.cs-blocks h2{
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom:25px;
+}
+.cs-description{
+    min-height: 97px;
+}
+/* Page navigation */
+.dataTables_paginate .paginate_button {
+    font-size: .9rem;
+    color: #212529;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    padding: 5px 10px;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.dataTables_paginate .paginate_button:hover {
+    color: #4285f4;
+}
+.dataTables_paginate .paginate_button.current,
+.dataTables_paginate .paginate_button.current:hover {
+    color: #fff;
+    background-color: #4285f4;
+    border-radius: .125rem;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
 /* header */
 #ea-header{
     position: fixed;
