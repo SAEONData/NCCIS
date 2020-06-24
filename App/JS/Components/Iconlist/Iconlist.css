@@ -37,7 +37,7 @@
     bottom: 41px;
     right: 20%;
     left: auto;
-    margin-right: -9px;
+    margin-right: -14px;
 }
 .tooltip-ea:hover:before{
     border: solid;
@@ -50,6 +50,20 @@
     z-index: 99;
 }
 .tooltip-ea-r:hover:before {
-    bottom: 35px;
+    bottom: 36px;
+}
+button.tooltip-ea{
+    overflow: visible;
+}
+button.tooltip-ea:hover:before {
+    bottom: 59px;
+}
+button.tooltip-ea:hover:after {
+    bottom: 64px;
+    right: -4%;
+    text-transform: none;
+    width: 300px;
+    background: #333;
+    box-shadow: 0 0 3px 0 #000;
 }
 /* Custom Tooltip END*/

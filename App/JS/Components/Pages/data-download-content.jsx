@@ -96,19 +96,13 @@ class DataDownloadContent extends React.Component {
               </div>
 
             </div>
-            <h2 class="mt-5 mb-3">Further Data Collections:</h2>
+            <h2 className="mt-5 mb-1">Further Data Collections:</h2>
+            <p className="mb-3">Datasets for assistance in decision making around specific areas</p>
             
 
           <section className="pt-5 pb-5">
             <div className="container">
               <div className="row mb-5">
-                <div className="col-md-3">
-                  <div className="dataDownTableInner">
-                  <h5>Climate Change Projections</h5>
-                  <img src={DataSAWS} />
-                  <a href="http://www.sasdi.net/search.aspx?guid=4787c3db-12ac-3350-5d75-1b829e1b1504&control=hide&noframe=true&tab=Results" target="_blank" className="btn btn-success">Access Data from SAWS <em className="fa fa-database ml-2"></em></a>
-                  </div>
-                </div>
                 <div className="col-md-3">
                   <div className="dataDownTableInner">
                   <h5>Disasters</h5>
@@ -128,6 +122,13 @@ class DataDownloadContent extends React.Component {
                   <h5>Biodiversity</h5>
                   <img src={DataBiodiversity} />
                   <a href="http://www.sasdi.net/search.aspx?guid=4821e616-f786-8e41-fc9a-45ad113b1510&control=hide&noframe=true&tab=Results" target="_blank" className="btn btn-success">Access Data <em className="fa fa-database ml-2"></em></a>
+                  </div>
+                </div>
+                <div className="col-md-3">
+                  <div className="dataDownTableInner">
+                  <h5>Water Resources</h5>
+                  <img src={DataWater} />
+                  <a href="http://www.sasdi.net/atlas.aspx?uid=6529763ce9983abf43d4192197d775c3&ro=true&control=hide&noframe=true&tab=Analysis" target="_blank" className="btn btn-success">Access Data <em className="fa fa-database ml-2"></em></a>
                   </div>
                 </div>
               </div>
@@ -153,13 +154,7 @@ class DataDownloadContent extends React.Component {
                   <a href="https://www.greenbook.co.za/" target="_blank" className="btn btn-success">Access Data <em className="fa fa-database ml-2"></em></a>
                   </div>
                 </div>
-                <div className="col-md-3">
-                  <div className="dataDownTableInner">
-                  <h5>Water Resources</h5>
-                  <img src={DataWater} />
-                  <a href="http://www.sasdi.net/atlas.aspx?uid=6529763ce9983abf43d4192197d775c3&ro=true&control=hide&noframe=true&tab=Analysis" target="_blank" className="btn btn-success">Access Data <em className="fa fa-database ml-2"></em></a>
-                  </div>
-                </div>
+                
               </div>
               <div className="row">
                 <div className="col-md-6">

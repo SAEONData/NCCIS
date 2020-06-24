@@ -107,7 +107,6 @@ function tabLink(){
     $('body').on('click','.tab-link', function(){
         var tabValue = $(this).attr('tab-link');
         $('a[tab-link="'+tabValue+'"]').trigger('click');
-        console.log(tabValue);
     });
 }
 /* Data Table Filter */
