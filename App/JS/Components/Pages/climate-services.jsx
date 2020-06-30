@@ -10,6 +10,7 @@ import RainfallMaps from '../galleries/gal-rainfall-maps.jsx'
 import RainfallGraphs from '../galleries/gal-rainfall-graphs.jsx'
 import ReportYearData from '../../../Data/2019Data.jsx'
 import DataDownloadContent from './data-download-content.jsx'
+import ServicesData from '../../../Data/servicesData.jsx'
 import '../../Components/Iconlist/IconList.css'
 const mapStateToProps = (state, props) => {
   return {}
@@ -73,10 +74,13 @@ class ClimateServices extends React.Component {
               <li className="nav-item waves-effect waves-light">
                 <a className="nav-link" tab-link="tab-c-mapsgraphs" >Maps and Graphs</a>
               </li>
+              <li className="nav-item waves-effect waves-light">
+                <a className="nav-link" tab-link="tab-c-saws" >SAWS Products and Services</a>
+              </li>
             </ul>
             <div className="tab-content card pt-5" id="mymdbTabContentMD">
-              <div className="tab-pane show" id="tab-saws" >
-                <h2 className="mb-5 mt-3">Products and services:</h2>
+              <div className="tab-pane pb-4  show" id="tab-saws" >
+                <h2 className="mb-5mt-3">Products and services:</h2>
                 <div className="row cs-blocks">
                   <div className="col-md-3">
                     <div className="card h-100"><div className="card-body">
@@ -110,6 +114,14 @@ class ClimateServices extends React.Component {
                       <em className="fa fa-bar-chart mr-1"></em> View data</Button>
                     </div></div>
                   </div>
+                  <div className="col-md-3">
+                    <div className="card h-100 mt-4"><div className="card-body">
+                      <h2>SAWS Products and Services</h2>
+                      <p className="cs-description">Climate summaries, Technical papers, reports and more to inform policy, planning and decision making.</p>
+                      <Button type="button" className="btn btn-success tab-link" tab-link="tab-c-saws">
+                      <em className="fa fa-eye mr-1"></em> View information</Button>
+                    </div></div>
+                  </div>
                 </div>
               
                     
@@ -127,8 +139,7 @@ class ClimateServices extends React.Component {
                   <div className="dataDownTableInner">
                   <h5>Climate Projections from SAWS:</h5>
                   <img src={DataSAWS} />
-                  <a href="http://www.sasdi.net/search.aspx?guid=4787c3db-12ac-3350-5d75-1b829e1b1504&control=hide&noframe=true&tab=Results" target="_blank" className="btn btn-success">Go to information <em className="fa fa-database ml-2"></em></a>
-                  <a href="/#/data-saws-products" className="btn btn-success">Products and services <em className="fa fa-database ml-2"></em></a>
+                  <a href="http://www.sasdi.net/search.aspx?guid=4787c3db-12ac-3350-5d75-1b829e1b1504&control=hide&noframe=true&tab=Results" target="_blank" className="btn btn-success">Go Data <em className="fa fa-database ml-2"></em></a>
                   </div>
                 </div>
                 <div className="col-md-4">
@@ -159,6 +170,12 @@ class ClimateServices extends React.Component {
                 <h3 className="mt-5 mb-3">Provincial Annual Rainfall:</h3>
                 <RainfallGraphs />
               </div>
+
+              <div className="tab-pane" id="tab-c-saws" >
+                <h2 className="mt-3 mb-3">SAWS Products and Services</h2>
+                <ServicesData />
+              </div>
+              
 
 
               

@@ -45,13 +45,14 @@ const ServicesData = () => {
         field: 'pillar',
         sort: 'asc',
         width: 150
-      },
-      {
-        label: 'View solution',
-        field: 'link',
-        sort: 'asc',
-        width: 150
       }
+      // ,
+      // {
+      //   label: 'View solution',
+      //   field: 'link',
+      //   sort: 'asc',
+      //   width: 150
+      // }
     ],
     rows: [
       {
@@ -62,7 +63,7 @@ const ServicesData = () => {
         sector: "General public",
         usage: "Commercial",
         pillar: "2,3",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Surface weather observations, forecasts and warnings",
@@ -72,7 +73,7 @@ const ServicesData = () => {
         sector: "General public",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Surface weather observations, forecasts and warnings",
@@ -82,7 +83,7 @@ const ServicesData = () => {
         sector: "General public",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Surface weather observations, forecasts and warnings",
@@ -92,7 +93,7 @@ const ServicesData = () => {
         sector: "General public",
         usage: "Public",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Surface weather observations, forecasts and warnings",
@@ -102,7 +103,7 @@ const ServicesData = () => {
         sector: "General public",
         usage: "Public",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Specialized data & products",
@@ -112,7 +113,7 @@ const ServicesData = () => {
         sector: "General public, all sectors",
         usage: "Public",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Specialized data & products",
@@ -122,7 +123,7 @@ const ServicesData = () => {
         sector: "Agriculture / water",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Specialized data & products",
@@ -132,7 +133,7 @@ const ServicesData = () => {
         sector: "Agriculture",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Specialized data & products",
@@ -142,7 +143,7 @@ const ServicesData = () => {
         sector: "Agriculture",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Specialized data & products",
@@ -152,7 +153,7 @@ const ServicesData = () => {
         sector: "General public",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Specialized data & products",
@@ -162,7 +163,7 @@ const ServicesData = () => {
         sector: "General public",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Specialized data & products",
@@ -172,7 +173,7 @@ const ServicesData = () => {
         sector: "Research",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Specialized data & products",
@@ -182,7 +183,7 @@ const ServicesData = () => {
         sector: "Health, general public",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Specialized data & products",
@@ -192,7 +193,7 @@ const ServicesData = () => {
         sector: "Insurance, Eskom",
         usage: "Commercial",
         pillar: "2, 3",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Specialized data & products",
@@ -202,7 +203,7 @@ const ServicesData = () => {
         sector: "Power utilities and municipalities",
         usage: "Commercial",
         pillar: "2, 3",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Specialized data & products",
@@ -212,7 +213,7 @@ const ServicesData = () => {
         sector: "Aviation",
         usage: "Commercial",
         pillar: "2, 3",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Specialized data & products",
@@ -222,7 +223,7 @@ const ServicesData = () => {
         sector: "Research/general public",
         usage: "Commercial",
         pillar: "2,3",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Specialized data & products",
@@ -232,7 +233,7 @@ const ServicesData = () => {
         sector: "Research",
         usage: "Commercial",
         pillar: "2,3",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Specialized data & products",
@@ -242,7 +243,7 @@ const ServicesData = () => {
         sector: "Research/general public",
         usage: "Commercial",
         pillar: "2,3",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Specialized data & products",
@@ -252,7 +253,7 @@ const ServicesData = () => {
         sector: "Research",
         usage: "Commercial",
         pillar: "2,3",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Specialized data & products",
@@ -262,7 +263,7 @@ const ServicesData = () => {
         sector: "General public",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Specialized data & products",
@@ -272,7 +273,7 @@ const ServicesData = () => {
         sector: "General public",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Specialized data & products",
@@ -282,7 +283,7 @@ const ServicesData = () => {
         sector: "General public / Research",
         usage: "Commercial",
         pillar: "2,3",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Specialized data & products",
@@ -292,7 +293,7 @@ const ServicesData = () => {
         sector: "General public, aviation, disaster management",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -302,7 +303,7 @@ const ServicesData = () => {
         sector: "Aviation",
         usage: "Commercial",
         pillar: "2, 3",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -312,7 +313,7 @@ const ServicesData = () => {
         sector: "Aviation",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -322,7 +323,7 @@ const ServicesData = () => {
         sector: "Aviation",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -332,7 +333,7 @@ const ServicesData = () => {
         sector: "Research / industry / general public",
         usage: "Commercial",
         pillar: "2,3",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -342,7 +343,7 @@ const ServicesData = () => {
         sector: "General public",
         usage: "Commercial",
         pillar: "2, 3",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -352,7 +353,7 @@ const ServicesData = () => {
         sector: "General public / all sectors",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -362,7 +363,7 @@ const ServicesData = () => {
         sector: "General public / all sectors",
         usage: "Commercial",
         pillar: "2,3",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -372,7 +373,7 @@ const ServicesData = () => {
         sector: "General public / all sectors",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -382,7 +383,7 @@ const ServicesData = () => {
         sector: "General public / all sectors",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -392,7 +393,7 @@ const ServicesData = () => {
         sector: "General public / all sectors",
         usage: "Commercial",
         pillar: "2,3",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -402,7 +403,7 @@ const ServicesData = () => {
         sector: "All sectors",
         usage: "Commercial",
         pillar: "2,3",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -412,7 +413,7 @@ const ServicesData = () => {
         sector: "Aviation / Insurance / general public",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -422,7 +423,7 @@ const ServicesData = () => {
         sector: "Agriculture",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -432,7 +433,7 @@ const ServicesData = () => {
         sector: "All sectors / general public",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -442,7 +443,7 @@ const ServicesData = () => {
         sector: "Aviation",
         usage: "Public",
         pillar: "2,3",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -452,7 +453,7 @@ const ServicesData = () => {
         sector: "Disaster management",
         usage: "Public",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -462,7 +463,7 @@ const ServicesData = () => {
         sector: "General public, all sectors",
         usage: "Public",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -472,7 +473,7 @@ const ServicesData = () => {
         sector: "General public, all sectors",
         usage: "Public",
         pillar: "2,3",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -482,7 +483,7 @@ const ServicesData = () => {
         sector: "General public, energy",
         usage: "Public",
         pillar: "2,3",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -492,7 +493,7 @@ const ServicesData = () => {
         sector: "General public, all sectors",
         usage: "Public",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -502,7 +503,7 @@ const ServicesData = () => {
         sector: "General public, all sectors",
         usage: "Public",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -512,7 +513,7 @@ const ServicesData = () => {
         sector: "General public, all sectors",
         usage: "Public",
         pillar: "2,3",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -522,7 +523,7 @@ const ServicesData = () => {
         sector: "General public, all sectors",
         usage: "Public",
         pillar: "2,3",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -532,7 +533,7 @@ const ServicesData = () => {
         sector: "General public, all sectors",
         usage: "Public",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -542,7 +543,7 @@ const ServicesData = () => {
         sector: "General public, all sectors",
         usage: "Public",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -552,7 +553,7 @@ const ServicesData = () => {
         sector: "General public, all sectors",
         usage: "Public",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -562,7 +563,7 @@ const ServicesData = () => {
         sector: "General public, all sectors",
         usage: "Public",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -572,7 +573,7 @@ const ServicesData = () => {
         sector: "General public, all sectors",
         usage: "Public",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Products and services/industry services",
@@ -582,7 +583,7 @@ const ServicesData = () => {
         sector: "General public, climate research",
         usage: "Public",
         pillar: "2,3",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Weather APPS",
@@ -592,7 +593,7 @@ const ServicesData = () => {
         sector: "General public, all sectors",
         usage: "Public",
         pillar: "2,3",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Weather services support desk",
@@ -602,7 +603,7 @@ const ServicesData = () => {
         sector: "General public",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Web products",
@@ -612,7 +613,7 @@ const ServicesData = () => {
         sector: "General public / all sectors",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Web products",
@@ -622,7 +623,7 @@ const ServicesData = () => {
         sector: "General public, all sectors",
         usage: "Public",
         pillar: "2,3",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Climate resources library",
@@ -632,7 +633,7 @@ const ServicesData = () => {
         sector: "General public",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Climate resources library",
@@ -642,7 +643,7 @@ const ServicesData = () => {
         sector: "General public",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Climate resources library",
@@ -652,7 +653,7 @@ const ServicesData = () => {
         sector: "General public",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Climate resources library",
@@ -662,7 +663,7 @@ const ServicesData = () => {
         sector: "General public",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Climate resources library",
@@ -672,7 +673,7 @@ const ServicesData = () => {
         sector: "General public",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Climate resources library",
@@ -682,7 +683,7 @@ const ServicesData = () => {
         sector: "All sectors / research",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Climate resources library",
@@ -692,7 +693,7 @@ const ServicesData = () => {
         sector: "General public",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Climate resources library",
@@ -702,7 +703,7 @@ const ServicesData = () => {
         sector: "General public / all sectors",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Climate resources library",
@@ -712,7 +713,7 @@ const ServicesData = () => {
         sector: "General public",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Climate resources library",
@@ -722,7 +723,7 @@ const ServicesData = () => {
         sector: "General public",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Climate resources library",
@@ -732,7 +733,7 @@ const ServicesData = () => {
         sector: "General public",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Climate resources library",
@@ -742,7 +743,7 @@ const ServicesData = () => {
         sector: "General public",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Climate resources library",
@@ -752,7 +753,7 @@ const ServicesData = () => {
         sector: "General public",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Climate resources library",
@@ -762,7 +763,7 @@ const ServicesData = () => {
         sector: "General public",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Climate resources library",
@@ -772,7 +773,7 @@ const ServicesData = () => {
         sector: "General public",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       },
       {
         category: "Climate resources library",
@@ -782,7 +783,7 @@ const ServicesData = () => {
         sector: "General public",
         usage: "Commercial",
         pillar: "",
-        link: [<a className="dataLink" href="#" target="_blank">link</a>]
+        //link: [<a className="dataLink" href="#" target="_blank">link</a>]
       }
      ]
   };
